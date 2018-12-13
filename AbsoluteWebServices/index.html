@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Absolute Web Services</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <header class="menu-default" id="menu-scroll-mobile">
+    <div class="header-top">
+      <div class="row">
+        <div class="header-top__logo">
+          <img src="img/logo.png" alt="Logo">
+        </div>
+        <div class="search-mobile">
+          <button class="search-mobile__btn" id="js-search-mobile-btn">
+            <i class="fas fa-search" id="js-icon-search"></i>
+          </button>
+        </div>
+        <div class="header-search" id="js-header-search">
+          <form>
+            <div class="form-search">
+              <input class="form-search__inp" type="text" placeholder="Search">
+              <button class="form-search__btn" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="header-list menu-default" id="menu-scroll">
+      <nav class="navbar navbar-expand-md navbar-light header-list__nav">
+        <button class="header-list__btn" id="js-menu-btn" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars" id="js-icon-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home</a>
+          <a class="nav-item nav-link" href="#">Services</a>
+          <a class="nav-item nav-link" href="#">Portfolio</a>
+          <a class="nav-item nav-link" href="#">Gallery</a>
+          <a class="nav-item nav-link" href="#">Help &amp; Faq</a>
+          <a class="nav-item nav-link" href="#">About</a>
+          <a class="nav-item nav-link" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+<section class="main-content">
+  <!-- BUTTONS -->
+  <div class="section-buttons">
+    <h2>Buttons</h2>
+    <div class="btn-block">
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-default">Default</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-info">Info</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-danger">Danger</button>
+    </div>
+  </div>
+
+  <!-- INPUTS -->
+  <div class="section-inputs">
+    <h2>Inputs</h2>
+    <div class="inp-block">
+      <div class="checkbox-block">
+        <input id="check-on" type="checkbox" class="checkbox-block__checkbox" checked>
+        <label for="check-on"></label>
+        <span class="checkbox-block__text">Checkbox Active</span>
+      </div>
+      <div class="checkbox-block">
+        <input id="check-off" type="checkbox" class="checkbox-block__checkbox">
+        <label for="check-off"></label>
+        <span class="checkbox-block__text">Checkbox</span>
+      </div>
+    </div>
+    <div class="inp-block">
+      <div class="radio-block">
+        <input id="radio-on" type="radio" class="radio-block__radio" checked>
+        <label for="radio-on"></label>
+        <span class="radio-block__text">Radio Active</span>
+      </div>
+      <div class="radio-block">
+        <input id="radio-off" type="radio" class="radio-block__radio">
+        <label for="radio-off"></label>
+        <span class="radio-block__text">Radio</span>
+      </div>
+    </div>
+    <div class="inp-block">
+      <div class="switch-block">
+        <input id="switch-on" type="checkbox" class="switch-block__switcher" checked>
+        <label for="switch-on" class="switch"></label>
+        <span class="switch-block__text">Switcher ON</span>
+      </div>
+      <div class="switch-block">
+        <input id="switch-off" type="checkbox" class="switch-block__switcher">
+        <label for="switch-off" class="switch"></label>
+        <span class="switch-block__text">Switcher OFF</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- STAR RATING -->
+  <div class="section-inputs">
+    <h2>Star Rating</h2>
+    <div class="rating-block">
+      <div class="rating-show">
+        <input type="radio" name="rating-show" id="c1">
+        <label for="c1"></label>
+        <input type="radio" name="rating-show" id="c2">
+        <label for="c2"></label>
+        <input type="radio" name="rating-show" id="c3">
+        <label for="c3"></label>
+        <input type="radio" name="rating-show" id="c4">
+        <label for="c4"></label>
+        <input type="radio" name="rating-show" id="c5">
+        <label for="c5"></label>
+      </div>
+      <span class="rating-block__text">Show rating</span>
+    </div>
+    <div class="rating-block">
+      <div class="rating-check">
+        <input type="radio" name="rating-check" id="r1">
+        <label for="r1"></label>
+        <input type="radio" name="rating-check" id="r2">
+        <label for="r2"></label>
+        <input type="radio" name="rating-check" id="r3">
+        <label for="r3"></label>
+        <input type="radio" name="rating-check" id="r4">
+        <label for="r4"></label>
+        <input type="radio" name="rating-check" id="r5">
+        <label for="r5"></label>
+      </div>
+      <span class="rating-block__text">Check rating</span>
+    </div>
+  </div>
+
+  <!-- CAROUSEL -->
+  <div class="section-carousel">
+    <h2>Carousel</h2>
+    <div class="row">
+      <div class="slider">
+        <div id="carousel" class="owl-carousel owl-theme">
+          <div class="slide item">
+            <div class="slide__img">
+              <img src="img/img-slide-1.png" alt="">
+            </div>
+            <div class="slide__text">
+              <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making
+              one good choice at a time.</p>
+              <h5>Chewbacca</h5>
+              <h6>July 2017</h6>
+            </div>
+          </div>
+          <div class="slide item">
+            <div class="slide__img">
+              <img src="img/img-slide-2.png" alt="">
+            </div>
+            <div class="slide__text">
+              <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making
+              one good choice at a time.</p>
+              <h5>Chewbacca</h5>
+              <h6>July 2017</h6>
+            </div>
+          </div>
+          <div class="slide item">
+            <div class="slide__img">
+              <img src="img/img-slide-3.png" alt="">
+            </div>
+            <div class="slide__text">
+              <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making
+              one good choice at a time.</p>
+              <h5>Chewbacca</h5>
+              <h6>July 2017</h6>
+            </div>
+          </div>
+          <div class="slide item">
+            <div class="slide__img">
+              <img src="img/img-slide-4.png" alt="">
+            </div>
+            <div class="slide__text">
+              <p>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making
+              one good choice at a time.</p>
+              <h5>Chewbacca</h5>
+              <h6>July 2017</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="section-map">
+  <div id="googleMap" style="width: 100%; height: 450px;"></div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="footer-list shop-list">
+        <div class="footer-list__name footer-list__chevron js-footer-list-chevron">
+          Shop
+          <i class="fas fa-chevron-down icon-chevron"></i>
+        </div>
+        <ul class="js-footer-list-toggle">
+          <li><a href="#" class="footer-list__link">Browse By Holidays</a></li>
+          <li><a href="#" class="footer-list__link">Browse By Brand</a></li>
+          <li><a href="#" class="footer-list__link">Gift of the Month Clubs</a></li>
+          <li><a href="#" class="footer-list__link">Customized Bottles</a></li>
+          <li><a href="#" class="footer-list__link">Corporate Gifts</a></li>
+        </ul>
+      </div>
+      <div class="footer-list about-list">
+        <div class="footer-list__name footer-list__chevron js-footer-list-chevron">
+          About
+          <i class="fas fa-chevron-down icon-chevron"></i>
+        </div>
+        <ul class="js-footer-list-toggle">
+          <li><a href="#" class="footer-list__link">About Spirited Gifts</a></li>
+          <li><a href="#" class="footer-list__link">Read our Blog</a></li>
+          <li><a href="#" class="footer-list__link">About our Selection</a></li>
+          <li><a href="#" class="footer-list__link">Read our Reviews</a></li>
+          <li><a href="#" class="footer-list__link">Shipping & Returns</a></li>
+        </ul>
+      </div>
+      <div class="footer-list more-list">
+        <div class="footer-list__name footer-list__chevron js-footer-list-chevron">
+          More
+          <i class="fas fa-chevron-down icon-chevron"></i>
+        </div>
+        <ul class="js-footer-list-toggle">
+          <li><a href="#" class="footer-list__link">Privacy Policy</a></li>
+          <li><a href="#" class="footer-list__link">Retailer Network</a></li>
+          <li><a href="#" class="footer-list__link">Help and FAQs</a></li>
+          <li><a href="#" class="footer-list__link">Scholarship</a></li>
+          <li><a href="#" class="footer-list__link">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-list follow-list">
+        <div class="footer-list__name">Follow us</div>
+        <div class="soc-block">
+          <a href="https://www.facebook.com/" class="soc-icon" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/" class="soc-icon" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/" class="soc-icon" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.pinterest.com/" class="soc-icon" target="_blank">
+            <i class="fab fa-pinterest-p"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="libs/OwlCarousel/dist/owl.carousel.min.js"></script>
+<script>
+  function myMap() {
+    var mapProp = {
+      center: new google.maps.LatLng(51.508742, -0.120850),
+      zoom: 7,
+      styles: [
+      {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
+        {
+          "color": "#444444"
+        }
+        ]
+      },
+      {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+        {
+          "color": "#f2f2f2"
+        }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+        {
+          "visibility": "off"
+        }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+        {
+          "saturation": -100
+        },
+        {
+          "lightness": 45
+        }
+        ]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+        {
+          "visibility": "simplified"
+        }
+        ]
+      },
+      {
+        "featureType": "road.arterial",
+        "elementType": "labels.icon",
+        "stylers": [
+        {
+          "visibility": "off"
+        }
+        ]
+      },
+      {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+        {
+          "visibility": "off"
+        }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+        {
+          "color": "#0049B0"
+        },
+        {
+          "visibility": "on"
+        }
+        ]
+      }
+      ]
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtcg0pIxCnC-M9uc1TtoJP4GxJ-luR1PM&callback=myMap"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

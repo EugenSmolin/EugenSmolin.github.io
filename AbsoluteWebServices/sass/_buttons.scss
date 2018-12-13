@@ -1,0 +1,107 @@
+.btn-primary {
+  @include button-variant(
+          $primary,
+          $primary,
+      $hover-background: darken($primary, 7.5%),
+      $hover-border: darken($primary, 10%),
+      $active-background: darken($primary, 10%),
+      $active-border: darken($primary, 12.5%)
+  );
+}
+
+
+/* .btn-default {
+  @include button-variant(
+          $light,
+          $light,
+      $hover-background: darken($light, 7.5%),
+      $hover-border: darken($light, 10%),
+      $active-background: darken($light, 10%),
+      $active-border: darken($light, 12.5%)
+  );
+} */
+
+.btn-success {
+  @include button-variant(
+          $success,
+          $success,
+      $hover-background: darken($success, 7.5%),
+      $hover-border: darken($success, 10%),
+      $active-background: darken($success, 10%),
+      $active-border: darken($success, 12.5%)
+  );
+}
+
+.btn-info {
+  @include button-variant(
+          $info,
+          $info,
+      $hover-background: darken($info, 7.5%),
+      $hover-border: darken($info, 10%),
+      $active-background: darken($info, 10%),
+      $active-border: darken($info, 12.5%)
+  );
+}
+
+.btn-warning {
+  @include button-variant(
+          $warning,
+          $warning,
+      $hover-background: darken($warning, 7.5%),
+      $hover-border: darken($warning, 10%),
+      $active-background: darken($warning, 10%),
+      $active-border: darken($warning, 12.5%)
+  );
+}
+
+.btn-danger {
+  @include button-variant(
+          $danger,
+          $danger,
+      $hover-background: darken($danger, 7.5%),
+      $hover-border: darken($danger, 10%),
+      $active-background: darken($danger, 10%),
+      $active-border: darken($danger, 12.5%)
+  );
+}
+
+/* $primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default; */
+
+.btn-primary,
+.btn-default,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
+  border-radius: 3px;
+  font-family: "OpenSansRegular", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 11px 24px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.section-buttons {
+  @include make-container();
+  @include make-container-max-widths();
+  margin-top: 100px;
+
+  .btn-block {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    @include media-breakpoint-only(xs) {
+      text-align: left; 
+    }
+  }
+}
+
