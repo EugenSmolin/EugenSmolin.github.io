@@ -85,3 +85,15 @@ h3 {
 .link-block__link:hover {
   margin-left: 30px;
 }
+
+@media only screen and (max-width: 850px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    width: 320px;
+  }
+}
