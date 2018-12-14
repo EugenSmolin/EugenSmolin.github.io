@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Поиск русских букв</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="bg">
+  <h1>Поиск английских или русских букв в тексте</h1>
+</div>
+<div class="content">
+  <div class="check-block">
+    <input class="radio" id="radio-ru" name="radio" type="radio" onchange="changeRadio(this)" value="1" checked>
+    <label for="radio-ru">Найти русские буквы</label>
+    <input class="radio" id="radio-en" name="radio" type="radio" onchange="changeRadio(this)" value="2">
+    <label for="radio-en">Найти английские буквы</label>
+  </div>
+  <h2>Введите в поле текст:</h2>
+  <textarea class="clear-main-text" id="main-text" placeholder="Введите текст ..."></textarea>
+  <button id="btn-search-words">Найти буквы</button>
+  <h2>Результат поиска:</h2>
+  <div class="result clear-result"></div>
+  <button id="btn-change-letter">Изменить буквы (а, е, о, р, с, у, і) на английские</button>
+  <button id="btn-clear">Очистить поля</button>
+  <div class="clear-both"></div>
+</div>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>

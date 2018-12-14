@@ -1,0 +1,358 @@
+ // ============= COLOUR ============== //
+
+$brown: #431C0F;
+$yellow: #FEB032;
+$green: #CF4F05;
+ 
+// =================================== //
+
+body {
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+	color: #4C4859;
+}
+
+// ============= HEADER ============== //
+#header {
+	.header_top {
+		padding-top: 25px;
+		padding-bottom: 20px;
+
+		.logo {
+			margin-top: -15px;
+		}
+
+		button {
+			color: $brown;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+
+			li {
+				margin: 0;
+				padding: 0;
+
+				a {
+					font-size: 18px;
+					font-weight: bold;
+					margin: 20px 15px;
+					padding: 0;
+					color: $brown;
+
+					&:hover {
+						background-color: transparent;
+						color: $yellow;
+					}
+				}
+			}
+		}
+	}
+}
+// ============== TURA =============== //
+#tura {
+	padding: 10px 0;
+	margin: 0;
+	color: $brown;
+
+	h2 {
+		font-weight: bold;
+		font-size: 40px;
+		text-align: center;
+		border-top: 1px solid $brown;
+		border-bottom: 1px solid $brown;
+		padding: 20px 0;
+		margin-bottom: 30px;
+		margin-top: 0;
+	}
+
+	.image_block {
+		border: 1px solid $brown;
+		position: relative;
+		overflow: hidden;
+		display: inline-block;
+		width: 300px;
+		height: 300px;
+		background-color: #fff;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
+	}
+
+	.name {
+		font-size: 16px;
+		font-weight: bold;
+		padding: 10px 0;
+		height: 65px;
+	}
+
+	.price {
+		color: #000;
+		font-size: 22px;
+		font-weight: bold;
+		padding: 10px 0;
+		border-bottom: 1px dotted $brown;
+		border-top: 1px dotted $brown;
+	}
+
+	ul {
+		margin: 10px 0;
+		padding: 0;
+
+		li {
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+			padding: 0 10px;
+			font-weight: bold;
+			border-right: 1px solid #000;
+			line-height: 14px;
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:last-child {
+				border: none;
+			}
+			
+			a {
+				font-style: 16px;
+				color: #000;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+					color: #8E3B20;
+				}
+			}
+		}
+	}
+
+	.button {
+		background-color: $brown;
+		color: #fff;
+		padding: 5px 10px;
+		border: 1px solid #000;
+		border-radius: 4px;
+		font-weight: bold;
+		margin-bottom: 50px;
+		display: inline-block;
+		text-decoration: none;
+
+		i {
+			margin-right: 5px;
+		}
+
+		&:hover {
+			background-color: #8E3B20;
+		}
+	}
+}
+// ============= FOOTER ============== //
+#footer {
+	padding: 50px 0;
+	color: $brown;
+	text-align: center;
+
+	.deliver {
+		font-size: 18px;
+
+		h2 {
+			color: $brown;
+			font-weight: bold;
+			font-size: 40px;
+			text-align: center;
+			padding: 20px 0;
+			margin-bottom: 50px;
+			border-top: 1px solid $brown;
+			border-bottom: 1px solid $brown;
+		}
+
+		.method {
+			font-weight: bold;
+			font-size: 20px;
+			margin-bottom: 15px;
+		}
+	}
+
+	.contacts {
+		h2 {
+			color: $brown;
+			font-weight: bold;
+			font-size: 40px;
+			text-align: center;
+			padding: 20px 0;
+			margin-bottom: 50px;
+			border-top: 1px solid $brown;
+			border-bottom: 1px solid $brown;
+		}
+
+		.city {
+			font-weight: bold;
+			font-size: 20px;
+			margin-bottom: 15px;
+
+		}
+
+		.street, .phone {
+			font-size: 18px;
+		}
+	}
+
+	.map {
+		margin-top: 50px;
+	}
+}
+
+//============ MODAL WINDOW ===========//
+#modal_form {
+	width: 400px; 
+	height: 400px; /* Рaзмеры дoлжны быть фиксирoвaны */
+	border-radius: 10px;
+	border: 3px #000 solid;
+	background-color: $green;
+	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+	top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+	left: 50%; /* пoлoвинa экрaнa слевa */
+	margin-top: -200px;
+	margin-left: -200px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+	display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+	opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+	z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+	padding: 40px 25px;
+
+	h3 {
+		color: #fff;
+		font-weight: bold;
+		font-size: 26px;
+		text-align: center;
+		margin: 0;
+	}
+
+	.minutes {
+		color: $yellow;
+		text-align: center;
+		margin: 7px 0;
+		font-size: 30px;
+	}
+
+	input {
+		display: block;
+		margin: 10px auto;
+		padding: 5px;
+		width: 100%;
+		height: 45px;
+		font-size: 18px;
+		border-radius: 5px;
+		border: 2px solid #7D3202;
+		text-align: left;
+	}
+
+	.form_button_modal_window {
+		background-color: $yellow;
+		padding: 10px 20px;
+		margin: 0 auto;
+		color: #000;
+		font-size: 20px;
+		font-weight: bold;
+		border: 1px solid #7D3202;
+		border-radius: 5px;
+		display: block;
+		box-shadow: 0 2px 2px 1px rgba(255,255,255,0.4);
+		
+		&:hover {
+			background-color: #D3902D;
+		}
+	}
+
+	/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+	#modal_close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		cursor: pointer;
+		display: block;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+/* Пoдлoжкa */
+#overlay {
+	z-index: 3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	position: fixed; /* всегдa перекрывaет весь сaйт */
+	background-color: #000; /* чернaя */
+	opacity: 0.8; /* нo немнoгo прoзрaчнa */
+	-moz-opacity: 0.8; /* фикс прозрачности для старых браузеров */
+	filter: alpha(opacity=80);
+	width: 100%; 
+	height: 100%; /* рaзмерoм вo весь экрaн */
+	top: 0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+	left: 0;
+	cursor: pointer;
+	display: none; /* в oбычнoм сoстoянии её нет) */
+}
+
+@media screen and (max-width: 1200px) {
+	#header {
+		.header_top {
+			ul {
+				margin-top: 50px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	#footer {
+		.deliver {
+			h2 {
+				margin-bottom: 0;
+			}
+
+			.method {
+				margin-top: 30px;
+			}
+		}
+
+		.contacts {
+			.phone {
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		text-align: center;
+	}
+
+	#tura {
+		h2 {
+			font-size: 35px;
+		}
+
+		.image_block {
+			width: 280px;
+			height: 280px;
+		}
+	}
+
+	#modal_form {
+		width: 300px; 
+		height: 350px;
+		margin-top: -175px;
+		margin-left: -150px;
+	}
+}

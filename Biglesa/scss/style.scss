@@ -1,0 +1,805 @@
+//================== ШРИФТ ===================//
+
+//=================== ЦВЕТ ===================//
+$blue: #7D3202;
+$green: #CF4F05;
+$yellow: #FEB032;
+$red: #FE750A;
+//============== ОБЩИЕ НАСТРОЙКИ =============//
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+	color: $blue;
+}
+//============= HEADER ===============//
+#header {
+	background: url('../images/bg_header.jpg') no-repeat;
+	background-size: cover;
+
+	.header_top {
+		padding-top: 25px;
+		padding-bottom: 20px;
+
+		.logo {
+			margin-top: -15px;
+		}
+
+		button {
+			color: $blue;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+
+			li {
+				margin: 0;
+				padding: 0;
+
+				a {
+					font-size: 18px;
+					font-weight: bold;
+					margin: 20px 15px;
+					padding: 0;
+					color: $blue;
+
+					&:hover {
+						background-color: transparent;
+						color: $yellow;
+					}
+				}
+			}
+		}
+	}
+
+	.main_header {
+		padding-top: 100px;
+		padding-bottom: 50px;
+
+		h1 {
+			font-size: 50px;
+			font-weight: bold;
+			color: $blue;
+			text-align: center;
+			margin-top: 0;
+		}
+
+		.phone {
+			font-size: 30px;
+			color: $blue;
+			text-align: right;
+			font-weight: bold;
+		}
+
+		.ring {
+			color: $red;
+			font-size: 26px;
+			font-weight: bold;
+			text-align: right;
+			margin: 20px 0;
+		}
+
+		.button {
+			color: #fff;
+			background-color: $green;
+			padding: 5px 15px;
+			border: 1px solid #7D3202;
+			border-radius: 5px;
+			float: right;
+			margin-bottom: 40px;
+			text-decoration: none;
+			display: inline-block;
+
+			&:hover {
+				background-color: #7D3202;
+			}
+		}
+
+		.info {
+			background-color: #fff;
+			padding: 15px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			box-shadow: 3px 3px 10px 2px rgba(126,51,2,0.6);
+
+			img {
+				float: left;
+			}
+
+			.info_text {
+				margin-left: 240px;
+
+				h3 {
+					color: $blue;
+					font-size: 26px;
+					font-weight: bold;
+					margin-top: 30px;
+				}
+
+				ul {
+					padding-left: 10px;
+					margin: 30px 0;
+
+					li {
+						list-style: inside; 
+						line-height: 28px;
+						font-size: 18px;
+
+						.number {
+							font-weight: bold;
+						}
+					}
+				}
+
+				.price {
+					color: $green;
+					font-size: 26px;
+					font-weight: bold;
+					margin-bottom: 30px;
+				}
+			}
+		}
+
+		.form-1 {
+			background-color: $green;
+			padding: 40px 25px;
+			border-radius: 5px;
+			box-shadow: 3px 3px 10px 2px rgba(126,51,2,0.6);
+
+			h3 {
+				color: #fff;
+				font-weight: bold;
+				font-size: 26px;
+				text-align: center;
+				margin: 0;
+			}
+
+			.minutes {
+				color: $yellow;
+				text-align: center;
+				margin: 7px 0;
+				font-size: 30px;
+			}
+
+			input {
+				display: block;
+				margin: 10px auto;
+				padding: 5px;
+				width: 100%;
+				height: 45px;
+				font-size: 18px;
+				border-radius: 5px;
+				border: 2px solid #7D3202;
+				text-align: left;
+			}
+
+			.form_button_1 {
+				background-color: $yellow;
+				padding: 10px 20px;
+				margin: 0 auto;
+				color: #000;
+				font-size: 20px;
+				font-weight: bold;
+				border: 1px solid #7D3202;
+				border-radius: 5px;
+				display: block;
+				box-shadow: 0 2px 2px 1px rgba(255,255,255,0.4);
+				
+				&:hover {
+					background-color: #D3902D;
+				}
+			}
+		}
+	}
+}
+//============= FOR SALE =============//
+#for_sale {
+	padding: 70px 0;
+
+	h2 {
+		text-align: center;
+		font-size: 40px;
+	}
+	
+	.for_sale_block_1 {
+		margin: 40px 0;
+
+		img {
+			margin-top: 10px;
+		}
+
+		p {
+			font-size: 20px;
+			text-transform: uppercase;
+			color: $red;
+		}
+	}
+
+	.for_sale_block_2 {
+		margin: 40px 0;
+
+		p {
+			font-size: 20px;
+			margin-top: 15px;
+		}
+	}
+
+	.for_sale_block_3 {
+		margin: 40px 0;
+		
+		p {
+			font-size: 20px;
+			margin-top: 5px;
+		}
+
+		span {
+			display: block;
+			margin-top: 15px;
+			font-size: 20px;
+		}
+	}
+}
+//=============== BEST ================//
+#best {
+	background: url('../images/bg_best.jpg') no-repeat;
+	background-size: cover;
+	padding: 50px 0;
+	font-size: 20px;
+	text-align: center;
+
+	h2 {
+		text-align: center;
+		font-size: 40px;
+	}
+
+	img {
+		margin-top: 60px;
+		margin-bottom: 40px;
+	}
+		
+	.best_green_text {
+		color: $green;
+		font-weight: bold;
+		padding: 0 30px;
+	}
+
+	.best_red_text {
+		color: $red;
+		font-weight: bold;
+		padding: 0 30px;
+	}
+
+	.call {
+		text-align: center;
+		padding: 50px 0;
+
+		h2 {
+			color: $green;
+			margin-top: 60px;
+		}
+
+		.phone {
+			color: $red;
+			font-size: 40px;
+		}
+
+		.ring {
+			color: $red;
+			font-size: 30px;
+			font-weight: bold;
+		}
+	}
+}
+//=========== CALCULATION =============//
+#calculation {
+	background-color: $green;
+	padding: 60px 0;
+
+	h2 {
+		font-size: 40px;
+		font-weight: bold;
+		text-align: center;
+		color: $yellow;
+		margin-bottom: 30px;
+	}
+
+	.form-2 {
+		.calculation_name {
+			font-weight: bold;
+			font-size: 20px;
+			color: #fff;
+			margin: 10px 0;
+		}
+
+		.form-2-1 {
+			.number {
+				font-weight: bold;
+				font-size: 20px;
+
+				.minus, .plus {
+					cursor: pointer;
+					color: #7D3202;
+				}
+
+				input {
+					margin: 5px;
+					padding: 5px;
+					width: 50px;
+					height: 30px;
+					font-size: 18px;
+					border-radius: 5px;
+					border: 2px solid #7D3202;
+					text-align: center;
+					color: grey;
+				}
+			}
+		}
+		
+		.form-2-2 {
+
+			input {
+				display: block;
+				margin: 20px auto;
+				padding: 5px;
+				width: 100%;
+				height: 45px;
+				font-size: 18px;
+				border-radius: 5px;
+				border: 2px solid #7D3202;
+				text-align: left;
+			}
+
+			.form_button_2 {
+				background-color: $yellow;
+				padding: 5px 20px;
+				margin: 0 auto;
+				color: #7D3202;
+				font-size: 20px;
+				font-weight: bold;
+				border: 1px solid #7D3202;
+				border-radius: 5px;
+				display: block;
+				box-shadow: 0 2px 2px 1px rgba(255,255,255,0.4);
+				
+				&:hover {
+					background-color: #D3902D;
+				}
+			}
+		}
+	}
+}
+//============== OBJECT ===============//
+#object {
+	// background: url('../images/bg_object.jpg') no-repeat;
+	// background-size: cover;
+	background-color: #7D3202;
+	padding: 50px 0;
+	text-align: center;
+
+	h2 {
+		font-size: 40px;
+		color: $yellow;
+		margin-bottom: 40px;
+	}
+
+	.object_image {
+		position: relative;
+		width: 240px;
+		height: 180px;
+		overflow: hidden;
+		display: inline-block;
+		border: 5px solid #fff;
+		border-radius: 5px;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
+	}
+
+	.city {
+		color: $yellow;
+		font-size: 18px;
+		font-weight: bold;
+		margin-top: 10px;
+		margin-bottom: 40px;
+	}
+
+	.info {
+		color: $yellow;
+		font-weight: bold;
+		font-size: 30px;
+	}
+}
+//============= CONTACTS ==============//
+#email {
+	background: url('../images/bg_best.jpg') no-repeat;
+	background-size: cover;
+	padding: 50px 0;
+
+	h2 {
+		color: $green;
+		font-weight: bold;
+		font-size: 35px;
+		margin: 0;
+	}
+
+	.call {
+		font-weight: bold;
+		font-size: 24px;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+
+	.phone {
+		color: $red;
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	.ring {
+		color: $red;
+		font-size: 20px;
+		font-weight: bold;
+		margin-top: 10px;
+	}
+
+	.button {
+		color: #7D3202;
+		font-weight: bold;
+		font-size: 20px;
+		background-color: $yellow;
+		padding: 10px 15px;
+		border: 1px solid #7D3202;
+		border-radius: 5px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		box-shadow: 0 2px 2px 2px rgba(126,51,2,0.6);
+		text-decoration: none;
+		display: inline-block;
+	
+		&:hover {
+			background-color: #D3902D;
+		}
+	}
+
+	.form-3 {
+		background-color: $green;
+		padding: 25px 25px;
+		border-radius: 5px;
+		box-shadow: 3px 3px 10px 2px rgba(126,51,2,0.6);
+
+		h3 {
+			color: #fff;
+			font-weight: bold;
+			font-size: 26px;
+			text-align: center;
+			margin: 0;
+		}
+
+		.minutes {
+			color: $yellow;
+			text-align: center;
+			margin: 7px 0;
+			font-size: 30px;
+		}
+
+		input {
+			display: block;
+			margin: 10px auto;
+			padding: 5px;
+			width: 100%;
+			height: 45px;
+			font-size: 18px;
+			border-radius: 5px;
+			border: 2px solid #7D3202;
+			text-align: left;
+		}
+
+		.form_button_3 {
+			background-color: $yellow;
+			padding: 10px 20px;
+			margin: 0 auto;
+			color: #000;
+			font-size: 20px;
+			font-weight: bold;
+			border: 1px solid #7D3202;
+			border-radius: 5px;
+			display: block;
+			box-shadow: 0 2px 2px 1px rgba(255,255,255,0.4);
+			
+			&:hover {
+				background-color: #D3902D;
+			}
+		}
+	}
+
+	.email {
+		margin-top: 50px;
+		padding: 40px 0;
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+		border-top: 1px solid #4C4859;
+		border-bottom: 1px solid #4C4859;
+
+		i {
+			margin-right: 10px;
+		}
+
+		a {
+			text-decoration: none;
+			color: $green;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+//============== FOOTER ===============//
+#footer {
+	padding: 50px 0;
+	color: $blue;
+	text-align: center;
+
+	.deliver {
+		font-size: 18px;
+
+		h2 {
+			color: $blue;
+			font-weight: bold;
+			font-size: 40px;
+			text-align: center;
+			padding: 20px 0;
+			margin-bottom: 50px;
+			border-top: 1px solid $blue;
+			border-bottom: 1px solid $blue;
+		}
+
+		.method {
+			font-weight: bold;
+			font-size: 20px;
+			margin-bottom: 15px;
+		}
+	}
+
+	.contacts {
+		h2 {
+			color: $blue;
+			font-weight: bold;
+			font-size: 40px;
+			text-align: center;
+			padding: 20px 0;
+			margin-bottom: 50px;
+			border-top: 1px solid $blue;
+			border-bottom: 1px solid $blue;
+		}
+
+		.city {
+			font-weight: bold;
+			font-size: 20px;
+			margin-bottom: 15px;
+
+		}
+
+		.street, .phone {
+			font-size: 18px;
+		}
+	}
+
+	.map {
+		margin-top: 50px;
+	}
+}
+
+//============ MODAL WINDOW ===========//
+#modal_form {
+	width: 400px; 
+	height: 400px; /* Рaзмеры дoлжны быть фиксирoвaны */
+	border-radius: 10px;
+	border: 3px #000 solid;
+	background-color: $green;
+	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+	top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+	left: 50%; /* пoлoвинa экрaнa слевa */
+	margin-top: -200px;
+	margin-left: -200px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+	display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+	opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+	z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+	padding: 40px 25px;
+
+	h3 {
+		color: #fff;
+		font-weight: bold;
+		font-size: 26px;
+		text-align: center;
+		margin: 0;
+	}
+
+	.minutes {
+		color: $yellow;
+		text-align: center;
+		margin: 7px 0;
+		font-size: 30px;
+	}
+
+	input {
+		display: block;
+		margin: 10px auto;
+		padding: 5px;
+		width: 100%;
+		height: 45px;
+		font-size: 18px;
+		border-radius: 5px;
+		border: 2px solid #7D3202;
+		text-align: left;
+	}
+
+	.form_button_modal_window {
+		background-color: $yellow;
+		padding: 10px 20px;
+		margin: 0 auto;
+		color: #000;
+		font-size: 20px;
+		font-weight: bold;
+		border: 1px solid #7D3202;
+		border-radius: 5px;
+		display: block;
+		box-shadow: 0 2px 2px 1px rgba(255,255,255,0.4);
+		
+		&:hover {
+			background-color: #D3902D;
+		}
+	}
+
+	/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+	#modal_close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		cursor: pointer;
+		display: block;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+/* Пoдлoжкa */
+#overlay {
+	z-index: 3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	position: fixed; /* всегдa перекрывaет весь сaйт */
+	background-color: #000; /* чернaя */
+	opacity: 0.8; /* нo немнoгo прoзрaчнa */
+	-moz-opacity: 0.8; /* фикс прозрачности для старых браузеров */
+	filter: alpha(opacity=80);
+	width: 100%; 
+	height: 100%; /* рaзмерoм вo весь экрaн */
+	top: 0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+	left: 0;
+	cursor: pointer;
+	display: none; /* в oбычнoм сoстoянии её нет) */
+}
+
+@media screen and (max-width: 1200px) {
+	#header {
+		.header_top {
+			ul {
+				margin-top: 50px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	#header {
+		.main_header {
+			text-align: center;
+
+			h1 {
+				font-size: 35px;
+				margin-bottom: 20px;
+			}
+
+			.phone,.ring {
+				text-align: center;
+			}
+
+			.button {
+				float: none;
+			}
+
+			.info {
+				text-align: center;
+
+				img {
+					float: none;
+				}
+
+				.info_text {
+					margin: 0;
+
+					ul {
+						text-align: left;
+						margin: 10px auto;
+					}
+				}
+			}
+		}
+	}
+
+	#for_sale {
+		text-align: center;
+
+		.for_sale_block_1,
+		.for_sale_block_2,
+		.for_sale_block_3 {
+			margin: 0;
+
+			img {
+				margin-top: 50px;
+				margin-bottom: 10px;
+			}
+
+			p {
+				margin: 0;
+			}
+		}
+	}
+
+	#best {
+		.call {
+			.phone {
+				font-size: 30px;
+			}
+		}
+	}
+
+	#calculation {
+		text-align: center;
+
+		h2 {
+			font-size: 30px;
+		}
+	}
+
+	#email {
+		text-align: center;
+
+		.email {
+			font-size: 20px;
+		}
+	}
+
+	#footer {
+		.deliver {
+			h2 {
+				margin-bottom: 0;
+			}
+
+			.method {
+				margin-top: 30px;
+			}
+		}
+
+		.contacts {
+			.phone {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	#modal_form {
+		width: 300px; 
+		height: 350px;
+		margin-top: -175px;
+		margin-left: -150px;
+	}
+}
