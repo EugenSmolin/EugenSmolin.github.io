@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'code_bold';
+    src: url('../fonts/code_webfont/code_bold-webfont.eot');
+    src: url('../fonts/code_webfont/code_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/code_webfont/code_bold-webfont.woff2') format('woff2'),
+         url('../fonts/code_webfont/code_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'code_light';
+    src: url('../fonts/code_webfont/code_light-webfont.eot');
+    src: url('../fonts/code_webfont/code_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/code_webfont/code_light-webfont.woff2') format('woff2'),
+         url('../fonts/code_webfont/code_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'code_regular';
+    src: url('../fonts/code_webfont/code_pro-webfont.eot');
+    src: url('../fonts/code_webfont/code_pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/code_webfont/code_pro-webfont.woff2') format('woff2'),
+         url('../fonts/code_webfont/code_pro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* =================== MARIAD ==================== */
+
+@font-face {
+    font-family: 'MYRIAD-REGULAR';
+    src: url(../fonts/MYRIAD/MYRIAD-REGULAR.OTF);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MYRIAD-LIGHT';
+    src: url(../fonts/MYRIAD/MYRIAD-LIGHT.OTF);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MYRIAD-SEMIBOLD';
+    src: url(../fonts/MYRIAD/MYRIAD-SEMIBOLD.OTF);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MYRIAD-BOLD';
+    src: url(../fonts/MYRIAD/MYRIAD-BOLD.OTF);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MYRIAD-BLACK';
+    src: url(../fonts/MYRIAD/MYRIAD-BLACK.OTF);
+    font-style: normal;
+}

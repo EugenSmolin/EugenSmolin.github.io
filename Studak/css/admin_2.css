@@ -1,0 +1,118 @@
+* {
+  font-family: 'MYRIAD-REGULAR'; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #474747; }
+
+.statistics_event {
+  background: url("../images/bg_statistics.jpg") no-repeat;
+  background-size: cover; }
+  .statistics_event .container .statistics_event_top {
+    padding-top: 35px; }
+    .statistics_event .container .statistics_event_top .search {
+      display: inline-block;
+      float: right;
+      margin-top: 5px; }
+      .statistics_event .container .statistics_event_top .search .input_search {
+        margin-right: 25px;
+        border: none;
+        border-bottom: 1px solid #474747;
+        background-color: transparent;
+        width: 250px;
+        height: 34px;
+        font-size: 28px;
+        color: #474747;
+        padding-right: 30px;
+        background-image: url("../images/search_icon.png");
+        background-repeat: no-repeat;
+        background-position: 220px; }
+      .statistics_event .container .statistics_event_top .search a {
+        text-decoration: none; }
+  .statistics_event .container .statistics_event_main {
+    margin-top: 50px; }
+    .statistics_event .container .statistics_event_main .arrow_nav {
+      display: inline-block;
+      float: left;
+      margin-top: 25px; }
+      .statistics_event .container .statistics_event_main .arrow_nav .arrow_up {
+        display: inline-block;
+        margin-right: 10px;
+        cursor: pointer; }
+        .statistics_event .container .statistics_event_main .arrow_nav .arrow_up a {
+          color: #BF7EEA;
+          font-size: 20px;
+          text-decoration: none; }
+          .statistics_event .container .statistics_event_main .arrow_nav .arrow_up a .arrow_back {
+            margin-right: 15px; }
+    .statistics_event .container .statistics_event_main h2 {
+      text-align: center;
+      font-family: 'MYRIAD-BOLD';
+      font-size: 42px;
+      margin: 20px 0;
+      text-transform: uppercase;
+      background: -webkit-linear-gradient(to left, rgba(204, 90, 249, 0.8), rgba(75, 173, 246, 0.8));
+      background: -o-linear-gradient(to left, rgba(204, 90, 249, 0.8), rgba(75, 173, 246, 0.8));
+      background: linear-gradient(to left, rgba(204, 90, 249, 0.8), rgba(75, 173, 246, 0.8));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      .statistics_event .container .statistics_event_main h2 .party {
+        font-family: 'MYRIAD-LIGHT'; }
+    .statistics_event .container .statistics_event_main h3 {
+      font-size: 28px;
+      margin-top: 80px;
+      margin-bottom: 35px;
+      text-align: center; }
+    .statistics_event .container .statistics_event_main .amount_tickets {
+      text-align: center;
+      font-family: 'MYRIAD-BOLD';
+      font-size: 48px;
+      background: -webkit-linear-gradient(to left, rgba(204, 90, 249, 0.8), rgba(75, 173, 246, 0.8));
+      background: -o-linear-gradient(to left, rgba(204, 90, 249, 0.8), rgba(75, 173, 246, 0.8));
+      background: linear-gradient(to left, rgba(204, 90, 249, 0.8), rgba(75, 173, 246, 0.8));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .statistics_event .container .statistics_event_main .diagram {
+      margin: 0 auto; }
+
+.statistics_event_copyring {
+  background: linear-gradient(to left, #4BADF6, #BF7EEA);
+  margin-top: 50px; }
+  .statistics_event_copyring .statistics_event_copy {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff; }
+
+@media screen and (max-width: 730px) {
+  .statistics_event {
+    text-align: center; }
+    .statistics_event .container .statistics_event_top .search {
+      display: block;
+      float: none;
+      margin-top: 35px; }
+    .statistics_event .container .statistics_event_main {
+      margin-top: 50px; }
+      .statistics_event .container .statistics_event_main .arrow_nav {
+        display: block;
+        float: none;
+        margin-top: 0; }
+      .statistics_event .container .statistics_event_main h2 {
+        margin: 40px 0; } }
+
+@media screen and (max-width: 400px) {
+  .statistics_event .container .statistics_event_top .search {
+    display: block;
+    float: none;
+    margin-top: 35px; }
+    .statistics_event .container .statistics_event_top .search .input_search {
+      margin-right: 15px;
+      width: 200px;
+      height: 34px;
+      background-position: 170px; }
+  .statistics_event .container .statistics_event_main {
+    margin-top: 50px; }
+    .statistics_event .container .statistics_event_main h2 {
+      font-size: 38px; } }

@@ -1,0 +1,1011 @@
+//================== ШРИФТ ===================//
+//font-family: 'Source Sans Pro', sans-serif;
+
+//================== ЦВЕТ ===================//
+$red: #FB635E;
+$grey: #888888;
+
+//============= ОБЩИЕ НАСТРОЙКИ =============//
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: $grey;
+}
+
+h2 {
+	margin: 65px 0 20px;
+	padding-bottom: 5px;
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	border-bottom: 2px solid $grey;
+	display: inline-block;
+
+	span {
+		color: $red;
+	}
+}
+
+h3 {
+	font-size: 20px;
+	margin-bottom: 65px;
+	line-height: 28px;
+}
+
+p {
+	line-height: 24px;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+//============== HEADER ==============//
+
+header {
+	background: url('../images/bgHeader.jpg') no-repeat;
+	background-size: cover;
+	color: #fff;
+
+	.headerTop {
+		padding-top: 50px;
+		text-transform: uppercase;
+		
+		.logo {
+			margin-top: -20px;
+		}
+
+		ul {
+			li {
+				a {
+					color: #fff;
+					padding: 0;
+					margin: 0 24px;
+					font-size: 16px;
+
+					&:hover {
+						background-color: transparent;
+						text-decoration: underline;
+						color: $red;
+					}
+				}
+			}
+		}
+	}
+
+	.headerMain {
+		text-align: center;
+		
+		h1 {
+			font-size: 50px;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-top: 210px;
+
+			span {
+				color: $red;
+			}
+
+			&:after {
+				content: '';
+				width: 105px;
+				height: 8px;
+				margin-left: 15px;
+				background-color: #fff;
+				opacity: .2;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			&:before {
+				content: '';
+				width: 105px;
+				height: 8px;
+				margin-right: 15px;
+				background-color: #fff;
+				opacity: .2;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+
+		p {
+			font-size: 24px;
+			margin-top: 25px;
+			margin-bottom: 40px;
+		}
+
+		button {
+			background-color: transparent;
+			color: $red;
+			font-size: 24px;
+			padding: 10px 30px;
+			margin-bottom: 235px;
+			border: 2px solid $red;
+			border-radius: 10px;
+			transition: all 0.3s ease-in-out;
+
+			&:hover {
+				background-color: $red;
+				color: #fff;
+			}
+		}
+		
+		.arrow_down {
+			color: #fff;
+			background-color: $red;
+			width: 30px;
+			height: 30px;
+			padding: 5px;
+			margin: 20px auto;
+			border-radius: 50%;
+			display: block;
+			transition: all .3s ease-in-out;
+				
+			&:hover {
+				background-color: #EA251E;
+			}
+		}
+	}
+}
+//============== WHAT ================//
+#what {
+	text-align: center;
+	
+	h4 {
+		text-transform: uppercase;
+		font-style: 20px;
+		font-weight: bold;
+
+		&:after {
+			content: '';
+			background-color: $grey;
+			width: 60px;
+			height: 2px;
+			display: block;
+			margin: 5px auto;
+		}
+	}
+
+	.main {
+		position: relative;
+		width: 100px;
+		height: 100px;
+		margin: 50px auto 0;
+		
+		.rocket {
+			position: absolute;
+			width: 41px;
+			height: 41px;
+			top: 8px;
+			left: 29px;
+			z-index: 2;
+		}
+
+		.sect_1, .sect_2, .sect_3 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100px;
+			height: 58px;
+			background-color: #FD8581;
+		}
+		.sect_2, .sect_5 {
+			transform: rotate(-60deg);
+		}
+		.sect_3, .sect_6 {
+			transform: rotate(60deg);
+		}
+		.sect_4, .sect_5, .sect_6 {
+			position: absolute;
+			top: 3px;
+			left: 5px;
+			width: 90px;
+			height: 52px;
+			background-color: $red;
+		}
+	}
+	.arrow_down {
+		color: #fff;
+		background-color: transparent;
+		width: 30px;
+		height: 30px;
+		padding: 5px;
+		margin: 40px auto 20px;
+		border-radius: 50%;
+		border: 1px solid $red;
+		display: block;
+		transition: all .3s ease-in-out;
+
+		i {
+			color: $red;
+		}
+	}
+}
+//============ ABOUT US ==============//
+#expand {
+	background: url('../images/bgExpand.jpg') no-repeat;
+	background-size: cover;
+	text-align: center;
+	
+	.head {
+		font-size: 50px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-top: 220px;
+
+		span {
+			color: $red;
+		}
+	}
+
+	button {
+		background-color: transparent;
+		color: $red;
+		font-size: 24px;
+		padding: 15px 60px;
+		margin-top: 50px;
+		margin-bottom: 155px;
+		border: 3px solid $red;
+		border-radius: 10px;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			background-color: $red;
+			color: #fff;
+		}
+	}
+	
+	.arrow_down {
+		color: #fff;
+		background-color: $red;
+		width: 30px;
+		height: 30px;
+		padding: 5px;
+		margin: 20px auto;
+		border-radius: 50%;
+		display: block;
+		transition: all .3s ease-in-out;
+			
+		&:hover {
+			background-color: #EA251E;
+		}
+	}
+}
+//============= PROCESS ==============//
+#process {
+	text-align: center;
+	
+	.steps {
+		position: relative;
+		width: 785px;
+		height: 550px;
+		margin: 0 auto;
+
+		.icon {
+			position: absolute;
+			top: -18px;
+			left: -18px;
+			width: 38px;
+			height: 38px;
+			background-color: $red;
+			border-radius: 50%;
+
+			img {
+				position: absolute;
+				top: 7px;
+				left: 7px;
+				width: 23px;
+				height: 23px;
+			}
+		}
+
+		h4 {
+			font-size: 24px;
+			font-weight: bold;
+			text-transform: uppercase;
+			display: inline-block;
+			border-bottom: 1px solid $grey;
+			margin: -10px 0 10px;
+			padding-bottom: 3px;
+
+			.number {
+				color: $red;
+			}
+		}
+
+		p {
+			line-height: 18px;
+			font-size: 14px;
+		}
+		
+		.step_1 {
+			position: absolute;
+			top: 150px;
+			left: 0;
+			width: 175px;
+
+			.step_text_1 {
+				height: 100px;
+				padding: 0 10px;
+				border-left: 1px solid $grey;
+				border-right: 5px solid $red;
+			}
+
+			&:after, &:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border-left: 1px solid $grey;
+				border-right: 1px solid $grey;
+			}
+			&:after {
+				transform: rotate(-60deg);
+				border-right: 5px solid $red;
+			}
+			&:before {
+				transform: rotate(60deg);
+				border-left: 5px solid $red;
+			}
+		}
+
+		.step_2 {
+			position: absolute;
+			top: 201px;
+			left: 263px;
+			width: 175px;
+
+			.step_text_2 {
+				height: 100px;
+				padding: 0 10px;
+				border-left: 5px solid $red;
+				border-right: 1px solid $grey;
+			}
+
+			&:after, &:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border-left: 1px solid $grey;
+				border-right: 1px solid $grey;
+			}
+			&:after {
+				transform: rotate(-60deg);
+			}
+			&:before {
+				transform: rotate(60deg);
+				border-left: 5px solid $red;
+			}
+		}
+
+		.step_3 {
+			position: absolute;
+			top: 50px;
+			left: 350px;
+			width: 175px;
+
+			.step_text_3 {
+				height: 100px;
+				padding: 0 10px;
+				border-left: 5px solid $red;
+				border-right: 5px solid $red;
+			}
+
+			&:after, &:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border-left: 1px solid $grey;
+				border-right: 1px solid $grey;
+			}
+			&:after {
+				transform: rotate(-60deg);
+				border-right: 5px solid $red;
+			}
+			&:before {
+				transform: rotate(60deg);
+				border-left: 5px solid $red;
+			}
+		}
+
+		.step_4 {
+			position: absolute;
+			top: 150px;
+			left: 524px;
+			width: 260px;
+
+			.step_text_4 {
+				height: 150px;
+				padding: 0 10px;
+				border-left: 1px solid $grey;
+				border-right: 5px solid $red;
+
+				.icon_bottom {
+					position: absolute;
+					bottom: -90px;
+					left: 50%;
+					width: 38px;
+					height: 38px;
+					background-color: #fff;
+					border-radius: 50%;
+					border: 3px solid $red;
+					margin-left: -18px;
+					z-index: 2;
+
+					img {
+						position: absolute;
+						top: 7px;
+						left: 7px;
+						width: 16px;
+						height: 19px;
+					}
+				}
+			}
+
+			&:after, &:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border-left: 1px solid $grey;
+				border-right: 1px solid $grey;
+			}
+			&:after {
+				transform: rotate(-60deg);
+				border-right: 5px solid $red;
+			}
+			&:before {
+				transform: rotate(60deg);
+				border-left: 5px solid $red;
+				border-right: 5px solid $red;
+			}
+		}
+
+		.step_5 {
+			position: absolute;
+			top: 251px;
+			left: 43px;
+
+			.line_img {
+				position: absolute;
+				top: 22px;
+				left: 122px;
+				width: 110px;
+				border-top: 5px solid $red;
+				transform: rotate(30deg);
+			}
+		}
+	}
+
+	.arrow_down {
+		color: #fff;
+		background-color: transparent;
+		width: 30px;
+		height: 30px;
+		padding: 5px;
+		margin: 60px auto 20px;
+		border-radius: 50%;
+		border: 1px solid $red;
+		display: block;
+		transition: all .3s ease-in-out;
+
+		i {
+			color: $red;
+		}
+	}
+}
+//============== WE_DO ===============//
+#we_do {
+	background-color: #F1F1F1;
+	text-align: center;
+	
+	h2 {
+		margin-bottom: 50px;
+	}
+
+	.h2 {
+		text-align: left;
+		text-transform: uppercase;
+		border-left: 10px solid $red;
+		padding-left: 20px;
+		font-size: 28px;
+	}
+
+	p {
+		text-align: left;
+		margin: 20px 0 40px;
+	}
+
+	button {
+		float: left;
+		background-color: $red;
+		color: #fff;
+		font-size: 20px;
+		text-transform: capitalize;
+		padding: 10px 30px;
+		border: 2px solid $red;
+		border-radius: 5px;
+		transition: all .3s ease-in-out;
+
+		&:hover {
+			background-color: transparent;
+			color: $red;
+		}
+	}
+
+	img {
+		float: right;
+	}
+
+	.arrow_down {
+		color: #fff;
+		background-color: transparent;
+		width: 30px;
+		height: 30px;
+		padding: 5px;
+		margin: 60px auto 20px;
+		border-radius: 50%;
+		border: 1px solid $red;
+		display: block;
+		transition: all .3s ease-in-out;
+
+		i {
+			color: $red;
+		}
+	}
+}
+//=========== ADVERTISING ============//
+#advertising {
+	text-align: center;
+	padding-top: 130px;
+	
+	img {
+		float: left;
+	}
+
+	.h2 {
+		text-align: right;
+		text-transform: uppercase;
+		border-right: 10px solid $red;
+		padding-right: 20px;
+		font-size: 28px;
+	}
+
+	p {
+		text-align: right;
+		margin: 20px 0 40px;
+	}
+
+	button {
+		float: right;
+		background-color: $red;
+		color: #fff;
+		font-size: 20px;
+		text-transform: capitalize;
+		padding: 10px 30px;
+		border: 2px solid $red;
+		border-radius: 5px;
+		transition: all .3s ease-in-out;
+
+		&:hover {
+			background-color: transparent;
+			color: $red;
+		}
+	}
+
+	.arrow_down {
+		color: #fff;
+		background-color: transparent;
+		width: 30px;
+		height: 30px;
+		padding: 5px;
+		margin: 100px auto 20px;
+		border-radius: 50%;
+		border: 1px solid $red;
+		display: block;
+		transition: all .3s ease-in-out;
+
+		i {
+			color: $red;
+		}
+	}
+}
+//============= MAGAZINE =============//
+#magazine {
+	background-color: #F1F1F1;
+	text-align: center;
+	padding-top: 130px;;
+
+	.h2 {
+		text-align: left;
+		text-transform: uppercase;
+		border-left: 10px solid $red;
+		padding-left: 20px;
+		font-size: 28px;
+	}
+
+	p {
+		text-align: left;
+		margin: 20px 0 40px;
+	}
+
+	button {
+		float: left;
+		background-color: $red;
+		color: #fff;
+		font-size: 20px;
+		text-transform: capitalize;
+		padding: 10px 30px;
+		border: 2px solid $red;
+		border-radius: 5px;
+		transition: all .3s ease-in-out;
+
+		&:hover {
+			background-color: transparent;
+			color: $red;
+		}
+	}
+
+	img {
+		float: right;
+	}
+
+	.arrow_down {
+		color: #fff;
+		background-color: transparent;
+		width: 30px;
+		height: 30px;
+		padding: 5px;
+		margin: 60px auto 20px;
+		border-radius: 50%;
+		border: 1px solid $red;
+		display: block;
+
+		i {
+			color: $red;
+		}
+	}
+}
+//============= PORTFOLIO ============//
+#portfolio {
+	text-align: center;
+
+	.controls {
+		h2 {
+			margin-bottom: 40px;
+		}
+		ul {
+			margin-bottom: 50px;
+			margin-right: 15px;
+			margin-left: 15px;			
+			text-align: center;
+			padding: 20px 0;
+			border-top: 1px solid $grey;
+			border-bottom: 1px solid $grey;
+
+			li {
+				text-transform: uppercase;
+				font-size: 20px;
+				display: inline-block;
+				padding: 0 80px;
+				border-right: 1px solid $grey;
+				cursor: pointer;
+				color: $red;
+				line-height: 18px;
+				
+
+				&:hover {
+					color: $grey;
+				}
+				&:first-child {
+					padding-left: 0;
+				}
+				&:last-child {
+					border-right: none;
+					padding-right: 0;
+				}
+			}
+		}
+	}
+
+	.portfolioBlock {
+		text-align: center;
+
+		//===== HOVER MENU =====//
+		.hover_menu, .hover_menu_2 {
+			width: 480px;
+			height: 200px;
+			display: inline-block;
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+			margin: 5px;
+
+			img {
+				position: absolute;
+				top: -50px;
+				left: 0;
+			}
+			//===== CONTENT HOVER MENU ====//
+			.content_hover_menu {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				padding: 25px;
+				background-color: rgba(191,48,28,0.7);
+				color: #fff;
+				opacity: 0;
+				transition: all 0.5s ease-in-out;
+
+				a {
+					margin: 0;
+					color: #fff;
+					background-color: transparent;
+					text-decoration: none;
+
+					h4 {
+						font-size: 28px;
+						text-transform: uppercase;
+						margin: 0;
+						text-align: left;
+					}
+
+					.plus {
+						margin: 0 auto;
+						text-transform: uppercase;
+						font-size: 80px;
+						font-weight: bold;
+						color: #fff;
+					}
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+			//=========================//
+		}
+
+		.hover_menu_2 {
+			width: 235px;
+			height: 200px;
+
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+
+		.hover_menu:hover .content_hover_menu,
+		.hover_menu_2:hover .content_hover_menu {
+			opacity: 1;
+		}
+
+		.mix {
+			display: none;
+		}
+	}
+
+	button {
+		background-color: $red;
+		color: #fff;
+		font-size: 20px;
+		text-transform: capitalize;
+		padding: 10px 15px;
+		border: 2px solid $red;
+		border-radius: 5px;
+		margin-top: 50px;
+		transition: all .3s ease-in-out;
+
+		&:hover {
+			background-color: transparent;
+			color: $red;
+		}
+	}
+
+	.arrow_down {
+		color: #fff;
+		background-color: transparent;
+		width: 30px;
+		height: 30px;
+		padding: 5px;
+		margin: 60px auto 20px;
+		border-radius: 50%;
+		border: 1px solid $red;
+		display: block;
+		transition: all .3s ease-in-out;
+
+		i {
+			color: $red;
+		}
+	}
+}
+//=============== TEAM ===============//
+#team {
+	text-align: center;
+	background-color: #F1F1F1;
+	
+	h2 {
+		margin-bottom: 70px;
+	}
+
+	.name {
+		margin-top: 20px;
+		font-size: 28px;
+
+		span {
+			color: $red;
+		}
+	}
+
+	.job {
+		font-size: 20px;
+	}
+
+	.icons {
+		margin-top: 20px;
+
+		.icon {
+			background-color: #555555;
+			border-radius: 50%;
+			display: table;
+			display: inline-block;
+			margin: 0 5px; 
+			transition: all .2s ease-in-out;
+
+			&:hover {
+				text-decoration: none;
+				background-color: $red;
+			}
+
+			i {
+				display: table-cell;
+				color: #fff;
+				vertical-align: middle;
+				text-align: center;
+				width: 38px;
+				height: 38px;
+			}
+		}
+	}
+
+	.arrow_down {
+		color: #fff;
+		background-color: transparent;
+		width: 30px;
+		height: 30px;
+		padding: 5px;
+		margin: 80px auto 20px;
+		border-radius: 50%;
+		border: 1px solid $red;
+		display: block;
+		transition: all .3s ease-in-out;
+
+		i {
+			color: $red;
+		}
+	}
+}
+//=============== ALAN ===============//
+#alan {
+	padding: 50px 0 150px;
+	text-align: center;
+
+	img {
+		margin-bottom: 80px;
+	}
+
+	.slider {
+
+		.slide {
+			p {
+				margin-top: 40px;
+			}
+		}
+		.slide_3 {
+			text-align: left;
+
+			.name {
+				font-size: 28px;
+				font-weight: bold;
+				margin-top: 60px;
+
+				span {
+					color: $red;
+				}
+			}
+			.job {
+				font-size: 20px;
+			}
+		}
+	}
+}
+//============== FOOTER ==============//
+#footer {
+	text-align: center;
+	
+	.map_section {
+		background-color: $grey;
+		min-height: 340px;
+		position: relative;
+		
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.main_sect {
+			position: absolute;
+			top: 0;
+			left: 42.5%;
+			width: 210px;
+			height: 210px;
+			margin: 0 auto;
+			
+
+			.sect_text {
+				position: absolute;
+				top: -55px;
+				padding: 0 25px;
+				color: #fff;
+				z-index: 2;
+
+				h4 {
+					font-size: 24px;
+				}
+			}
+
+			.sect_1, .sect_2, .sect_3 {
+				position: absolute;
+				top: -61px;
+				left: 0;
+				width: 210px;
+				height: 122px;
+				background-color: #FD8581;
+			}
+			.sect_2, .sect_5 {
+				transform: rotate(-60deg);
+			}
+			.sect_3, .sect_6 {
+				transform: rotate(60deg);
+			}
+			.sect_4, .sect_5, .sect_6 {
+				position: absolute;
+				top: -55px;
+				left: 10px;
+				width: 190px;
+				height: 110px;
+				background-color: $red;
+			}
+		}
+	}
+
+	.logo_footer {
+		background: url('../images/bgFooter.jpg') no-repeat;
+		background-size: cover;
+		padding: 75px 0;
+	}
+}
+//============== MEDIA ===============//
+/* @media screen and (max-width: 992px) {
+	body {
+		text-align: center;
+	}
+} */

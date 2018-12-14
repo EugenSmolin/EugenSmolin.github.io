@@ -1,0 +1,337 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "ralewayregular"; }
+
+.header {
+  background: url("../images/banner.jpg") no-repeat;
+  background-size: cover;
+  color: #fff; }
+  .header .headerTop {
+    border-bottom: 1px solid #fff;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .header .headerTop a {
+      padding-left: 0; }
+      .header .headerTop a img {
+        padding: 0;
+        margin: 0; }
+    .header .headerTop ul li {
+      margin-left: 30px; }
+      .header .headerTop ul li a {
+        color: #fff;
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+        opacity: 0.7; }
+      .header .headerTop ul li a:hover {
+        background: transparent;
+        opacity: 1; }
+    .header .headerTop button {
+      border: none;
+      margin-right: 10px;
+      padding-right: 0; }
+  .header h1 {
+    margin: 130px 0 25px 0;
+    font-size: 65px;
+    font-family: "ralewaybold";
+    text-transform: uppercase; }
+  .header h5 {
+    font-size: 22px; }
+  .header .button {
+    margin-top: 75px;
+    margin-bottom: 100px;
+    padding: 10px 50px;
+    background: #e84545;
+    text-transform: uppercase;
+    font-size: 13px;
+    border: none; }
+  .header .button:hover {
+    background: #D31616;
+    border: none; }
+  .header button {
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px; }
+
+#features {
+  margin-bottom: 80px; }
+  #features img {
+    margin-top: 80px; }
+  #features h6 {
+    text-transform: uppercase;
+    font-family: "ralewaybold";
+    margin: 20px 0; }
+  #features p {
+    margin: 0 40px; }
+
+.grid {
+  position: relative;
+  margin: 0;
+  padding: 1em 0 4em;
+  max-width: 100%;
+  list-style: none;
+  text-align: center;
+  /* Common style */ }
+  .grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 0;
+    max-width: 25%;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    /* Anchor will cover the whole item by default */
+    /* For some effects it will show as a button */ }
+    .grid figure img {
+      position: relative;
+      display: block;
+      max-width: 150%; }
+    .grid figure figcaption {
+      color: #fff;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
+    .grid figure figcaption::before,
+    .grid figure figcaption::after {
+      pointer-events: none; }
+    .grid figure figcaption,
+    .grid figure figcaption > a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    .grid figure figcaption > a {
+      z-index: 1000;
+      text-indent: 200%;
+      white-space: nowrap;
+      font-size: 0;
+      opacity: 0; }
+    .grid figure h2 {
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase; }
+    .grid figure p {
+      font-size: 14px; }
+
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+.grid .effect-bubba {
+  background: #e84545; }
+  .grid .effect-bubba img {
+    border: 1px solid #fff;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s; }
+
+.grid .effect-bubba:hover img {
+  opacity: 0.4; }
+
+.grid .effect-bubba figcaption::before,
+.grid .effect-bubba figcaption::after {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s; }
+
+.grid .effect-bubba figcaption::before {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1); }
+
+.grid .effect-bubba figcaption::after {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0); }
+
+.grid .effect-bubba h2 {
+  margin-top: 32%;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0); }
+
+.grid .effect-bubba p {
+  padding: 10px 2.5em;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0); }
+
+.grid .effect-bubba:hover figcaption::before,
+.grid .effect-bubba:hover figcaption::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+
+.grid .effect-bubba:hover h2,
+.grid .effect-bubba:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/*----------------------------------------*/
+#teams {
+  margin: 100px 0; }
+  #teams .name {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: bold; }
+  #teams .job {
+    margin: 10px 0;
+    font-size: 13px;
+    color: #e84545;
+    text-transform: uppercase; }
+  #teams p {
+    margin-top: 20px;
+    margin-bottom: 30px; }
+  #teams i {
+    border: 2px solid #000;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    opacity: .5;
+    color: #000;
+    border-radius: 4px; }
+  #teams i:hover {
+    background: #e84545;
+    border: 2px solid #e84545;
+    color: #fff;
+    opacity: 1; }
+
+#testimonials {
+  color: #fff; }
+  #testimonials img {
+    width: 50%;
+    float: left; }
+  #testimonials .text {
+    font-style: italic;
+    margin-left: 50%;
+    padding: 80px 100px 50px 60px;
+    font-size: 30px;
+    font-family: 'Times New Roman', sans-serif; }
+    #testimonials .text h6 {
+      font-style: normal;
+      text-transform: uppercase;
+      font-size: 13px;
+      margin-top: 50px; }
+
+#download {
+  margin: 70px 0; }
+  #download h2 {
+    font-size: 28px; }
+  #download h6 {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px; }
+  #download button {
+    margin-top: 75px;
+    padding: 10px 50px;
+    background: #e84545;
+    text-transform: uppercase;
+    font-size: 13px;
+    border: none;
+    color: #fff; }
+  #download button:hover {
+    background: #D31616;
+    border: none; }
+
+footer {
+  background: #3A3D63;
+  color: #fff;
+  font-size: 14px; }
+  footer i {
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    margin-right: 5px;
+    color: #fff;
+    border-radius: 4px; }
+  footer i:hover {
+    background: #e84545;
+    border: 2px solid #e84545;
+    color: #fff;
+    opacity: 1; }
+  footer h5 {
+    text-transform: uppercase;
+    margin-top: 65px;
+    margin-bottom: 20px; }
+  footer .greyText {
+    color: #9D9EAE;
+    margin-bottom: 70px; }
+  footer .copyring {
+    background: #313353;
+    background-size: cover;
+    padding: 20px 0; }
+
+@media screen and (max-width: 1250px) {
+  #testimonials .text {
+    padding: 60px 100px 30px 60px;
+    font-size: 25px; } }
+
+@media screen and (max-width: 1110px) {
+  #testimonials .text {
+    padding: 60px 100px 10px 60px;
+    font-size: 20px; } }
+
+@media screen and (max-width: 992px) {
+  body {
+    text-align: center; }
+    body #teams img {
+      margin: 0 auto;
+      margin-top: 40px; }
+    body #testimonials img {
+      float: none;
+      width: 100%;
+      display: block; }
+    body #testimonials .text {
+      padding: 50px 15px;
+      margin: 0;
+      font-size: 18px; }
+      body #testimonials .text h6 {
+        padding: 30px auto;
+        margin-top: 40px; }
+    body .grid figure {
+      max-width: 50%; } }
+
+@media screen and (max-width: 768px) {
+  .header h1 {
+    margin: 130px 0 25px 0;
+    font-size: 50px;
+    font-family: "ralewaybold";
+    text-transform: uppercase; }
+  .header h5 {
+    font-size: 20px; } }
+
+@media screen and (max-width: 620px) {
+  header .header h1 {
+    margin: 100px 0 25px 0;
+    font-size: 35px;
+    font-family: "ralewaybold";
+    text-transform: uppercase; }
+  header .header h5 {
+    font-size: 18px; }
+  #works .grid figure {
+    float: none;
+    max-width: 100%;
+    display: block;
+    margin: 0; } }

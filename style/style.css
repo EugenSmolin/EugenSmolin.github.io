@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+body {
+
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('bg1.png') center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  display: block;
+  width: 800px;
+  margin: 50px auto 0;
+  border: 1px solid #4d4d4d;
+  -webkit-box-shadow: 0 0 20px #4d4d4d;
+  -moz-box-shadow: 0 0 20px #4d4d4d;
+  box-shadow: 0 0 20px #4d4d4d;
+  background: url('default_bg.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+h3 {
+  display: block;
+  font-size: 32px;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #4d4d4d;
+  background-color: #315670;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: #fff;
+  text-shadow: 0 0 8px #000;
+}
+
+.link-block {
+  /*margin-bottom: 25px;*/
+}
+
+.link-block__link {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  width: 100%;
+  line-height: 40px;
+  padding: 0 30px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 16px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(30, 50, 70, 0.3),
+  inset 0 0 1px rgba(255, 255, 255, 0.15),
+  inset 0 1px 0 rgba(255, 255, 255, 0.12);
+
+}
+
+.link-block__link:visited {
+  color: #999;
+}
+
+.link-block__link:hover {
+  margin-left: 30px;
+}

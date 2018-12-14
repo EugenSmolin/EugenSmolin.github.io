@@ -1,0 +1,457 @@
+body {
+  font-family: "roboto_slabregular", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #545454; }
+
+section {
+  padding: 100px 0; }
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "montserratregular", sans-serif;
+  text-align: center; }
+  h2:after {
+    content: '';
+    background-color: #545454;
+    width: 55px;
+    height: 2px;
+    display: block;
+    margin: 30px auto; }
+
+h3 {
+  font-size: 16px;
+  margin-bottom: 70px;
+  text-align: center; }
+
+h4 {
+  font-size: 14px;
+  font-family: "montserratregular", sans-serif;
+  text-transform: uppercase;
+  margin: 25px 0; }
+
+p {
+  line-height: 24px; }
+
+header {
+  background: url("../images/bgHeader.jpg") no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: "montserratregular", sans-serif; }
+  header .headerTop {
+    padding-top: 40px;
+    text-transform: capitalize; }
+    header .headerTop .logo {
+      color: #fff;
+      padding: 0;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px; }
+    header .headerTop ul a {
+      color: #fff;
+      padding: 0 20px;
+      font-size: 14px; }
+      header .headerTop ul a:hover {
+        background-color: transparent;
+        text-decoration: underline; }
+  header .headerMain {
+    padding: 250px 0;
+    text-align: center; }
+    header .headerMain h1 {
+      font-size: 48px;
+      text-transform: uppercase; }
+    header .headerMain p {
+      font-family: "roboto_slabregular", sans-serif;
+      font-size: 20px;
+      text-transform: capitalize;
+      margin-top: 25px;
+      margin-bottom: 40px; }
+    header .headerMain button {
+      background-color: transparent;
+      font-weight: 16px;
+      text-transform: uppercase;
+      padding: 15px 30px;
+      border: 2px solid #fff;
+      border-radius: 4px;
+      transition: all 0.3s ease-in-out; }
+      header .headerMain button:hover {
+        background-color: #fff;
+        color: #BF301C; }
+
+#services {
+  text-align: center; }
+  #services a {
+    width: 85px;
+    height: 85px;
+    color: #BF301C;
+    display: table;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 2px solid #E1E1E1;
+    transition: all 0.3s ease-in-out; }
+    #services a:hover {
+      background-color: #BF301C;
+      color: #fff;
+      border: 2px solid #BF301C;
+      border-radius: 50%;
+      cursor: pointer;
+      text-decoration: none; }
+    #services a i {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center; }
+
+#about {
+  background-color: #F7F7F7; }
+  #about p {
+    margin-bottom: 70px; }
+  #about .slider_about {
+    text-align: center;
+    font-size: 13px; }
+    #about .slider_about .name {
+      text-transform: uppercase;
+      display: block;
+      margin: 15px 0 5px; }
+    #about .slider_about .job {
+      text-transform: capitalize;
+      display: block;
+      margin: 0; }
+    #about .slider_about .slide .hover_menu {
+      position: relative;
+      overflow: hidden;
+      width: 263px;
+      height: 250px; }
+      #about .slider_about .slide .hover_menu img {
+        position: absolute; }
+      #about .slider_about .slide .hover_menu .content_hover_menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        transition: all 0.5s ease-in-out; }
+        #about .slider_about .slide .hover_menu .content_hover_menu a {
+          margin-top: 70%;
+          color: #fff;
+          display: table;
+          display: inline-block;
+          transition: all 0.3s ease-in-out; }
+          #about .slider_about .slide .hover_menu .content_hover_menu a:hover {
+            background-color: #BF301C;
+            text-decoration: none; }
+        #about .slider_about .slide .hover_menu .content_hover_menu i {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          width: 35px;
+          height: 35px;
+          margin: 5px; }
+    #about .slider_about .slide .hover_menu:hover .content_hover_menu {
+      opacity: 1; }
+
+#portfolio .controls ul {
+  margin-bottom: 70px;
+  text-align: center;
+  padding: 0; }
+  #portfolio .controls ul li {
+    font-size: 16px;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer; }
+    #portfolio .controls ul li:hover {
+      color: #BF301C; }
+
+#portfolio .portfolioBlock {
+  text-align: center; }
+  #portfolio .portfolioBlock .category-1, #portfolio .portfolioBlock .category-2,
+  #portfolio .portfolioBlock .category-3, #portfolio .portfolioBlock .category-4 {
+    width: 360px;
+    height: 320px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 5px; }
+    #portfolio .portfolioBlock .category-1 .hover_menu img, #portfolio .portfolioBlock .category-2 .hover_menu img,
+    #portfolio .portfolioBlock .category-3 .hover_menu img, #portfolio .portfolioBlock .category-4 .hover_menu img {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #portfolio .portfolioBlock .category-1 .hover_menu .content_hover_menu, #portfolio .portfolioBlock .category-2 .hover_menu .content_hover_menu,
+    #portfolio .portfolioBlock .category-3 .hover_menu .content_hover_menu, #portfolio .portfolioBlock .category-4 .hover_menu .content_hover_menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(191, 48, 28, 0.7);
+      color: #fff;
+      opacity: 0;
+      transition: all 0.5s ease-in-out; }
+      #portfolio .portfolioBlock .category-1 .hover_menu .content_hover_menu h3, #portfolio .portfolioBlock .category-2 .hover_menu .content_hover_menu h3,
+      #portfolio .portfolioBlock .category-3 .hover_menu .content_hover_menu h3, #portfolio .portfolioBlock .category-4 .hover_menu .content_hover_menu h3 {
+        margin-top: 100px;
+        margin-bottom: 0;
+        font-size: 18px;
+        text-transform: uppercase; }
+      #portfolio .portfolioBlock .category-1 .hover_menu .content_hover_menu h4, #portfolio .portfolioBlock .category-2 .hover_menu .content_hover_menu h4,
+      #portfolio .portfolioBlock .category-3 .hover_menu .content_hover_menu h4, #portfolio .portfolioBlock .category-4 .hover_menu .content_hover_menu h4 {
+        font-size: 12px;
+        text-transform: capitalize;
+        margin-top: 15px;
+        margin-bottom: 0; }
+      #portfolio .portfolioBlock .category-1 .hover_menu .content_hover_menu a, #portfolio .portfolioBlock .category-2 .hover_menu .content_hover_menu a,
+      #portfolio .portfolioBlock .category-3 .hover_menu .content_hover_menu a, #portfolio .portfolioBlock .category-4 .hover_menu .content_hover_menu a {
+        margin-top: 25px;
+        padding: 15px 25px;
+        text-transform: uppercase;
+        font-size: 14px;
+        background-color: #fff;
+        color: #BF301C;
+        border: 2px solid #fff;
+        transition: all 0.5s ease-in-out;
+        display: inline-block; }
+        #portfolio .portfolioBlock .category-1 .hover_menu .content_hover_menu a:hover, #portfolio .portfolioBlock .category-2 .hover_menu .content_hover_menu a:hover,
+        #portfolio .portfolioBlock .category-3 .hover_menu .content_hover_menu a:hover, #portfolio .portfolioBlock .category-4 .hover_menu .content_hover_menu a:hover {
+          color: #fff;
+          background-color: transparent;
+          text-decoration: none; }
+    #portfolio .portfolioBlock .category-1 .hover_menu:hover .content_hover_menu, #portfolio .portfolioBlock .category-2 .hover_menu:hover .content_hover_menu,
+    #portfolio .portfolioBlock .category-3 .hover_menu:hover .content_hover_menu, #portfolio .portfolioBlock .category-4 .hover_menu:hover .content_hover_menu {
+      opacity: 1; }
+  #portfolio .portfolioBlock .mix {
+    display: none; }
+
+#work {
+  background: url("../images/bgWork.jpg") no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center; }
+  #work h3 {
+    font-family: "roboto_slabregular", sans-serif;
+    font-size: 30px;
+    line-height: 45px;
+    margin: 0; }
+  #work span {
+    text-transform: uppercase; }
+  #work button {
+    background-color: transparent;
+    font-weight: 18px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out; }
+    #work button:hover {
+      background-color: #fff;
+      color: #BF301C; }
+
+#recent img {
+  margin-bottom: 30px; }
+
+#recent .calendar {
+  width: 75px;
+  height: 75px;
+  text-transform: uppercase;
+  border: 2px solid #545454;
+  float: left;
+  text-align: center;
+  margin-right: 30px;
+  padding-top: 17px;
+  display: inline-block;
+  line-height: 20px; }
+  #recent .calendar .number {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "montserratregular", sans-serif; }
+  #recent .calendar .month {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "montserratregular", sans-serif; }
+
+#recent .startup {
+  text-transform: uppercase;
+  color: #BF301C;
+  font-size: 16px;
+  margin: 0;
+  margin: 10px 0; }
+
+#recent .startup_1 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 0;
+  margin: 10px 0; }
+
+#recent .by {
+  font-size: 13px;
+  font-style: italic;
+  text-transform: capitalize;
+  margin: 10px 0; }
+
+#recent .by_1 {
+  color: #BF301C; }
+
+#recent p {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+#recent a {
+  color: #BF301C;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+#recent .href {
+  color: #545454; }
+
+#clients {
+  background-color: #F7F7F7;
+  font-family: "roboto_slabregular", sans-serif; }
+  #clients img {
+    margin: 0 25px; }
+  #clients p {
+    font-style: italic;
+    font-size: 18px;
+    margin: 70px 0 30px 0; }
+  #clients .clients_name {
+    font-size: 20px; }
+
+#contact .address, #contact .hotline, #contact .email {
+  margin-bottom: 30px; }
+  #contact .address i, #contact .hotline i, #contact .email i {
+    width: 25px;
+    height: 25px;
+    display: inline-block; }
+  #contact .address #address, #contact .address #hotline, #contact .address #email, #contact .hotline #address, #contact .hotline #hotline, #contact .hotline #email, #contact .email #address, #contact .email #hotline, #contact .email #email {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "montserratregular", sans-serif;
+    margin-bottom: 20px;
+    line-height: 25px;
+    vertical-align: top; }
+  #contact .address #address_1, #contact .address #hotline_1, #contact .address #email_1, #contact .hotline #address_1, #contact .hotline #hotline_1, #contact .hotline #email_1, #contact .email #address_1, #contact .email #hotline_1, #contact .email #email_1 {
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 30px;
+    display: block; }
+
+#contact input {
+  width: 100%;
+  height: 45px;
+  background-color: transparent;
+  border: 1px solid #545454;
+  font-size: 14px;
+  margin-bottom: 25px;
+  padding: 0 15px; }
+
+#contact textarea {
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  border: 1px solid #545454;
+  font-size: 14px;
+  margin-bottom: 25px;
+  padding: 15px; }
+
+#contact button {
+  background-color: transparent;
+  border: 1px solid #545454;
+  font-size: 14px;
+  margin-bottom: 25px;
+  margin-right: 35px;
+  padding: 15px 35px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out; }
+  #contact button:hover {
+    background-color: #BF301C;
+    border: 1px solid #BF301C;
+    color: #fff; }
+
+#footer {
+  background-color: #BF301C;
+  text-align: center;
+  color: #fff; }
+  #footer .social:after {
+    content: '';
+    background-color: #fff;
+    width: 55px;
+    height: 2px;
+    display: block;
+    margin: 25px auto; }
+  #footer .social a {
+    display: table;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s ease-in-out; }
+    #footer .social a:hover {
+      text-decoration: none;
+      border: 2px solid #fff;
+      color: #BF301C;
+      background-color: #fff; }
+    #footer .social a i {
+      display: table-cell;
+      vertical-align: middle;
+      width: 45px;
+      height: 45px; }
+  #footer .copy {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    letter-spacing: 1px; }
+
+@media screen and (max-width: 992px) {
+  body {
+    text-align: center; }
+    body h3 {
+      line-height: 25px; }
+    body #services p {
+      margin-bottom: 50px; }
+    body #recent img {
+      width: 460px;
+      margin: 30px auto; }
+    body #recent .calendar {
+      float: none;
+      margin: 0 0 20px 0; }
+    body #clients img {
+      margin: 10px 20px; }
+    body #contact .address #address_1, body #contact .address #hotline_1, body #contact .address #email_1, body #contact .hotline #address_1, body #contact .hotline #hotline_1, body #contact .hotline #email_1, body #contact .email #address_1, body #contact .email #hotline_1, body #contact .email #email_1 {
+      margin-left: 0; }
+    body #contact button {
+      display: block;
+      margin: 10px auto 40px; } }
+
+@media screen and (max-width: 767px) {
+  body header .headerTop a {
+    margin-left: 15px;
+    margin-top: 5px; }
+  body header .headerTop button {
+    margin-top: 0;
+    padding-top: 0; }
+  body header .headerTop li {
+    margin: 10px 0; }
+  body #portfolio .controls ul li {
+    display: block;
+    margin: 10px; } }
+
+@media screen and (max-width: 410px) {
+  #portfolio .controls ul li {
+    display: block;
+    margin: 10px; }
+  #portfolio .portfolioBlock .category-1, #portfolio .portfolioBlock .category-2,
+  #portfolio .portfolioBlock .category-3, #portfolio .portfolioBlock .category-4 {
+    width: 260px;
+    height: 220px; }
+    #portfolio .portfolioBlock .category-1 .hover_menu .content_hover_menu h3, #portfolio .portfolioBlock .category-2 .hover_menu .content_hover_menu h3,
+    #portfolio .portfolioBlock .category-3 .hover_menu .content_hover_menu h3, #portfolio .portfolioBlock .category-4 .hover_menu .content_hover_menu h3 {
+      margin-top: 40px; } }

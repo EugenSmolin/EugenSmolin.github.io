@@ -1,0 +1,188 @@
+//================== ШРИФТ ===================//
+
+//== CODE REGULAR ==//
+$code_regular: code_regular;
+$code_light: code_light;
+$code_bold: code_bold;
+
+//== MYRIAD REGULAR ==//
+
+
+//=================== ЦВЕТ ===================//
+
+$pink: #CC5AF9;
+$blue: #4BADF6;
+$yellow: #FEB630;
+$orange: #FF8349;
+$main: #474747;
+$grey_light: #B9B9B9;
+//rgba blue: 75,173,246
+//rgba pink: 204,90,249
+
+//======= gradient background ========//
+//background: linear-gradient(to left, rgba(204,90,249,0.8), rgba(75,173,246,0.8));
+
+//======= gradient text ========//
+// background: linear-gradient(to left, $pink, $blue);
+// -webkit-background-clip: text;
+// -webkit-text-fill-color: transparent;
+
+//============== ОБЩИЕ НАСТРОЙКИ =============//
+
+* {
+	font-family: 'MYRIAD-REGULAR';
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.main_block_ticket {
+	background: url('../images/bg_ticket.jpg') no-repeat;
+	background-size: cover;
+	padding: 50px;
+	color: #000;
+
+	h2 {
+		text-align: center;
+		font-family: 'MYRIAD-BOLD';
+		font-size: 68px;
+		margin-top: 0;
+		margin-bottom: 65px;
+		text-transform: uppercase;
+
+		.party {
+			font-family: 'MYRIAD-LIGHT';
+		}
+	} 
+
+	.date_ticket, .time_ticket, .address_ticket {
+		font-size: 26px;
+	}
+
+	.date, .time, .address {
+		font-size: 26px;
+		font-family: 'MYRIAD-LIGHT';
+	}
+
+	.address_ticket {
+		margin-top: 25px;
+	}
+
+	.hall_ticket, .row_ticket, .place_ticket {
+		font-size: 26px;
+		margin-top: 55px;
+	}
+
+	.hall, .row_num, .place {
+		font-family: 'MYRIAD-SEMIBOLD';
+		font-size: 38px;
+		margin-left: 5px;
+	}
+
+	.hall {
+		text-transform: uppercase;
+	}
+
+	.qr_code {
+		margin: 0 auto;
+	}
+
+	.numder_qr_code {
+		font-size: 45px;
+		text-align: center;
+		margin-top: 15px;
+		margin-bottom: 50px;
+	}
+
+	//================ email pnone ===========//
+
+	.email {
+		margin-bottom: 30px;
+		margin-top: 0;
+		font-family: 'MYRIAD-SEMIBOLD';
+		font-size: 26px;
+	}
+
+	.ticket_icon_tv, .ticket_icon_phone {
+		margin-right: 20px;
+	}
+
+	.phone {
+		font-size: 26px;
+
+		.phone_maks, .phone_aleks {
+			font-family: 'MYRIAD-SEMIBOLD';
+		}
+
+		.phone_aleks {
+			margin-left: 40px;
+		}
+	}
+
+	//============== price =================//
+
+	.price_ticket {
+		font-size: 26px;
+		margin-top: 0;
+
+		.price {
+			font-size: 70px;
+			margin: 0 10px;
+			font-family: 'MYRIAD-SEMIBOLD';
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.main_block_ticket {
+		text-align: center;
+
+		h2 {
+			margin-top: 30px;
+    		margin-bottom: 10px;
+		}
+
+		.address_ticket {
+			margin-top: 0;
+		}
+
+		.hall_ticket, .row_ticket, .place_ticket {
+			margin-top: 20px;
+		}
+
+		.qr_code {
+			margin-top: 30px;
+		}
+
+		.email {
+			.email_comp {
+				display: block;
+			}
+		}
+		
+		.ticket_icon_phone, .ticket_icon_tv {
+			margin: 0;
+		}
+
+		.phone {
+			.phone_aleks, .phone_maks {
+				display: block;
+				font-size: 24px;
+				margin: 0;
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.main_block_ticket {
+		padding: 10px;
+
+		h2 {
+			font-size: 40px;
+		}
+	}
+}

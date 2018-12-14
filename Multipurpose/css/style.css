@@ -1,0 +1,327 @@
+
+body {
+    font-size: 16px;
+    font-family: "AlteHaasGroteskRegular";
+}
+
+p {
+    padding: 0 10px;
+}
+
+header {
+    background: url('../images/bg.jpg') center fixed;
+    background-size: cover;
+}
+
+header .top_header {
+    background-color: rgba(255,255,255,0.7);
+}
+            /*navbar*/
+header .mybrand {
+    font-family: 'LavanderiaDelicate';
+    font-size: 42px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+header .mybrand .pink {
+    color: #b73958;
+}
+
+header ul {
+    padding: 15px 0;
+}
+
+header li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+header .top_header ul li a {
+    transition: background-color 1s, color 1s;
+}
+
+header .top_header ul li a:hover{
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(166,3,0,0.4);
+    border-radius: 5px;
+}
+            /*button navbar xs*/
+header .top_header button {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #C96263;
+    margin: 15px 15px;
+    border-radius: 5px;
+}
+            /*button navbar md or lg*/
+header .top_header .button {
+    color: #fff;
+    font-weight: bold;
+    background-color: #C96263;
+    padding: 5px 20px;
+    margin-top: 7px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 1s;
+}
+
+header .top_header .button i {
+    margin-right: 10px;
+}
+
+header .top_header .button:hover {
+    background-color: #A91214;
+}
+            /*text header*/
+header .header_text img {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+
+header .header_text p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 100px;
+}
+            /*text block*/
+.block {
+    min-height: 470px;
+}
+
+.block p {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 60px;
+    text-align: center;
+}
+        /*значки*/
+.photo_block img {
+    position: absolute;
+    bottom: 60px;
+    right: 50px;
+}
+
+.tickets, .camera, .beer, .devices {
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+            /*всплывашка*/
+.tickets_menu {
+    color: #fff;
+    padding: 35px 25px;
+    font-size: 12px;
+    text-shadow: 0 0 3px #000;
+    text-align: center;
+    height: 180px;
+    background-color: rgba(21,87,122,0.4);
+    position: absolute;
+    bottom: -180px;
+    left: 0;
+    width: 100%;
+    transition-duration: 1.5s;
+    transition-property: bottom;
+}
+
+.camera_menu {
+    color: #fff;
+    padding: 35px 25px;
+    font-size: 12px;
+    text-shadow: 0 0 3px #000;
+    text-align: center;
+    height: 180px;
+    background-color: rgba(45,98,5,0.4);
+    position: absolute;
+    bottom: -180px;
+    left: 0;
+    width: 100%;
+    transition-duration: 1.5s;
+    transition-property: bottom;
+}
+
+.beer_menu {
+    color: #fff;
+    padding: 35px 25px;
+    font-size: 12px;
+    text-shadow: 0 0 3px #000;
+    text-align: center;
+    height: 180px;
+    background-color: rgba(119,17,10,0.4);
+    position: absolute;
+    bottom: -180px;
+    left: 0;
+    width: 100%;
+    transition-duration: 1.5s;
+    transition-property: bottom;
+}
+
+.devices_menu {
+    color: #fff;
+    padding: 35px 25px;
+    font-size: 12px;
+    text-shadow: 0 0 3px #000;
+    text-align: center;
+    height: 180px;
+    background-color: rgba(107,60,3,0.4);
+    position: absolute;
+    bottom: -180px;
+    left: 0;
+    width: 100%;
+    transition-duration: 1.5s;
+    transition-property: bottom;
+}
+
+.photo_block .tickets:hover .tickets_menu {
+    bottom: 0;
+}
+
+.photo_block .camera:hover .camera_menu {
+    bottom: 0;
+}
+
+.photo_block .beer:hover .beer_menu {
+    bottom: 0;
+}
+
+.photo_block .devices:hover .devices_menu {
+    bottom: 0;
+}
+            /*конец всплывашки*/
+.tickets {
+    background-color: #4EB9F3;
+}
+
+.camera {
+    background-color: #6DC02C;
+}
+
+.beer {
+    background-color: #FF5649;
+}
+
+.devices {
+    background-color: #E38E27;
+}
+
+.name {
+    font-size: 14px;
+    color: #fff;
+    padding-top: 135px;
+}
+        /*block2 картинки и текст*/
+.block2 {
+    min-height: 680px;
+}
+
+.block_lor {
+    min-height: 215px;
+}
+
+.block2 img {
+    margin-top: 40px;
+}
+
+.block2 h3 {
+    margin-top: 50px;
+    padding: 0 10px;
+}
+            /*footer*/
+.footer {
+    background: url('../images/footer.jpg');
+    color: #686A69;
+}
+
+.left_footer {
+    margin-top: 40px;
+}
+
+.right_footer {
+    margin: 50px 0;
+}
+
+.links {
+    font-size: 22px;
+    color: #9A9A9A;
+}
+
+a {
+    color: #686A69;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.face_icon {
+    color: #292929;
+}
+
+.bg_facebook:hover {
+    color: #3B5997;
+}
+
+.bg_twitter:hover {
+    color: #1DA1F2;
+}
+
+.bg_dribbble:hover {
+    color: #EA4C89;
+}
+
+.bg_share:hover {
+    color: #33BDE6;
+}
+
+.bg_facebook, .bg_twitter,
+.bg_dribbble, .bg_share {
+    padding: 30px 35px;
+}
+
+#com {
+    margin: 40px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .block2, .footer {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .left_footer {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+﻿/* Код для подключения шрифта в /css/stylename.css */
+
+@font-face {
+    font-family: "AlteHaasGroteskRegular";
+    src: url("../fonts/7fonts.ru_altehaasgroteskregular-webfont.eot");
+    src: url("../fonts/7fonts.ru_altehaasgroteskregular-webfont.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/7fonts.ru_altehaasgroteskregular-webfont.woff") format("woff"),
+    url("../fonts/7fonts.ru_altehaasgroteskregular-webfont.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/******************"Lavanderia"******************/
+
+@font-face {
+    font-family: "LavanderiaDelicate";
+    src: url("../fonts/Lavanderia/Lavanderia Delicate.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "LavanderiaRegular";
+    src: url("../fonts/Lavanderia/Lavanderia Regular.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "LavanderiaStrudy";
+    src: url("../fonts/Lavanderia/Lavanderia Sturdy.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/******************"UniversLT"******************/
+
+@font-face {
+    font-family: "UniversLtLight";
+    src: url("../fonts/UniversLT/univers-lt-45-light-590b3f382426a.ttf");
+    font-style: normal;
+    font-weight: normal;
+}

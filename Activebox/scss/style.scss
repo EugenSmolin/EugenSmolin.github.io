@@ -1,0 +1,497 @@
+$regular: 'ralewayregular';
+$bold: 'ralewaybold';
+$red: #e84545;
+// $regular: 'Raleway Regular';
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: $regular;
+} 
+
+.header {
+	background: url('../images/banner.jpg') no-repeat;
+	background-size: cover;
+	color: #fff;
+
+	.headerTop {
+		border-bottom: 1px solid #fff;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		a {
+			padding-left: 0;
+
+			img {
+				padding: 0;
+				margin: 0;
+			}
+		}
+		
+		ul {
+			li {
+				margin-left: 30px;
+			
+				a {
+					color: #fff;
+					font-size: 13px;
+					font-weight: bold;
+					text-transform: uppercase;
+					opacity: 0.7;
+				}
+
+				a:hover {
+					background: transparent;
+					opacity: 1;
+				}
+			}
+		}
+
+		button {
+			border: none;
+			margin-right: 10px;
+			padding-right: 0;
+		}
+	}
+
+	h1 {
+		margin: 130px 0 25px 0;
+		font-size: 65px;
+		font-family: $bold;
+		text-transform: uppercase;
+	}
+
+	h5 {
+		font-size: 22px;
+	}
+
+	.button {
+		margin-top: 75px;
+		margin-bottom: 100px;
+		padding: 10px 50px;
+		background: $red;
+		text-transform: uppercase;
+		font-size: 13px;
+		border: none;
+	}
+
+	.button:hover {
+		background: #D31616;
+		border: none;
+	}
+	//button min
+	button {
+		padding: 5px 10px;
+		font-size: 16px;
+		color: #fff;
+		border: 1px solid #fff;
+		border-radius: 3px;
+	}
+}
+
+#features {
+	margin-bottom: 80px;
+	
+	img {
+		margin-top: 80px;
+	}
+
+	h6 {
+		text-transform: uppercase;
+		font-family: $bold;
+		margin: 20px 0;
+	}
+
+	p {
+		margin: 0 40px;
+	}
+}
+
+.grid {
+	position: relative;
+	margin: 0;
+	padding: 1em 0 4em;
+	max-width: 100%;
+	list-style: none;
+	text-align: center;
+
+	/* Common style */
+	figure {
+		position: relative;
+		float: left;
+		overflow: hidden;
+		margin: 0;
+		max-width: 25%;
+		height: 100%;
+		text-align: center;
+		cursor: pointer;
+
+		img {
+			position: relative;
+			display: block;
+			max-width: 150%;
+		}
+
+		figcaption {
+			color: #fff;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
+
+		figcaption::before,
+		figcaption::after {
+			pointer-events: none;
+		}
+
+		figcaption,
+		figcaption > a {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		/* Anchor will cover the whole item by default */
+		/* For some effects it will show as a button */
+		figcaption > a {
+			z-index: 1000;
+			text-indent: 200%;
+			white-space: nowrap;
+			font-size: 0;
+			opacity: 0;
+		}
+
+		h2 {
+			font-weight: bold;
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+
+		p {
+			font-size: 14px;
+		}
+	}
+}
+
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+
+.grid {
+	.effect-bubba {
+  		background: $red;
+		
+		img {
+			border: 1px solid #fff;
+			-webkit-transition: opacity 0.35s;
+			transition: opacity 0.35s;
+		}
+	}
+
+	.effect-bubba:hover img {
+		opacity: 0.4;
+	}
+
+	.effect-bubba figcaption::before,
+	.effect-bubba figcaption::after {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		bottom: 30px;
+		left: 30px;
+		content: '';
+		opacity: 0;
+		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+		transition: opacity 0.35s, transform 0.35s;
+	}
+
+	.effect-bubba figcaption::before {
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		-webkit-transform: scale(0,1);
+		transform: scale(0,1);
+	}
+
+	.effect-bubba figcaption::after {
+		border-right: 1px solid #fff;
+		border-left: 1px solid #fff;
+		-webkit-transform: scale(1,0);
+		transform: scale(1,0);
+	}
+
+	.effect-bubba h2 {
+		margin-top: 32%;
+		opacity: 0;
+		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+		transition: opacity 0.35s, transform 0.35s;
+		-webkit-transform: translate3d(0,20px,0);
+		transform: translate3d(0,20px,0);
+	}
+
+	.effect-bubba p {
+		padding: 10px 2.5em;
+		opacity: 0;
+		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+		transition: opacity 0.35s, transform 0.35s;
+		-webkit-transform: translate3d(0,20px,0);
+		transform: translate3d(0,20px,0);
+	}
+
+	.effect-bubba:hover figcaption::before,
+	.effect-bubba:hover figcaption::after {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+
+	.effect-bubba:hover h2,
+	.effect-bubba:hover p {
+		opacity: 1;
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+}
+
+/*----------------------------------------*/
+
+#teams {
+	margin: 100px 0;
+
+	.name {
+		margin-top: 30px;
+		font-size: 22px;
+		font-weight: bold;
+	}
+
+	.job {
+		margin: 10px 0;
+		font-size: 13px;
+		color: $red;
+		text-transform: uppercase;
+	}
+
+	p {
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	i {
+		border: 2px solid #000;
+		width: 40px;
+		height: 40px;
+		padding: 5px;
+		text-align: center;
+		margin-right: 5px;
+		margin-bottom: 20px;
+		opacity: .5;
+		color: #000;
+		border-radius: 4px;
+	}
+
+	i:hover {
+		background: $red;
+		border: 2px solid $red;
+		color: #fff;
+		opacity: 1;
+	}
+}
+
+#testimonials {
+	color: #fff;
+
+	img {
+		width: 50%;
+		float: left;
+	}
+
+	.text {
+		font-style: italic;
+		margin-left: 50%;
+		padding: 80px 100px 50px 60px; 
+		font-size: 30px;
+		font-family: 'Times New Roman', sans-serif;
+
+		h6 {
+			font-style: normal;
+			text-transform: uppercase;
+			font-size: 13px;
+			margin-top: 50px;
+		}
+	} 
+}
+
+#download {
+	margin: 70px 0;
+	
+	h2{
+		font-size: 28px;
+	}
+
+	h6 {
+		font-size: 13px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-top: 20px;
+	}
+
+	button {
+		margin-top: 75px;
+		padding: 10px 50px;
+		background: $red;
+		text-transform: uppercase;
+		font-size: 13px;
+		border: none;
+		color: #fff;
+	}
+
+	button:hover {
+		background: #D31616;
+		border: none;
+	}
+}
+
+footer {
+	background: #3A3D63;
+	color: #fff;
+	font-size: 14px;
+	
+	i {
+		border: 2px solid #fff;
+		width: 40px;
+		height: 40px;
+		padding: 5px;
+		text-align: center;
+		margin-right: 5px;
+		color: #fff;
+		border-radius: 4px;
+	}
+
+	i:hover {
+		background: $red;
+		border: 2px solid $red;
+		color: #fff;
+		opacity: 1;
+	}
+
+	h5 {
+		text-transform: uppercase;
+		margin-top: 65px;
+		margin-bottom: 20px;
+	}
+
+	.greyText {
+		color: #9D9EAE;
+		margin-bottom: 70px;
+	}
+
+	.copyring {
+		background: #313353;
+		background-size: cover;
+		padding: 20px 0;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	#testimonials {
+		.text {
+			padding: 60px 100px 30px 60px; 
+			font-size: 25px;
+		} 
+	}
+}
+
+@media screen and (max-width: 1110px) {
+	#testimonials {
+		.text {
+			padding: 60px 100px 10px 60px; 
+			font-size: 20px;
+		} 
+	}
+}
+
+@media screen and (max-width: 992px) {
+	body {
+		text-align: center;
+		
+		#teams {
+			img {
+				margin: 0 auto;
+				margin-top: 40px;
+			}
+		}
+
+		#testimonials {
+			img {
+				float: none;
+				width: 100%;
+				display: block;
+			}
+			.text {
+				padding: 50px 15px;
+				margin: 0;
+				font-size: 18px;
+
+				h6 {
+					padding: 30px auto;
+					margin-top: 40px;
+				}
+			} 
+		}
+
+		.grid {
+			figure {
+				max-width: 50%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+		h1 {
+			margin: 130px 0 25px 0;
+			font-size: 50px;
+			font-family: $bold;
+			text-transform: uppercase;
+		}
+
+		h5 {
+			font-size: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 620px) {
+	header {
+		.header {
+
+			h1 {
+				margin: 100px 0 25px 0;
+				font-size: 35px;
+				font-family: $bold;
+				text-transform: uppercase;
+			}
+
+			h5 {
+				font-size: 18px;
+			}
+		}
+	}
+	
+	#works {
+		.grid {
+			figure {
+				float: none;
+				max-width: 100%;
+				display: block;
+				margin: 0;
+			}
+		}
+	}
+}
+
+
+
+

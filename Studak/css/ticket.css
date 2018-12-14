@@ -1,0 +1,92 @@
+* {
+  font-family: 'MYRIAD-REGULAR'; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.main_block_ticket {
+  background: url("../images/bg_ticket.jpg") no-repeat;
+  background-size: cover;
+  padding: 50px;
+  color: #000; }
+  .main_block_ticket h2 {
+    text-align: center;
+    font-family: 'MYRIAD-BOLD';
+    font-size: 68px;
+    margin-top: 0;
+    margin-bottom: 65px;
+    text-transform: uppercase; }
+    .main_block_ticket h2 .party {
+      font-family: 'MYRIAD-LIGHT'; }
+  .main_block_ticket .date_ticket, .main_block_ticket .time_ticket, .main_block_ticket .address_ticket {
+    font-size: 26px; }
+  .main_block_ticket .date, .main_block_ticket .time, .main_block_ticket .address {
+    font-size: 26px;
+    font-family: 'MYRIAD-LIGHT'; }
+  .main_block_ticket .address_ticket {
+    margin-top: 25px; }
+  .main_block_ticket .hall_ticket, .main_block_ticket .row_ticket, .main_block_ticket .place_ticket {
+    font-size: 26px;
+    margin-top: 55px; }
+  .main_block_ticket .hall, .main_block_ticket .row_num, .main_block_ticket .place {
+    font-family: 'MYRIAD-SEMIBOLD';
+    font-size: 38px;
+    margin-left: 5px; }
+  .main_block_ticket .hall {
+    text-transform: uppercase; }
+  .main_block_ticket .qr_code {
+    margin: 0 auto; }
+  .main_block_ticket .numder_qr_code {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 50px; }
+  .main_block_ticket .email {
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-family: 'MYRIAD-SEMIBOLD';
+    font-size: 26px; }
+  .main_block_ticket .ticket_icon_tv, .main_block_ticket .ticket_icon_phone {
+    margin-right: 20px; }
+  .main_block_ticket .phone {
+    font-size: 26px; }
+    .main_block_ticket .phone .phone_maks, .main_block_ticket .phone .phone_aleks {
+      font-family: 'MYRIAD-SEMIBOLD'; }
+    .main_block_ticket .phone .phone_aleks {
+      margin-left: 40px; }
+  .main_block_ticket .price_ticket {
+    font-size: 26px;
+    margin-top: 0; }
+    .main_block_ticket .price_ticket .price {
+      font-size: 70px;
+      margin: 0 10px;
+      font-family: 'MYRIAD-SEMIBOLD'; }
+
+@media screen and (max-width: 992px) {
+  .main_block_ticket {
+    text-align: center; }
+    .main_block_ticket h2 {
+      margin-top: 30px;
+      margin-bottom: 10px; }
+    .main_block_ticket .address_ticket {
+      margin-top: 0; }
+    .main_block_ticket .hall_ticket, .main_block_ticket .row_ticket, .main_block_ticket .place_ticket {
+      margin-top: 20px; }
+    .main_block_ticket .qr_code {
+      margin-top: 30px; }
+    .main_block_ticket .email .email_comp {
+      display: block; }
+    .main_block_ticket .ticket_icon_phone, .main_block_ticket .ticket_icon_tv {
+      margin: 0; }
+    .main_block_ticket .phone .phone_aleks, .main_block_ticket .phone .phone_maks {
+      display: block;
+      font-size: 24px;
+      margin: 0;
+      margin-top: 10px; } }
+
+@media screen and (max-width: 520px) {
+  .main_block_ticket {
+    padding: 10px; }
+    .main_block_ticket h2 {
+      font-size: 40px; } }

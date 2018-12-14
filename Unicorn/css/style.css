@@ -1,0 +1,452 @@
+body {
+    font-family: 'SourceSansProRegular';
+    font-size: 18px;
+}
+
+h2 {
+    font-family: 'SourceSansProBold';
+    font-size: 27px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+p {
+    line-height: 35px;
+}
+                /* HEADER */
+.bg {
+    background: url('../images/temp.png') no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.header-nav {
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-family: 'SourceSansProBold';
+}
+
+.header-nav a {
+    color: #000;
+}
+
+.header-nav ul li:hover {
+    margin: auto auto;
+    background-color: transparent;
+}
+
+.main .header_text {
+    text-align: right;
+}
+
+.main h1 {
+    font-family: 'SourceSansProBold';
+    font-size: 72px;
+    margin-top: 370px;
+}
+
+.main p {
+    text-align: right;
+    line-height: 35px;
+}
+
+.main .button {
+    font-family: 'SourceSansProBold';
+    margin-top: 60px;
+    padding: 10px 80px;
+    border: 2px solid #000;
+    background-color: transparent;
+    float: right;
+}
+
+.main .button:hover {
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+                /* WHO & WHY */
+.who_why {
+    min-height: 490px;
+}
+
+.who_why .broccoli {
+    margin-top: 100px;
+}
+
+.who_why h2 {
+    margin-top: 20px;
+}
+
+.who_why p {
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+                /* BLOCK GREY */
+.block_grey1 {
+    min-height: 375px;
+    background-color: #EFEFEF;
+    padding-top: 80px;
+    padding-bottom: 110px;
+}
+
+.block_grey1 .column {
+    background-color: #EFEFEF;
+    padding: 0 45px;
+    float: left;
+}
+
+.block_grey1 h3 {
+    font-family: 'SourceSansProBold';
+    font-size: 18px;
+    margin-top: 30px;
+
+}
+
+.block_grey1 p {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+                /* FEATURED ARTICLES */
+.featured_articles {
+    min-height: 840px;
+}
+
+.featured_articles p {
+    margin-top: 40px;
+}
+
+.featured_text {
+    min-height: 300px;
+}
+                /* CAROUSEL */
+.slider_featured {
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.slider_featured .slide {
+    background: url('../images/rectangle.png');
+    padding: 60px 40px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.slider_featured h5 {
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.slider_featured p {
+    min-height: 140px;
+    font-size: 24px;
+}
+
+.slider_featured img {
+    float: left;
+}
+
+.slider_featured .slide .name {
+    margin-left: 80px;
+    margin-top: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+                /* CLIENTS */
+.clients {
+    min-height: 370px;
+    background-color: #EFEFEF;
+}
+
+.clients h2 {
+    margin-top: 65px;
+    margin-bottom: 60px;
+}
+
+                /* PORTFOLIO */
+.portfolio {
+    margin-bottom: 120px;
+}
+
+.portfolio .art {
+    font-family: 'SourceSansProBold';
+    text-align: center;
+    margin: 30px 0; 
+}
+
+.portfolio .art ul li {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.portfolio .art ul li {
+    color: #000;
+    text-decoration: none;
+}
+
+.portfolio .art ul li:hover {
+    color: #E64A19;
+    cursor: pointer;
+}
+
+.portfolio .slide {
+    width: 100%;
+}
+
+.portfolio .portfolio_carousel .mix {
+    display: none; }
+                /* DENIS */
+.denis {
+    min-height: 310px;
+    background-color: #212121;
+    text-align: center;
+    color: #fff;
+}
+
+.denis img {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.denis p .denis_name {
+    font-size: 20px;
+}
+
+.denis .denis_name {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+                /* TEAM */
+.team {
+    min-height: 675px;
+}
+
+.team p {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.team .team_name {
+    text-align: center;
+    margin: auto;
+}
+
+.team .team_name h3 {
+    font-family: 'SourceSansProBold';
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.team .team_name h4 {
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+                /* FACTS */
+.facts {
+    padding-bottom: 60px;
+    background: url('../images/facts_bg.png') no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.facts h2 {
+    color: #fff;
+}
+
+.grey_bg {
+    background-color: rgba(255,255,255,0.3);
+    color: #fff;
+    text-align: center;
+    padding: 0 50px 50px 50px;
+    font-size: 27px;
+}
+
+.facts .grey_bg .number {
+    margin-top: 50px;
+}
+
+.facts .grey_bg .text {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+                /* BLOG */
+.blog {
+    min-height: 1435px;
+    text-align: center;
+}
+
+.blog .blog1 {
+    margin-top: 110px;
+}
+
+.blog .blog1, .blog2, .blog3 {
+    min-height: 380px;
+    margin-bottom: 60px;
+}
+
+.blog h4 {
+    margin-top: 60px;
+    font-size: 14px;
+    color: #A6A6A6;
+}
+
+.blog h2 {
+    font-family: 'SourceSansProBold';
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.blog p {
+    margin-top: 40px;
+}
+                /* BLOCK_GREY2 */
+.block_grey2 {
+    min-height: 220px;
+    background-color: #EFEFEF;
+    padding-top: 70px;
+}
+
+.block_grey2 img {
+    margin-left: 10px;
+    float: left;
+}
+
+.block_grey2 h4 {
+    font-family: 'SourceSansProBold';
+    font-size: 18px;
+    margin-left: 40px;
+}
+
+.block_grey2 p {
+    font-size: 14px;
+    margin-left: 40px;
+}
+                /* TWITTER */
+
+.block_twitter {
+    min-height: 465px;
+    text-align: center;
+}
+
+.block_twitter .twitter {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.block_twitter p {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+                /* FOOTER */
+.footer {
+    min-height: 490px;
+    background-color: #212121;
+    font-size: 14px;
+    color: #999999;
+}
+
+.footer .logo {
+    font-family: 'SourceSansProBold';
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.footer p {
+    line-height: 24px;
+}
+
+.footer .links, .friends, .social {
+    font-family: 'SourceSansProBold';
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.footer a {
+    color: #999999;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+.footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+input {
+    margin-right: 15px;
+    width: 200px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999999;
+}
+
+input:focus {
+    padding: 0 5px;
+    color: #fff;
+}
+
+.button_send {
+    margin-top: 50px;
+    padding: 5px 5px;
+    width: 100px;
+    background-color: transparent;
+    border: none;
+}
+
+.button_send:hover {
+    color: #fff;
+}
+
+.send {
+    margin-left: -5px;
+    float: left;
+}
+
+.button_send i {
+    margin-left: -30px;
+}
+
+.up_footer {
+    min-height: 310px;
+    margin-top: 50px;
+    border-bottom: 1px solid #999999;
+}
+
+.down_footer {
+    min-height: 80px;
+    margin-top: 40px;
+}
+
+.down_footer ul {
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 500px) {
+    .main .header_text h1 {
+        margin-top: 100px;
+        padding: 10px;
+        text-align: center;
+        font-size: 40px;
+    }
+    .main .header_text p {
+        font-style: 16px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+

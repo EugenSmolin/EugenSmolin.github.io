@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Студенческие мероприятия | Студак</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+    <script src="js/jquery.easings.min.js"></script>
+
+
+    <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+    <script src="js/scrolloverflow.min.js"></script>
+
+    <script src="js/jquery.fullPage.js"></script>
+        
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div id="fullpage"> 
+    <!-- //============== HEADER ==============// -->
+    <div class="section" id="header">
+        <header class="header">
+            <div class="container">
+                <div class="header_top">
+                    <div class="navbar-header">
+                        <a href="index.html" class="navbar-brand logo">
+                            <img src="images/logo.png" alt="logo" class="logo_white">
+                            <img src="images/tablets/logo_white.png" alt="" class="logo_white_tablets">
+                        </a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive_header">
+                            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="responsive_header">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li data-anchor="firstPage"><a href="#firstPage"></a></li>
+                            <li data-anchor="secondPage"><a href="#secondPage">О нас</a></li>
+                            <li data-anchor="thirdPage"><a href="#thirdPage">Фотографии</a></li>
+                            <li data-anchor="fourthPage"><a href="#fourthPage">Мероприятия</a></li>
+                            <li data-anchor="fifthPage"><a href="#fifthPage">Контакты</a></li>
+                        </ul>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-6 col-md-7 col-md-offset-5">
+                        <div class="header_main">
+                            <h1>party</h1>
+                            <div class="row">
+                                <div class="col-md-9 col-md-offset-3">
+                                    <div class="weekends">weekends</div>
+                                    <p>Neque porro quisquam est qui <br>
+                                     dolorem ipsum</p>
+                                    <button class="button">узнать больше</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow_down">
+                    <a href="#secondPage" class="justscroll">
+                        <img src="images/arrow_down.png" alt="" class="arrow_down_nav">
+                        О нас
+                    </a>
+                </div>
+
+                <!-- nav social -->
+                <div class="header_social_nav">
+                    <a href="#" class="vk">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="insta">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <!-- navigation right -->
+                <div class="header_nav">
+                    <ul>
+                        <li data-anchor="firstPage"><a href="#firstPage" class="active"> . </a></li>
+                        <li data-anchor="secondPage"><a href="#secondPage"> . </a></li>
+                        <li data-anchor="thirdPage"><a href="#thirdPage"> . </a></li>
+                        <li data-anchor="fourthPage"><a href="#fourthPage"> . </a></li>
+                        <li data-anchor="fifthPage"><a href="#fifthPage"> . </a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- //================ US ================// -->
+    <div class="section" id="us">
+        <section class="us">
+            <div class="container">
+                <div class="us_top">
+                    <div class="navbar-header">
+                        <a href="index.html" class="navbar-brand logo">
+                            <img src="images/logo_color.png" alt="logo">
+                        </a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive_us">
+                            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="responsive_us">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li data-anchor="firstPage"><a href="#firstPage"></a></li>
+                            <li data-anchor="secondPage"><a href="#secondPage">О нас</a></li>
+                            <li data-anchor="thirdPage"><a href="#thirdPage">Фотографии</a></li>
+                            <li data-anchor="fourthPage"><a href="#fourthPage">Мероприятия</a></li>
+                            <li data-anchor="fifthPage"><a href="#fifthPage">Контакты</a></li>
+                        </ul>  
+                    </div>
+                </div>
+
+                <!-- ====== ОСНОВНОЙ БЛОК С ТРЕУГОЛЬНИКАМИ ===== -->
+                <div class="triangle_main_block">
+                    <!-- ========== TRIANGLE BLOCK 1 ========== -->
+                    <div class="triangle_block_1">
+                        <div class="triangle_icon_1">
+                            <img src="images/icon-1.png" alt="Иконка" class="icon_1">
+                            <h3>Кто мы?</h3>
+                        </div>
+                        <div class="triangle_block_hover_1">
+                            <img src="images/triangle_front_1.png" alt="" class="triangle_front_1">
+                            <div class="triangle_block_hover_content_1">
+                                <h3>Кто мы?</h3>
+                                <p>
+                                    Организаторы студенческих мероприятий. <br>
+                                    Создаем такую обстановку, в которой вы <br>
+                                    с друзьями или второй половинкой <br>
+                                    отдохнете и хорошо проведете время. <br>
+                                    Даже если ты один, наша <br>
+                                    развлекательная  программа <br>
+                                    поможет завести новые <br>
+                                    знакомства.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ========== TRIANGLE BLOCK 2 ========== -->
+                    <div class="triangle_block_2">
+                        <div class="triangle_icon_2">
+                            <h3>Поподробнее?</h3>
+                            <img src="images/icon-2.png" alt="Иконка" class="icon_2">
+                        </div>
+                        <div class="triangle_block_hover_2">
+                            <img src="images/triangle_front_2.png" alt="" class="triangle_front_2">
+                            <div class="triangle_block_hover_content_2">
+                                <h3>Поподробнее?</h3>
+                                <p>
+                                    Мы сотрудничаем с крупными <br>
+                                    развлекательными комплексами: <br>
+                                    закрытый парк аттракционов Play Day, <br>
+                                    сеть кинотеатров  Cinema Park, <br>
+                                    роллердром Ролл Холл, аквапарк Мореон. <br>
+                                    Это даёт нам возможность раз в месяц,<br> 
+                                    в конце учебной недели, собрать до тысячи <br>
+                                    студентов в одном месте.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ========== TRIANGLE BLOCK 3 ========== -->
+                    <div class="triangle_block_3">
+                        <div class="triangle_icon_3">
+                            <img src="images/icon-3.png" alt="Иконка" class="icon_3">
+                            <h3>Изюминка</h3>
+                        </div>
+                        <div class="triangle_block_hover_3">
+                            <img src="images/triangle_front_1.png" alt="" class="triangle_front_3">
+                            <div class="triangle_block_hover_content_3">
+                                <h3>Изюминка</h3>
+                                <p>
+                                    Мы решили отойти от привычного формата. <br>
+                                    Главной задачей было создать уникальное <br>
+                                    мероприятие. Договорившись с большим <br>
+                                    закрытым парком аттракционов, мы <br>
+                                    сделали его безлимитным на всю <br>
+                                    ночь. Кинотеатр и парк согласились <br>
+                                    сотрудничать вместе, и появилось  <br>
+                                    новое мероприятие “Ночь <br>
+                                    приключений”, которое вы  <br>
+                                    запомните надолго.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rectangle_block"></div>
+                </div>
+
+                <!-- ====== БЛОК С ТРЕУГОЛЬНИКАМИ ПРИ АДАПТИВЕ НИЖЕ 991px ===== -->
+                <div class="tablets_triangle_main_block">
+                   <!-- ============ TRIANGLE BLOCK ============ -->
+                   <div class="tablets_triangle_block">
+                       <a href="#" id="tablets_icon_1">
+                           <img src="images/icon-1.png" alt="" class="img_tablets_icon_1">
+                           <h2>Подробнее?</h2>
+                       </a>
+                       <a href="#" id="tablets_icon_3">
+                           <img src="images/icon-3.png" alt="" class="img_tablets_icon_3">
+                           <h2>Изюминка</h2>
+                       </a>
+                       <!-- =========== БЛОК 1 ГЛАВНЫЙ ============ -->
+                       <div class="tablets_triangle_block_content_1" id="tablets_triangle_block_content_1">
+                           <img src="images/triangle_front_2.png" alt="" class="tablets_triangle_1">
+                           <div class="tablets_triangle_block_hover_1">
+                               <h3>Кто мы?</h3>
+                               <p>
+                                   Организаторы студенческих <br>
+                                   мероприятий. Создаем такую <br>
+                                   обстановку, в которой вы с друзьями <br>
+                                   или второй половинкой отдохнете <br>
+                                   и хорошо проведете время. Даже если <br>
+                                   ты один, наша развлекательная программа <br>
+                                   поможет завести новые знакомства.
+                                   
+                               </p>
+                           </div>
+                       </div>
+                       <!-- =============== БЛОК ЛЕВЫЙ ================ -->
+                       <div class="tablets_triangle_block_content_left">
+                           <img src="images/triangle_front_2.png" alt="" class="tablets_triangle_left">
+                            <div class="tablets_triangle_block_hover_left">
+                               <h3>Поподробнее?</h3>
+                               <p>
+                                   Мы сотрудничаем с крупными <br>
+                                   развлекательными комплексами: <br>
+                                   закрытый парк аттракционов Play Day, <br>
+                                   сеть кинотеатров  Cinema Park, <br>
+                                   роллердром Ролл Холл, аквапарк Мореон. <br>
+                                   Это даёт нам возможность раз в месяц,<br> 
+                                   в конце учебной недели, собрать до тысячи <br>
+                                   студентов в одном месте.
+                               </p>
+                           </div>
+                       </div>
+                       <!-- ============== БЛОК ПРАВЫЙ ================ -->
+                       <div class="tablets_triangle_block_content_right">
+                           <img src="images/triangle_front_2.png" alt="" class="tablets_triangle_right">
+                            <div class="tablets_triangle_block_hover_right">
+                               <h3>Изюминка</h3>
+                               <p>
+                                   Мы решили отойти от привычного <br>
+                                   формата. Главной задачей было <br>
+                                   создать уникальное мероприятие. <br>
+                                   Договорившись с большим <br>
+                                   закрытым парком аттракционов, мы <br>
+                                   сделали его безлимитным на всю ночь. <br>
+                                   Кинотеатр и парк согласились сотрудничать<br>
+                                   вместе, и появилось новое мероприятие <br>
+                                   “Ночь приключений”, которое вы <br>
+                                   запомните надолго.
+                               </p>
+                           </div>
+                       </div>
+                       <!-- ============= ПРЯМОУГОЛЬНИК =============== -->
+                       <div class="rectangle_block"></div>
+                   </div>
+                </div>
+
+                <!-- ====== БЛОК С ТРЕУГОЛЬНИКАМИ ПРИ АДАПТИВЕ НИЖЕ 767px ===== -->
+                <div class="triangle_main_block_phones">
+                    <!-- ============ TRIANGLE BLOCK ============ -->
+                    <div class="triangle_block">
+                        <a href="#" id="icon_1"></a>
+                        <a href="#" id="icon_3"></a>
+                        <!-- =========== БЛОК 1 ГЛАВНЫЙ ============ -->
+                        <div class="triangle_block_content_1" id="triangle_block_content_1">
+                            <img src="images/triangle_front_2.png" alt="" class="triangle_1">
+                            <div class="triangle_block_hover_1">
+                                <h3>Кто мы?</h3>
+                                <p>
+                                    Организаторы студенческих <br>
+                                    мероприятий. Создаем такую <br>
+                                    обстановку, в которой вы с друзьями <br>
+                                    или второй половинкой отдохнете <br>
+                                    и хорошо проведете время. Даже если <br>
+                                    ты один, наша развлекательная программа <br>
+                                    поможет завести новые знакомства.
+                                    
+                                </p>
+                            </div>
+                        </div>
+                        <!-- =============== БЛОК 2 ================ -->
+                        <div class="triangle_block_content_left">
+                            <img src="images/triangle_front_2.png" alt="" class="triangle_2">
+                             <div class="triangle_block_hover_left">
+                                <h3>Поподробнее?</h3>
+                                <p>
+                                    Мы сотрудничаем с крупными <br>
+                                    развлекательными комплексами: <br>
+                                    закрытый парк аттракционов Play Day, <br>
+                                    сеть кинотеатров  Cinema Park, <br>
+                                    роллердром Ролл Холл, аквапарк Мореон. <br>
+                                    Это даёт нам возможность раз в месяц,<br> 
+                                    в конце учебной недели, собрать до тысячи <br>
+                                    студентов в одном месте.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- =============== БЛОК 3 ================ -->
+                        <div class="triangle_block_content_right">
+                            <img src="images/triangle_front_2.png" alt="" class="triangle_3">
+                             <div class="triangle_block_hover_right">
+                                <h3>Изюминка</h3>
+                                <p>
+                                    Мы решили отойти от привычного <br>
+                                    формата. Главной задачей было <br>
+                                    создать уникальное мероприятие. <br>
+                                    Договорившись с большим <br>
+                                    закрытым парком аттракционов, мы <br>
+                                    сделали его безлимитным на всю ночь. <br>
+                                    Кинотеатр и парк согласились сотрудничать<br>
+                                    вместе, и появилось новое мероприятие <br>
+                                    “Ночь приключений”, которое вы <br>
+                                    запомните надолго.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="arrow_nav">
+                    <div class="arrow_up">
+                        <a href="#firstPage" class="justscroll">
+                            Главная
+                            <img src="images/arrow_up.png" alt="" class="arrow_up_nav">
+                        </a>
+                    </div>
+                    <div class="arrow_down">
+                        <a href="#thirdPage" class="justscroll">
+                            <img src="images/arrow_down.png" alt="" class="arrow_down_nav">
+                            Фотографии
+                        </a>
+                    </div>
+                </div>
+
+                <!-- nav social -->
+                <div class="us_social_nav">
+                    <a href="#" class="vk">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="insta">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <!-- navigation right -->
+                <div class="us_nav">
+                    <ul>
+                        <li data-anchor="firstPage"><a href="#firstPage"> . </a></li>
+                        <li data-anchor="secondPage"><a href="#secondPage" class="active"> . </a></li>
+                        <li data-anchor="thirdPage"><a href="#thirdPage"> . </a></li>
+                        <li data-anchor="fourthPage"><a href="#fourthPage"> . </a></li>
+                        <li data-anchor="fifthPage"><a href="#fifthPage"> . </a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- //============= PORTFOLIO ============// -->
+    <div class="section" id="portfolio">
+        <section class="portfolio">
+            <div class="container">
+                <div class="portfolio_top">
+                    <div class="navbar-header">
+                        <a href="index.html" class="navbar-brand logo">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive_portfolio">
+                            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="responsive_portfolio">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li data-anchor="firstPage"><a href="#firstPage"></a></li>
+                            <li data-anchor="secondPage"><a href="#secondPage">О нас</a></li>
+                            <li data-anchor="thirdPage"><a href="#thirdPage">Фотографии</a></li>
+                            <li data-anchor="fourthPage"><a href="#fourthPage">Мероприятия</a></li>
+                            <li data-anchor="fifthPage"><a href="#fifthPage">Контакты</a></li>
+                        </ul>  
+                    </div>
+                </div>
+
+                <div class="photo_block">
+                    <h2>фотоотчет</h2>
+                    <div class="photo_front_1">
+                        <img src="images/portfolio-1.jpg" alt="">
+                        <a href="#">
+                            <div class="photo_front_hover_1">
+                                <div class="date">
+                                    <img src="images/clock.png" alt="Часы" class="clock">
+                                    24 / 08
+                                </div>
+                                <i class="fa fa-search fa-3x" aria-hidden="true"></i>
+                                <div class="watch">
+                                    Просмотр фильма <br>
+                                    в кинотеатре «Cinema»</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="photo_front_2">
+                        <img src="images/portfolio-2.jpg" alt="">
+                        <a href="#">
+                            <div class="photo_front_hover_2">
+                                <div class="date">
+                                    <img src="images/clock.png" alt="Часы" class="clock">
+                                    24 / 08
+                                </div>
+                                <i class="fa fa-search fa-3x" aria-hidden="true"></i>
+                                <div class="watch">
+                                    Просмотр фильма <br>
+                                    в кинотеатре «Cinema»</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="photo_front_3">
+                        <img src="images/portfolio-3.jpg" alt="">
+                        <a href="#">
+                            <div class="photo_front_hover_3">
+                                <div class="date">
+                                    <img src="images/clock.png" alt="Часы" class="clock">
+                                    24 / 08
+                                </div>
+                                <i class="fa fa-search fa-3x" aria-hidden="true"></i>
+                                <div class="watch">
+                                    Просмотр фильма <br>
+                                    в кинотеатре «Cinema»</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="photo_front_4">
+                        <img src="images/portfolio-4.jpg" alt="">
+                        <a href="#">
+                            <div class="photo_front_hover_4">
+                                <div class="date">
+                                    <img src="images/clock.png" alt="Часы" class="clock">
+                                    24 / 08
+                                </div>
+                                <i class="fa fa-search fa-3x" aria-hidden="true"></i>
+                                <div class="watch">
+                                    Просмотр фильма <br>
+                                    в кинотеатре «Cinema»</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="photo_front_5">
+                        <img src="images/portfolio-5.jpg" alt="">
+                        <a href="#">
+                            <div class="photo_front_hover_5">
+                                <div class="date">
+                                    <img src="images/clock.png" alt="Часы" class="clock">
+                                    24 / 08
+                                </div>
+                                <i class="fa fa-search fa-3x" aria-hidden="true"></i>
+                                <div class="watch">
+                                    Просмотр фильма <br>
+                                    в кинотеатре «Cinema»</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="portfolio.html" class="albums">Смотреть все альбомы</a>
+
+                <div class="arrow_nav">
+                    <div class="arrow_up">
+                        <a href="#secondPage" class="justscroll">
+                            О нас
+                            <img src="images/arrow_up.png" alt="" class="arrow_up_nav">
+                        </a>
+                    </div>
+                    <div class="arrow_down">
+                        <a href="#fourthPage" class="justscroll">
+                            <img src="images/arrow_down.png" alt="" class="arrow_down_nav">
+                            Мероприятия
+                        </a>
+                    </div>
+                </div>
+
+                <!-- nav social -->
+                <div class="portfolio_social_nav">
+                    <a href="#" class="vk">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="insta">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <!-- navigation right -->
+                <div class="portfolio_nav">
+                    <ul>
+                        <li data-anchor="firstPage"><a href="#firstPage"> . </a></li>
+                        <li data-anchor="secondPage"><a href="#secondPage"> . </a></li>
+                        <li data-anchor="thirdPage"><a href="#thirdPage" class="active"> . </a></li>
+                        <li data-anchor="fourthPage"><a href="#fourthPage"> . </a></li>
+                        <li data-anchor="fifthPage"><a href="#fifthPage"> . </a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio_sliders">
+            <h2>фотоотчет</h2>
+            <div id="block-for-slider">
+                <div id="viewport">
+                    <ul id="slidewrapper">
+                        <li class="portfolio_slide">
+                            <a href="portfolio.html">
+                                <div class="slide_block">
+                                    <img src="images/portfolio-1.jpg" class="slide-img">
+                                </div>
+                                <div class="name_event">
+                                    <span class="date">20/09</span>
+                                    <span class="name">Название мероприятия</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="portfolio_slide">
+                            <a href="portfolio.html">
+                                <div class="slide_block">
+                                    <img src="images/portfolio-2.jpg" class="slide-img">
+                                </div>
+                                <div class="name_event">
+                                    <span class="date">20/09</span>
+                                    <span class="name">Название мероприятия</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="portfolio_slide">
+                            <a href="portfolio.html">
+                                <div class="slide_block">
+                                    <img src="images/portfolio-3.jpg" class="slide-img">
+                                </div>
+                                <div class="name_event">
+                                    <span class="date">20/09</span>
+                                    <span class="name">Название мероприятия</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="portfolio_slide">
+                            <a href="portfolio.html">
+                                <div class="slide_block">
+                                    <img src="images/portfolio-4.jpg" class="slide-img">
+                                </div>
+                                <div class="name_event">
+                                    <span class="date">20/09</span>
+                                    <span class="name">Название мероприятия</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- =========== BUTTONS ============= -->
+                    <div id="prev-next-btns">
+                        <div id="prev-btn"></div>
+                        <div id="next-btn"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="block-for-slider_2">
+                <div id="viewport_2">
+                    <ul id="slidewrapper_2">
+                        <li class="portfolio_slide_2">
+                            <a href="portfolio.html">
+                                <div class="slide_block_2">
+                                    <img src="images/portfolio-4.jpg" class="slide-img_2">
+                                </div>
+                                <div class="name_event_2">
+                                    <span class="date">20/09</span>
+                                    <span class="name">Название мероприятия</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="portfolio_slide_2">
+                            <a href="portfolio.html">
+                                <div class="slide_block_2">
+                                    <img src="images/portfolio-3.jpg" class="slide-img_2">
+                                </div>
+                                <div class="name_event_2">
+                                    <span class="date">20/09</span>
+                                    <span class="name">Название мероприятия</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="portfolio_slide_2">
+                            <a href="portfolio.html">
+                                <div class="slide_block_2">
+                                    <img src="images/portfolio-2.jpg" class="slide-img_2">
+                                </div>
+                                <div class="name_event_2">
+                                    <span class="date">20/09</span>
+                                    <span class="name">Название мероприятия</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="portfolio_slide_2">
+                            <a href="portfolio.html">
+                                <div class="slide_block_2">
+                                    <img src="images/portfolio-1.jpg" class="slide-img_2">
+                                </div>
+                                <div class="name_event_2">
+                                    <span class="date">20/09</span>
+                                    <span class="name">Название мероприятия</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- =========== BUTTONS ============= -->
+                    <div id="prev-next-btns_2">
+                        <div id="prev-btn_2"></div>
+                        <div id="next-btn_2"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="portfolio.html" class="albums">Смотреть все альбомы</a>
+        </section>
+    </div>
+
+    <!-- //============== EVENTS ==============// -->
+    <div class="section" id="events">
+        <section class="events">
+            <div class="container">
+                <div class="events_top">
+                    <div class="navbar-header">
+                        <a href="index.html" class="navbar-brand logo">
+                            <img src="images/logo_color.png" alt="logo">
+                        </a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive_events">
+                            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="responsive_events">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li data-anchor="firstPage"><a href="#firstPage"></a></li>
+                            <li data-anchor="secondPage"><a href="#secondPage">О нас</a></li>
+                            <li data-anchor="thirdPage"><a href="#thirdPage">Фотографии</a></li>
+                            <li data-anchor="fourthPage"><a href="#fourthPage">Мероприятия</a></li>
+                            <li data-anchor="fifthPage"><a href="#fifthPage">Контакты</a></li>
+                        </ul>  
+                    </div>
+                </div>
+
+                <div class="photo_block_events">
+                    <h2>мероприятия</h2>
+                    <div class="photo_events_1">
+                        <img src="images/events-1.png" alt="">
+                        <a href="events.html">
+                            <div class="photo_events_hover_1">
+                                <i class="fa fa-search fa-3x" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="photo_events_2">
+                        <img src="images/events-2.png" alt="">
+                        <a href="events.html">
+                            <div class="photo_events_hover_2">
+                                <i class="fa fa-search fa-3x" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="photo_events_3">
+                        <img src="images/events-3.png" alt="">
+                        <a href="events.html">
+                            <div class="photo_events_hover_3">
+                                <i class="fa fa-search fa-3x" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="posters.html" class="albums">Смотреть все альбомы</a>
+
+                <div class="arrow_nav">
+                    <div class="arrow_up">
+                        <a href="#thirdPage" class="justscroll">
+                            Фотографии
+                            <img src="images/arrow_up.png" alt="" class="arrow_up_nav">
+                        </a>
+                    </div>
+                    <div class="arrow_down">
+                        <a href="#fifthPage" class="justscroll">
+                            <img src="images/arrow_down.png" alt="" class="arrow_down_nav">
+                            Контакты
+                        </a>
+                    </div>
+                </div>
+
+                <!-- nav social -->
+                <div class="events_social_nav">
+                    <a href="#" class="vk">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="insta">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <!-- navigation right -->
+                <div class="events_nav">
+                    <ul>
+                        <li data-anchor="firstPage"><a href="#firstPage"> . </a></li>
+                        <li data-anchor="secondPage"><a href="#secondPage"> . </a></li>
+                        <li data-anchor="thirdPage"><a href="#thirdPage"> . </a></li>
+                        <li data-anchor="fourthPage"><a href="#fourthPage" class="active"> . </a></li>
+                        <li data-anchor="fifthPage"><a href="#fifthPage"> . </a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- //============== EVENTS SLIDERS ==============// -->
+        <section class="events_sliders">
+            <h2>мероприятия</h2>
+            <div id="block-for-slider_3">
+                <div id="viewport_3">
+                    <ul id="slidewrapper_3">
+                        <li class="events_slide">
+                            <a href="posters.html">
+                                <div class="slide_block_3">
+                                    <img src="images/poster-1.jpg" class="slide-img_3">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="events_slide">
+                            <a href="posters.html">
+                                <div class="slide_block_3">
+                                    <img src="images/poster-2.jpg" class="slide-img_3">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="events_slide">
+                            <a href="posters.html">
+                                <div class="slide_block_3">
+                                    <img src="images/poster-3.jpg" class="slide-img_3">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- =========== BUTTONS ============= -->
+                    <div id="prev-next-btns_3">
+                        <div id="prev-btn_3"></div>
+                        <div id="next-btn_3"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="events.html" class="albums">Смотреть все альбомы</a>
+        </section>
+    </div>
+
+    <!-- //============= CONTACTS =============// -->
+    <div class="section" id="contacts">
+        <footer class="contacts">
+            <div class="container">
+                <div class="contacts_top">
+                    <div class="navbar-header">
+                        <a href="index.html" class="navbar-brand logo">
+                            <img src="images/logo_color.png" alt="logo">
+                        </a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive_contacts">
+                            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="responsive_contacts">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li data-anchor="firstPage"><a href="#firstPage"></a></li>
+                            <li data-anchor="secondPage"><a href="#secondPage">О нас</a></li>
+                            <li data-anchor="thirdPage"><a href="#thirdPage">Фотографии</a></li>
+                            <li data-anchor="fourthPage"><a href="#fourthPage">Мероприятия</a></li>
+                            <li data-anchor="fifthPage"><a href="#fifthPage">Контакты</a></li>
+                        </ul>  
+                    </div>
+                </div>
+                
+                <div class="contacts_block">
+                    <h2>контакты</h2>
+                    <div class="or">или</div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                            <img src="images/contacts-1.jpg" alt="" class="contacts_1">
+                            <img src="images/icon_phone.png" alt="" class="icon_phone">
+                            <div class="phone_block">
+                                <div class="phone"><strong>8 (916)135 74 35</strong> Максим</div>
+                                <div class="phone"><strong>8 (905) 791 75 76</strong> Александр</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <img src="images/contacts-2.jpg" alt="" class="contacts_2">
+                            <img src="images/icon_tv.png" alt="" class="icon_tv">
+                            <div class="email">studak@mail.ru</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social">
+                    <span class="we_social">Мы в соц. сетях:</span> 
+                    <a href="https://vk.com" target="_blank" class="icon_vk">
+                        <img src="images/icon_vk.png" alt="" class="icon_vk_img">
+                    </a>
+                    <a href="https://www.instagram.com/?hl=ru" target="_blank" class="icon_insta">
+                        <img src="images/icon_insta.png" alt="" class="icon_insta_img">
+                    </a>
+                </div>
+
+                <div class="arrow_nav">
+                    <div class="arrow_up">
+                        <a href="#firstPage" class="justscroll">
+                            <img src="images/arrow_up_contacts.png" alt="" class="arrow_up_contacts">
+                            В начало
+                        </a>
+                    </div>
+                </div>
+
+                <!-- navigation right -->
+                <div class="contacts_nav">
+                    <ul>
+                        <li data-anchor="firstPage"><a href="#firstPage"> . </a></li>
+                        <li data-anchor="secondPage"><a href="#secondPage"> . </a></li>
+                        <li data-anchor="thirdPage"><a href="#thirdPage"> . </a></li>
+                        <li data-anchor="fourthPage"><a href="#fourthPage"> . </a></li>
+                        <li data-anchor="fifthPage"><a href="#fifthPage" class="active"> . </a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    
+    
+</body>
+</html>

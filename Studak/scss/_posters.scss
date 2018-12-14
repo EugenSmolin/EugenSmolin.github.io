@@ -1,0 +1,288 @@
+//================== ШРИФТ ===================//
+
+//== CODE REGULAR ==//
+$code_regular: code_regular;
+$code_light: code_light;
+$code_bold: code_bold;
+
+//== MYRIAD REGULAR ==//
+
+
+//=================== ЦВЕТ ===================//
+
+$pink: #BF7EEA;
+$blue: #4BADF6;
+$yellow: #FEB630;
+$orange: #FF8349;
+$main: #474747;
+$grey_light: #B9B9B9;
+//rgba blue: 75,173,246
+//rgba pink: 204,90,249
+
+//======= gradient background ========//
+//background: linear-gradient(to left, rgba(204,90,249,0.8), rgba(75,173,246,0.8));
+
+//======= gradient text ========//
+// background: linear-gradient(to left, $pink, $blue);
+// -webkit-background-clip: text;
+// -webkit-text-fill-color: transparent;
+
+//============== ОБЩИЕ НАСТРОЙКИ =============//
+
+* {
+	font-family: 'MYRIAD-REGULAR';
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	color: $main; 
+}
+
+//============== HEADER ===============//
+.poster {
+	background: url('../images/bg_header_poster.jpg') no-repeat;
+	background-size: cover;
+	
+	
+	.container {
+		position: relative;
+
+		.poster_top {
+			padding-top: 35px;
+
+			.logo {
+				margin-top: -15px;
+			}
+
+			button {
+				margin: 10px 15px;
+				padding: 0;
+			}
+
+			ul {
+				margin: 0;
+				padding: 0;
+
+				li {
+					margin: 20px 0;
+					padding: 0;
+
+					a {
+						font-family: 'MYRIAD-SEMIBOLD';
+						font-size: 22px;
+						margin-left: 60px;
+						padding: 0;
+						color: $main;
+
+						&:hover {
+							background: -webkit-linear-gradient(to left, rgba(204,90,249,0.8), rgba(75,173,246,0.8));
+							background: -o-linear-gradient(to left, rgba(204,90,249,0.8), rgba(75,173,246,0.8));
+							background: linear-gradient(to left, rgba(204,90,249,0.8), rgba(75,173,246,0.8));
+							-webkit-background-clip: text;
+							-webkit-text-fill-color: transparent;
+							text-decoration: underline;
+							color: $pink;
+
+							&:after {
+								content: '';
+								width: 100%;
+							    height: 2px;
+							    margin-top: -2px;
+								background: linear-gradient(to left, $pink, $blue);
+								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.poster_main {
+			margin-top: 50px;
+
+			.arrow_nav {
+				display: inline-block;
+				float: left;
+				margin-top: 20px;
+				
+				.arrow_up {
+					display: inline-block;	
+					margin-right: 10px;
+					cursor: pointer;
+
+					a {
+						color: $pink;
+						font-size: 20px;
+						text-decoration: none;
+
+						.arrow_back {
+							margin-right: 15px;
+						}
+					}
+				}
+			}
+
+			h2 {
+				text-align: center;
+				font-family: 'MYRIAD-BOLD';
+				font-size: 50px;
+				margin: 0;
+				color: $pink;
+				text-transform: uppercase;
+				background: -webkit-linear-gradient(to left, rgba(204,90,249,0.8), rgba(75,173,246,0.8));
+				background: -o-linear-gradient(to left, rgba(204,90,249,0.8), rgba(75,173,246,0.8));
+				background: linear-gradient(to left, rgba(204,90,249,0.8), rgba(75,173,246,0.8));
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+
+			.photo_poster {
+
+				.photo_poster_block {
+					margin-top: 50px;
+					margin-right: 15px;
+					width: 210px;
+					height: 360px;
+					display: inline-block;
+
+					.photo_poster_block_image {
+						position: relative;
+						width: 210px;
+						height: 297px;
+
+						a {
+							text-decoration: none;
+
+							.photo_poster_hover {
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 100%;
+								height: 100%;
+								z-index: 2;
+								padding: 5px;
+								background: -webkit-linear-gradient(to left top, rgba(204,90,249,0.8), rgba(75,173,246,0.8));
+								background: -o-linear-gradient(to left top, rgba(204,90,249,0.8), rgba(75,173,246,0.8));
+								background: linear-gradient(to left top, rgba(204,90,249,0.8), rgba(75,173,246,0.8));
+								color: #fff;
+								font-size: 13px;
+								opacity: 0;
+								transition: all 0.5s ease-in-out;
+								text-align: center;
+							
+								.date {
+									text-align: right;
+									font-family: 'MYRIAD-SEMIBOLD';
+									line-height: 24px;
+									margin: 10px;
+							
+									.clock {
+										width: 20px;
+										height: 20px;
+										margin-right: 10px;
+									}
+								}
+							
+								i {
+									margin: 85px 0;
+									text-align: center;
+								}
+							
+								.watch {
+									text-transform: uppercase;
+									text-align: center;
+									font-size: 14px;
+									font-family: 'MYRIAD-SEMIBOLD';
+								}
+							}
+
+							&:hover .photo_poster_hover {
+								opacity: 1;
+							}
+						}
+					}
+
+					.name_events {
+						margin-top: 10px;
+						font-style: 18px;
+
+						.date {
+							display: inline-block;
+							font-weight: bold;
+							margin-right: 10px;
+							margin-left: 5px;
+
+							&:after {
+								content: '';
+								width: 50px;
+							    height: 10px;
+							    margin-top: -12px;
+							    margin-left: -5px;
+								background-color: $yellow;
+								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+//============= COPYRING =============//
+.copyring {
+	background: linear-gradient(to left, $blue, $pink);
+	margin-top: 50px;
+
+	.copy {
+		padding: 10px;
+		text-align: center;
+		font-size: 18px;
+		color: #fff;
+	}
+} 
+
+
+@media screen and (max-width: 992px) {
+	.poster {
+		.container {
+			.poster_top {
+				padding-top: 35px;
+
+				.logo {
+					margin-top: -15px;
+				}
+
+				ul {
+					margin-top: 30px;
+				}
+			}
+
+			.poster_main {
+				margin-top: 50px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.poster {
+		.container {
+			.poster_main {
+				margin-top: 20px;
+				text-align: center;
+
+				.arrow_nav {
+					float: none;
+				}
+
+				h2 {
+					margin-top: 30px;
+					font-size: 40px;
+				}
+			}
+		}
+	}
+}
