@@ -5869,8 +5869,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
-  src: url("../../../fonts/Fontawesome/fa-solid-900.eot");
-  src: url("../../../fonts/Fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../../../fonts/Fontawesome/fa-solid-900.woff2") format("woff2"), url("../../../fonts/Fontawesome/fa-solid-900.woff") format("woff"), url("../../../fonts/Fontawesome/fa-solid-900.ttf") format("truetype"), url("../../../fonts/Fontawesome/fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url("../fonts/Fontawesome/fa-solid-900.eot");
+  src: url("../fonts/Fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/Fontawesome/fa-solid-900.woff2") format("woff2"), url("../fonts/Fontawesome/fa-solid-900.woff") format("woff"), url("../fonts/Fontawesome/fa-solid-900.ttf") format("truetype"), url("../fonts/Fontawesome/fa-solid-900.svg#fontawesome") format("svg"); }
 
 .fa,
 .fas {
@@ -5885,8 +5885,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 400;
-  src: url("../../../fonts/Fontawesome/fa-regular-400.eot");
-  src: url("../../../fonts/Fontawesome/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../../../fonts/Fontawesome/fa-regular-400.woff2") format("woff2"), url("../../../fonts/Fontawesome/fa-regular-400.woff") format("woff"), url("../../../fonts/Fontawesome/fa-regular-400.ttf") format("truetype"), url("../../../fonts/Fontawesome/fa-regular-400.svg#fontawesome") format("svg"); }
+  src: url("../fonts/Fontawesome/fa-regular-400.eot");
+  src: url("../fonts/Fontawesome/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/Fontawesome/fa-regular-400.woff2") format("woff2"), url("../fonts/Fontawesome/fa-regular-400.woff") format("woff"), url("../fonts/Fontawesome/fa-regular-400.ttf") format("truetype"), url("../fonts/Fontawesome/fa-regular-400.svg#fontawesome") format("svg"); }
 
 .far {
   font-family: 'Font Awesome 5 Free';
@@ -5900,8 +5900,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
-  src: url("../../../fonts/Fontawesome/fa-brands-400.eot");
-  src: url("../../../fonts/Fontawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../../../fonts/Fontawesome/fa-brands-400.woff2") format("woff2"), url("../../../fonts/Fontawesome/fa-brands-400.woff") format("woff"), url("../../../fonts/Fontawesome/fa-brands-400.ttf") format("truetype"), url("../../../fonts/Fontawesome/fa-brands-400.svg#fontawesome") format("svg"); }
+  src: url("../fonts/Fontawesome/fa-brands-400.eot");
+  src: url("../fonts/Fontawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/Fontawesome/fa-brands-400.woff2") format("woff2"), url("../fonts/Fontawesome/fa-brands-400.woff") format("woff"), url("../fonts/Fontawesome/fa-brands-400.ttf") format("truetype"), url("../fonts/Fontawesome/fa-brands-400.svg#fontawesome") format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
@@ -6484,29 +6484,29 @@ h2 {
 /* Myriad Pro */
 @font-face {
   font-family: 'MyriadRegular';
-  src: url("../fonts//MyriadPro-Regular/MyriadPro-Regular.eot");
-  src: url("../fonts//MyriadPro-Regular/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts//MyriadPro-Regular/MyriadPro-Regular.woff") format("woff"), url("../fonts//MyriadPro-Regular/MyriadPro-Regular.ttf") format("truetype");
+  src: url("../fonts/MyriadPro-Regular/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro-Regular/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular/MyriadPro-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'MyriadLight';
-  src: url("../fonts//MyriadPro-Light/MyriadPro-Light.eot");
-  src: url("../fonts//MyriadPro-Light/MyriadPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts//MyriadPro-Light/MyriadPro-Light.woff") format("woff"), url("../fonts//MyriadPro-Light/MyriadPro-Light.ttf") format("truetype");
+  src: url("../fonts/MyriadPro-Light/MyriadPro-Light.eot");
+  src: url("../fonts/MyriadPro-Light/MyriadPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Light/MyriadPro-Light.woff") format("woff"), url("../fonts/MyriadPro-Light/MyriadPro-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'MyriadBold';
-  src: url("../fonts//MyriadPro-Bold/MyriadPro-Bold.eot");
-  src: url("../fonts//MyriadPro-Bold/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts//MyriadPro-Bold/MyriadPro-Bold.woff") format("woff"), url("../fonts//MyriadPro-Bold/MyriadPro-Bold.ttf") format("truetype");
+  src: url("../fonts/MyriadPro-Bold/MyriadPro-Bold.eot");
+  src: url("../fonts/MyriadPro-Bold/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Bold/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro-Bold/MyriadPro-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'MyriadBlack';
-  src: url("../fonts//MyriadPro-Black/MyriadPro-Black.eot");
-  src: url("../fonts//MyriadPro-Black/MyriadPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts//MyriadPro-Black/MyriadPro-Black.woff") format("woff"), url("../fonts//MyriadPro-Black/MyriadPro-Black.ttf") format("truetype");
+  src: url("../fonts/MyriadPro-Black/MyriadPro-Black.eot");
+  src: url("../fonts/MyriadPro-Black/MyriadPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Black/MyriadPro-Black.woff") format("woff"), url("../fonts/MyriadPro-Black/MyriadPro-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal; }
 
