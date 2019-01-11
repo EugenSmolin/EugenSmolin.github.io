@@ -28,6 +28,10 @@
       color: $colorRed;
     }
 
+    &__row {
+      display: inline-block;
+    }
+
     &__first,
     &__phone,
     &__second,
@@ -43,7 +47,7 @@
     &__first,
     &__phone {
       width: 140px;
-      margin-right: 20px;
+      margin-right: 10px;
     }
 
     &__second,
@@ -136,6 +140,13 @@
   #contacts {
     .contacts-send {
       padding: 15px;
+
+      &__first,
+      &__second,
+      &__phone,
+      &__email {
+        width: 225px;
+      }
     }
 
     .contacts-info {
@@ -154,13 +165,6 @@
 
     .contacts-send {
       margin-bottom: 40px;
-
-      &__first,
-      &__second,
-      &__phone,
-      &__email {
-        width: 225px;
-      }
     }
 
     .contacts-info {
@@ -186,11 +190,15 @@
 
   #contacts {
     .contacts-send {
+      &__row {
+        display: block;
+      }
+
       &__first,
       &__second,
       &__phone,
       &__email {
-        width: 100%;
+        width: 90%;
       }
     }
   }
