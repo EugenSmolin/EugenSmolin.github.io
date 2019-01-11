@@ -302,10 +302,6 @@ $(document).ready(function () {
 
 
     // === ВВОД ТОЛЬКО ЦИФР === //
-    // $('.only-number').on('keypress', function (event) {
-    //     return !(/[А-Яа-яA-Za-z ]/.test(String.fromCharCode(event.charCode)));
-    // });
-
     $('.only-number').bind("change keyup input click", function() {
         if ($(this).val().match(/[^0-9]/g)) {
             $(this).val( $(this).val().replace(/[^0-9]/g, '') );
