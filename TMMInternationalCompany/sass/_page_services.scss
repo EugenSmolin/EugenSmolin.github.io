@@ -1,0 +1,158 @@
+#services-slider {
+  h2 {
+    color: #fff;
+    text-transform: none;
+  }
+  .slider {
+    margin-top: 50px;
+    margin-bottom: 0;
+
+    &__slide {
+      position: relative;
+      display: block;
+      min-height: 360px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 450px;
+      height: 330px;
+    }
+
+    &__desc {
+      max-width: 800px;
+      min-height: 320px;
+      background-color: #fff;
+      padding: 20px 20px 20px 365px;
+      margin-top: 40px;
+      margin-left: 110px;
+
+      h3 {
+        font-family: NanumGothic, sans-serif;
+        font-size: 32px;
+        color: $colorRed;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: $colorDarkGrey;
+      }
+    }
+
+    &__more {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600;
+      color: $colorDarkGrey;
+
+      .icon-arrow {
+        position: relative;
+        top: -1px;
+        display: inline-block;
+        width: 20px;
+        margin-left: 5px;
+      }
+    }
+
+    .dots-services {
+      position: absolute;
+      top: -70px;
+      display: block;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin: 0 10px;
+        padding: 0;
+        font-size: 0;
+        border: none;
+        border-radius: 50%;
+        background-color: #fff;
+        cursor: pointer;
+
+        button {
+          display: none;
+        }
+      }
+      .slick-active {
+        background-color: #bc515c;
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+}
+
+
+// ===== MEDIA QUERIES ===== //
+@media screen and (max-width: 992px) {
+
+  #services-slider {
+    .slider {
+      &__img {
+        width: 300px;
+        height: 180px;
+      }
+
+      &__desc {
+        padding: 20px 20px 20px 280px;
+        margin-top: 20px;
+        margin-left: 40px;
+
+        h3 {
+          font-size: 28px;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  #services-slider {
+    .slider {
+      padding-bottom: 50px;
+
+      &__slide {
+        background-color: #fff;
+      }
+
+      &__img {
+        position: inherit;
+        width: 100%;
+        height: auto;
+      }
+
+      &__desc {
+        min-height: 200px;
+        padding: 15px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>About</title>
+
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="libs/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <!--<link href="libs/slick/slick.css" rel="stylesheet">-->
+    <!--<link href="libs/slick/slick-theme.css" rel="stylesheet">-->
+    <link href="libs/select2/select2.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- //============== HEADER ==============// -->
+<header id="header">
+    <div class="container">
+        <div class="header-top">
+            <!-- <nav class="navbar"> -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fas fa-bars fa-1x icon-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="index.html">Home</a>
+                        <a class="nav-item nav-link" href="about.html">About</a>
+                        <a class="nav-item nav-link" href="services.html">Services</a>
+                        <a class="nav-item nav-link" href="rates.html">Rates</a>
+                        <a class="nav-item nav-link active" href="contacts.html">Contacts</a>
+                        <a class="nav-item nav-link login" href="#" id="login">
+                            <i class="far fa-user icon-user"></i>
+                            <span>Login</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div id="contacts">
+            <h2>Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <p>Have a question about the supply chain?<br/>
+                        Ask us. Just fill out the form and we’ll have one of our supply chain experts respond.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 offset-md-0 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <div class="contacts-send">
+                        <input class="contacts-send__first" name="contactsFirstName" placeholder="First name">
+                        <input class="contacts-send__second" name="contactsSecondName" placeholder="Second name">
+                        <input class="contacts-send__phone" name="contactsPhone" placeholder="Phone">
+                        <input class="contacts-send__email" name="contactsEmail" placeholder="E-mail">
+                        <label for="message">Type you message</label>
+                        <textarea class="contacts-send__message" name="contactsMessage" id="message"></textarea>
+                        <div class="buttons-block">
+                            <button class="contacts-send__btn">Send</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 offset-md-0 col-lg-5 offset-lg-1 col-xl-4 offset-xl-1">
+                    <div class="contacts-info">
+                        <div class="contacts-info__fax">
+                            <img src="img/fax.png" alt="Fax">
+                            <div class="contacts-info__text">999-999-9999</div>
+                        </div>
+                        <div class="contacts-info__phone">
+                            <img src="img/phone.png" alt="Phone">
+                            <div class="contacts-info__text">+1(732) 324-0025</div>
+                        </div>
+                        <div class="contacts-info__email">
+                            <img src="img/mail.png" alt="Mail">
+                            <div class="contacts-info__text">
+                                <div class="email-row">info@tmminternational.com</div>
+                                <div class="email-row">billing@tmmintertational.com</div>
+                                <div class="email-row">dispatch@tmmintertational.com</div>
+                                <div class="email-row">doc@tmmintertational.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!-- //============== FOOTER ==============// -->
+<section id="footer">
+    <div class="container">
+        <div class="link-block">
+            <span class="link-block__head">Terms And Condtions:</span>
+            <a href="#" class="link-block__link">Terms of Use Website</a>
+            <a href="#" class="link-block__link">Terms of Transport</a>
+            <a href="#" class="link-block__link">Terms of Purchase</a>
+            <a href="#" class="link-block__link">Imprint</a>
+            <a href="#" class="link-block__link">Privacy Terms</a>
+            <a href="#" class="link-block__link">Cookie Policy</a>
+        </div>
+        <div class="copyright">
+            Copyright &copy; Metropolitan Shipping Company. All rights reserved.
+        </div>
+    </div>
+</section>
+
+<!-- //=============== LOGIN ==============// -->
+<div class="modal-window" id="modal-login">
+    <div class="modal-window__content">
+        <div class="modal-window__close" id="modal-close"></div>
+        <div class="modal-window__head">
+            Log in
+        </div>
+        <div class="modal-window__body">
+            <div class="modal-window__row">
+                <label class="modal-window__label" for="login-email">E-mail:</label>
+                <input class="modal-window__inp" name="email" id="login-email">
+            </div>
+            <div class="modal-window__row">
+                <label class="modal-window__label" for="login-password">Password:</label>
+                <input class="modal-window__inp" name="password" id="login-password" type="password">
+            </div>
+            <button class="btn-login" id="btn-login">Log in</button>
+            <a class="forgot-password" href="#">Forgot your Password?</a>
+            <div class="just-login">Already have Account? Just <a class="just-login__href" href="#">Login</a></div>
+        </div>
+    </div>
+</div>
+
+
+<script src="libs/jquery/js/jquery.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<!--<script src="libs/slick/slick.min.js"></script>-->
+<script src="libs/select2/select2.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

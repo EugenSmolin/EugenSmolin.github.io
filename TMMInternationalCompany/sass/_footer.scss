@@ -1,0 +1,51 @@
+#footer {
+  background-color: $colorDarkBlue;
+  padding: 20px 0;
+
+  .link-block {
+    margin-bottom: 20px;
+
+    &__head {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      margin-right: 20px;
+    }
+
+    &__link {
+      display: inline-block;
+      font-size: 16px;
+      color: #fff;
+      margin-right: 20px;
+      text-decoration: none;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+  }
+}
+
+// ===== MEDIA QUERIES ===== //
+@media screen and (max-width: 768px) {
+
+  #footer {
+    .link-block {
+      text-align: center;
+
+      &__head {
+        display: block;
+        margin: 0;
+      }
+
+      &__link {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  }
+
+}

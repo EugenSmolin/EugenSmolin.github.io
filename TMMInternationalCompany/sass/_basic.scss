@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: NanumGothic, sans-serif;
+}
+
+a {
+  color: $colorDarkGrey;
+  text-decoration: none;
+
+  &:hover {
+    color: $colorDarkGrey;
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+h2 {
+  font-family: NanumGothic, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 60px 0;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #666;
+  font-family: NanumGothic, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #666;
+  font-family: NanumGothic, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #666;
+  font-family: NanumGothic, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #666;
+  font-family: NanumGothic, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  transition: all .3s linear;
+}
+
+input,
+select,
+textarea,
+label {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: $colorDarkGrey;
+  transition: all .3s linear;
+}
+
+
+// === REQUIRED INPUT === //
+.required-input {
+  border: 1px solid $colorRed !important;
+  color: $colorRed !important;
+  transition: all .3s linear;
+}
+
+
+// === INPUT CHECKBOX === //
+.inp-checkbox {
+  display: none;
+}
+
+.inp-checkbox + label.head:before {
+  margin-left: 15px;
+}
+
+.inp-checkbox + label:before {
+  content: "\2713";
+  color: transparent;
+  background-color: #fff;
+  display: inline-block;
+  border: 1px solid $colorGrey;
+  border-radius: 50%;
+  font-size: 13px;
+  line-height: 15px;
+  height: 17px;
+  width: 17px;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.inp-checkbox:checked + label:before {
+  color: #fff;
+  background-color: $colorLightRed;
+  border: 1px solid transparent;
+}
+
+
+// === BUTTON DISABLED === //
+.btn-disabled {
+  color: #fff !important;
+  background-color: $colorGrey !important;
+  transition: all .3s linear;
+}

@@ -1,0 +1,285 @@
+#rates {
+  h2 {
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+  }
+
+  p {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .calculate-block {
+    width: 100%;
+    min-height: 465px;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 30px;
+    margin-bottom: 50px;
+
+    h4 {
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+
+    &__row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+    }
+
+    &__ground,
+    &__ocean {
+
+      h5 {
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+
+        &:after {
+          content: '';
+          display: block;
+          width: 130px;
+          height: 2px;
+          background-color: $colorLightRed;
+          margin-top: 5px;
+        }
+      }
+
+      .ground-row,
+      .ocean-row {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-bottom: 15px;
+        min-height: 25px;
+        position: relative;
+
+        label {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 16px;
+        }
+
+        input {
+          display: inline-block;
+          width: 100px;
+          margin-left: 15px;
+          border: none;
+          border-bottom: 1px solid $colorLightGrey;
+          height: 20px;
+          padding: 0 5px;
+          font-size: 16px;
+          font-weight: normal;
+        }
+
+        .ground-trans,
+        .ocean-trans {
+          font-size: 16px;
+          font-weight: normal;
+        }
+
+        #ground-trans,
+        #ocean-trans {
+          padding: 0 16px 0 5px;
+          font-weight: 600;
+          color: $colorLightRed;
+          text-align: right;
+        }
+
+        .dollar {
+          position: absolute;
+          bottom: -2px;
+          right: 4px;
+          font-size: 16px;
+          font-weight: 600;
+          color: $colorLightRed;
+        }
+      }
+    }
+
+    &__ocean:after {
+      content: '';
+      display: inline-block;
+      width: 240px;
+      height: 1px;
+      margin: 10px 0 20px;
+      background-color: $colorLightGrey;
+      float: right;
+    }
+
+    .total-block {
+      margin-right: 50px;
+      text-align: right;
+
+      &__label {
+        font-size: 16px;
+        font-weight: normal;
+      }
+
+      &__inp {
+        display: inline-block;
+        width: 100px;
+        margin-left: 15px;
+        border: none;
+        border-bottom: 1px solid $colorLightGrey;
+        height: 20px;
+        padding: 0 5px;
+        text-align: right;
+        font-size: 16px;
+        font-weight: 600;
+        color: $colorLightRed;
+      }
+    }
+
+    .btn-make-order {
+      display: block;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: $colorRed;
+      margin: 50px auto 0;
+      padding: 3px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+
+  // === CUSTOM SELECT === //
+  .select2-container {
+    .select2-choice {
+      position: relative;
+      top: 6px;
+      display: inline-block;
+      width: 200px;
+      height: 20px;
+      line-height: 20px;
+      background: #fff;
+      border: none;
+      border-bottom: 1px solid $colorLightGrey;
+      text-align: left;
+      margin-left: 15px;
+      padding: 0 5px;
+      font-size: 16px;
+      font-weight: normal;
+      box-shadow: none;
+
+      .select2-arrow {
+        display: inline-block;
+        width: 13px;
+        height: 100%;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        border: none;
+        background: #fff;
+
+        b {
+          display: block;
+          width: 0;
+          height: 0;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          border-top: 6px solid $colorLightRed;
+        }
+      }
+    }
+  }
+}
+
+// === CUSTOM SELECT === //
+.calculate-select-dropdown {
+  border: 1px solid $colorLightGrey;
+}
+
+.calculate-select-dropdown {
+  .select2-highlighted {
+    background: $colorLightRed;
+  }
+
+  .select2-result-label {
+    padding: 0 5px;
+  }
+
+  .select2-search {
+    input {
+      font-size: 14px;
+      padding: 2px 20px 3px 5px;
+    }
+  }
+}
+
+
+// ===== MEDIA QUERIES ===== //
+@media screen and (max-width: 768px) {
+
+  #rates {
+    .calculate-block {
+      &__row {
+        align-items: center;
+        flex-direction: column;
+      }
+
+      &__ground {
+        margin-bottom: 30px;
+      }
+
+      .ocean-none {
+        display: none;
+      }
+
+      .total-block {
+        margin-top: 20px;
+        margin-right: 0;
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+
+  #rates {
+    .select2-container {
+      .select2-choice {
+        width: 170px;
+      }
+    }
+
+    .calculate-block {
+      padding: 15px;
+
+      &__ground {
+        .ground-row {
+          .ground-trans,
+          .ocean-trans {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+

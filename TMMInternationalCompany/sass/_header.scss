@@ -1,0 +1,138 @@
+//============== HEADER ===============//
+#header {
+  background: url('../img/bg_header.png') center center no-repeat;
+  background-size: cover;
+  min-height: 830px;
+  //height: 830px;
+
+  .header-top {
+    padding-top: 25px;
+
+    .navbar-collapse {
+      justify-content: flex-end;
+      margin-top: 15px;
+    }
+
+    .icon-bars {
+      color: #fff;
+      font-size: 26px;
+    }
+
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      color: #fff;
+      font-family: NanumGothic, sans-serif;
+      text-transform: uppercase;
+      margin-left: 10px;
+      padding: 5px 15px;
+      line-height: 18px;
+    }
+
+    .active {
+      color: $colorDarkGrey;
+      background-color: #fff;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .login {
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      text-transform: capitalize;
+
+      .icon-user {
+        margin-right: 10px;
+      }
+    }
+
+  }
+
+  .header-body {
+    color: #fff;
+
+    h1 {
+      font-size: 32px;
+      text-align: center;
+      font-weight: 600;
+      margin-top: 100px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 24px;
+      text-align: center;
+      margin: 0;
+    }
+
+    .search-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 370px;
+      height: 60px;
+      background-color: #fff;
+      margin: 80px auto 0;
+      padding: 18px 20px 18px 40px;
+      border: none;
+      border-radius: 8px;
+
+      &__inp {
+        display: inline-block;
+        width: 270px;
+        padding: 0 5px;
+        border: none;
+        border-bottom: 1px solid $colorLightGrey;
+        font-size: 18px;
+      }
+
+      &__btn {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: url(../img/icon-search.png) center center no-repeat;
+        background-size: cover;
+        font-size: 20px;
+        color: $colorDarkGrey;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #header {
+    .header-top {
+      .navbar {
+        justify-content: flex-end;
+      }
+
+      .nav-link {
+        margin-left: 0;
+        padding: 5px 15px;
+        margin-bottom: 10px;
+      }
+
+      .navbar-toggler {
+        padding: 0;
+      }
+    }
+    .header-body {
+      .search-block {
+        width: 300px;
+        padding: 15px;
+
+        &__inp {
+          width: 230px;
+        }
+      }
+    }
+  }
+}
+
+
+
+

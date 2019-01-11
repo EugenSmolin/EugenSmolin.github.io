@@ -1,0 +1,62 @@
+#about {
+  background-color: $colorDarkBlue;
+  padding-top: 70px;
+
+  .row {
+    padding-bottom: 70px;
+  }
+
+  h2 {
+    text-align: left;
+    color: #fff;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  .img-about-1,
+  .img-about-3 {
+    width: 100%;
+  }
+
+}
+
+
+// ===== MEDIA QUERIES ===== //
+@media screen and (max-width: 1200px) {
+
+  #about {
+    .row {
+      padding-bottom: 40px;
+    }
+
+    .img-about-2 {
+      width: auto;
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  #about {
+    h2 {
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+
+  #about {
+    .img-about-2 {
+      width: 100%;
+    }
+  }
+
+}

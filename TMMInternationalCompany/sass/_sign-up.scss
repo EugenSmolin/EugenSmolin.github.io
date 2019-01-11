@@ -1,0 +1,149 @@
+#modal-sign-up {
+  width: 870px;
+
+  .block-info {
+    display: inline-block;
+    width: 300px;
+    margin: 20px 50px;
+    vertical-align: top;
+
+    &__head {
+      font-size: 14px;
+      color: $colorDarkGrey;
+      margin-bottom: 20px;
+
+      &:after {
+        content: '';
+        display: block;
+        width: 150px;
+        height: 1px;
+        background-color: $colorLightGrey;
+      }
+    }
+
+    &__row {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 10px;
+      min-height: 25px;
+      padding-left: 10px;
+    }
+
+    &__label {
+      position: relative;
+      display: inline-block;
+      width: 100px;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 16px;
+      color: $colorGrey;
+    }
+
+    &__inp {
+      display: inline-block;
+      width: 200px;
+      border: 1px solid #fff;
+      border-bottom: 1px solid $colorLightGrey;
+      height: 20px;
+      padding: 0 5px;
+      font-size: 14px;
+    }
+
+    &__required {
+      &:before {
+        content: '*';
+        display: inline-block;
+        width: 10px;
+        height: 16px;
+        color: $colorRed;
+        position: absolute;
+        top: -5px;
+        left: -10px;
+      }
+    }
+  }
+
+  .confirm-agree {
+    text-align: center;
+
+    a {
+      font-weight: 600;
+      color: $colorLightRed;
+    }
+  }
+}
+
+
+// ===== MEDIA QUERIES ===== //
+@media screen and (max-width: 992px) {
+
+  #modal-sign-up {
+    width: 690px;
+
+    .block-info {
+      margin: 10px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  #modal-sign-up {
+    position: absolute;
+    width: auto;
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+
+    .block-info {
+      margin: 10px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  #modal-sign-up {
+    .block-info {
+      margin: 10px auto;
+
+      &__label {
+        width: 85px;
+      }
+
+      &__inp {
+        width: 180px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+
+  #modal-sign-up {
+    width: calc(100% - 30px);
+
+    .modal-window__content {
+      padding: 20px 10px;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>TMM</title>
+
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="libs/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="libs/slick/slick.css" rel="stylesheet">
+    <link href="libs/slick/slick-theme.css" rel="stylesheet">
+    <link href="libs/select2/select2.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- //============== HEADER ==============// -->
+<header id="header">
+    <div class="container">
+        <div class="header-top">
+            <!-- <nav class="navbar"> -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fas fa-bars fa-1x icon-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="index.html">Home</a>
+                        <a class="nav-item nav-link" href="about.html">About</a>
+                        <a class="nav-item nav-link" href="services.html">Services</a>
+                        <a class="nav-item nav-link" href="rates.html">Rates</a>
+                        <a class="nav-item nav-link" href="contacts.html">Contacts</a>
+                        <a class="nav-item nav-link login" href="#" id="login">
+                            <i class="far fa-user icon-user"></i>
+                            <span>Login</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="header-body">
+            <h1>TMM International Company</h1>
+            <p>full set of car transportation services from America</p>
+            <div class="search-block">
+                <input type="text" class="search-block__inp" id="inp-search" placeholder="Already have track ID?">
+                <button type="button" class="search-block__btn" id="btn-search"></button>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!-- //============== SERVICES ==============// -->
+<section id="services">
+    <div class="container">
+        <h2>Services</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="services-block">
+                    <h3>Ocean Freight</h3>
+                    <p>Metropolitan Shipping Company is a premier provider of truck freight shipping services, with
+                        routing inbound freight to and from points throughout the U.S., Canada, and Mexico, as well as
+                        outbound shipping to and from points within the continental U.S., Canada, and Mexico.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="services-block">
+                    <h3>Air Freight</h3>
+                    <p>Metropolitan Shipping Company is a premier provider of truck freight shipping services, with
+                        routing inbound freight to and from points throughout the U.S., Canada, and Mexico, as well as
+                        outbound shipping to and from points within the continental U.S., Canada, and Mexico.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="services-block">
+                    <h3>Ground Transportation</h3>
+                    <p>Metropolitan Shipping Company is a premier provider of truck freight shipping services, with
+                        routing inbound freight to and from points throughout the U.S., Canada, and Mexico, as well as
+                        outbound shipping to and from points within the continental U.S., Canada, and Mexico.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="services-block">
+                    <h3>Automobile Shipping</h3>
+                    <p>Metropolitan Shipping Company is a premier provider of truck freight shipping services, with
+                        routing inbound freight to and from points throughout the U.S., Canada, and Mexico, as well as
+                        outbound shipping to and from points within the continental U.S., Canada, and Mexico.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- //============== PARTNERS ==============// -->
+<section id="partners">
+    <div class="container">
+        <h2>Partners</h2>
+        <div class="slider">
+            <div class="slide"><img src="img/logo/aeroflot.png" alt=""></div>
+            <div class="slide"><img src="img/logo/apl.png" alt=""></div>
+            <div class="slide"><img src="img/logo/auscargo.png" alt=""></div>
+            <div class="slide"><img src="img/logo/british.png" alt=""></div>
+            <div class="slide"><img src="img/logo/cma-cgm.png" alt=""></div>
+            <div class="slide"><img src="img/logo/cs.png" alt=""></div>
+            <div class="slide"><img src="img/logo/evergreen.png" alt=""></div>
+            <div class="slide"><img src="img/logo/hapag-lloyd.png" alt=""></div>
+            <div class="slide"><img src="img/logo/iag-cargo.png" alt=""></div>
+            <div class="slide"><img src="img/logo/kline.png" alt=""></div>
+            <div class="slide"><img src="img/logo/maersk.png" alt=""></div>
+            <div class="slide"><img src="img/logo/msc.png" alt=""></div>
+            <div class="slide"><img src="img/logo/nedlloyd.png" alt=""></div>
+            <div class="slide"><img src="img/logo/sas.png" alt=""></div>
+            <div class="slide"><img src="img/logo/ww.png" alt=""></div>
+            <div class="slide"><img src="img/logo/yang-ming.png" alt=""></div>
+            <div class="slide"><img src="img/logo/yusen.png" alt=""></div>
+            <div class="slide"><img src="img/logo/zim.png" alt=""></div>
+        </div>
+    </div>
+</section>
+
+<!-- //============= QUICK QUOTE ==============// -->
+<section id="quick-quote">
+    <div class="container">
+        <h2>quick quote</h2>
+        <div class="quote-block">
+            <form action="">
+                <div class="quote-block__row">
+                    <select class="select-freight" name="freight_type" id="freight_type">
+                        <option value="">Freight type</option>
+                        <option value="">Freight type 2</option>
+                        <option value="">Freight type 3</option>
+                    </select>
+                    <input type="text" name="weight" id="weight" placeholder="Weight">
+                </div>
+                <div class="quote-block__row">
+                    <input type="text" name="shiping_from" id="shiping_from" placeholder="Shiping from">
+                    <input type="text" name="shiping_to" id="shiping_to" placeholder="Shiping to">
+                </div>
+                <div class="quote-block__row">
+                    <input type="text" name="email" id="email" placeholder="E-mail">
+                </div>
+                <div class="quote-block__row">
+                    <textarea name="details" id="details" placeholder="Details"></textarea>
+                </div>
+                <button class="btn-submit">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- //=============== FOOTER ==============// -->
+<section id="footer">
+    <div class="container">
+        <div class="link-block">
+            <span class="link-block__head">Terms And Condtions:</span>
+            <a href="#" class="link-block__link">Terms of Use Website</a>
+            <a href="#" class="link-block__link">Terms of Transport</a>
+            <a href="#" class="link-block__link">Terms of Purchase</a>
+            <a href="#" class="link-block__link">Imprint</a>
+            <a href="#" class="link-block__link">Privacy Terms</a>
+            <a href="#" class="link-block__link">Cookie Policy</a>
+        </div>
+        <div class="copyright">
+            Copyright &copy; Metropolitan Shipping Company. All rights reserved.
+        </div>
+    </div>
+</section>
+
+<!-- //=============== LOGIN ==============// -->
+<div class="modal-window" id="modal-login">
+    <div class="modal-window__content">
+        <div class="modal-window__close"></div>
+        <div class="modal-window__head">
+            Log in
+        </div>
+        <div class="modal-window__body">
+            <div class="modal-window__row">
+                <label class="modal-window__label" for="login-email">E-mail:</label>
+                <input class="modal-window__inp" name="login-email" id="login-email">
+            </div>
+            <div class="modal-window__row">
+                <label class="modal-window__label" for="login-password">Password:</label>
+                <input class="modal-window__inp" name="login-password" id="login-password" type="password">
+            </div>
+            <button class="btn-modal" id="btn-login">Log in</button>
+            <a class="forgot-password" href="#">Forgot your Password?</a>
+            <div class="just-login">Already have Account? Just <a class="just-login__href" href="#">Login</a></div>
+        </div>
+    </div>
+</div>
+
+<!-- //=============== SIGN UP ==============// -->
+<div class="modal-window" id="modal-sign-up">
+    <div class="modal-window__content">
+        <div class="modal-window__close" data-id="modal-close"></div>
+        <div class="modal-window__head">
+            Sign Up
+        </div>
+        <div class="modal-window__body">
+            <div class="user-info">
+                <div class="block-info">
+                    <div class="block-info__head">Personal info</div>
+                    <div class="block-info__row">
+                        <label for="first-name" class="block-info__label block-info__required">First Name:</label>
+                        <input name="first-name" class="block-info__inp" id="first-name">
+                    </div>
+                    <div class="block-info__row">
+                        <label for="last-name" class="block-info__label block-info__required">Last Name:</label>
+                        <input name="last-name" class="block-info__inp" id="last-name">
+                    </div>
+                    <div class="block-info__row">
+                        <label for="phone" class="block-info__label">Phone:</label>
+                        <input name="user-phone" class="block-info__inp only-number" id="phone">
+                    </div>
+                </div>
+                <div class="block-info">
+                    <div class="block-info__head">Company info</div>
+                    <div class="block-info__row">
+                        <label for="company" class="block-info__label">Company:</label>
+                        <input name="company" class="block-info__inp" id="company">
+                    </div>
+                    <div class="block-info__row">
+                        <label for="country" class="block-info__label">Country, Region:</label>
+                        <input name="country" class="block-info__inp" id="country">
+                    </div>
+                    <div class="block-info__row">
+                        <label for="street" class="block-info__label">Street:</label>
+                        <input name="street" class="block-info__inp" id="street">
+                    </div>
+                    <div class="block-info__row">
+                        <label for="code" class="block-info__label">Postal Code:</label>
+                        <input name="code" class="block-info__inp only-number" id="code">
+                    </div>
+                </div>
+                <div class="block-info">
+                    <div class="block-info__head">My Account</div>
+                    <div class="block-info__row">
+                        <label for="sign-email" class="block-info__label block-info__required">E-mail:</label>
+                        <input name="user-email" class="block-info__inp" id="sign-email">
+                    </div>
+                    <div class="block-info__row">
+                        <label for="password" class="block-info__label block-info__required">Password:</label>
+                        <input name="user-pass" class="block-info__inp" id="password" type="password">
+                    </div>
+                    <div class="block-info__row">
+                        <label for="confirm-password" class="block-info__label block-info__required">Confirm Password:</label>
+                        <input name="user-pass-confirm" class="block-info__inp" id="confirm-password" type="password">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="confirm-agree">
+                <input class="inp-checkbox" id="confirm-agree" type="checkbox">
+                <label for="confirm-agree"></label>
+                I have read and agree to the <a href="#">Privacy Terms</a> and <a href="#">Terms of Use</a> of the website. (Mandatory)
+            </div>
+
+            <button class="btn-modal btn-disabled" id="btn-create-account" disabled>Create Account</button>
+
+            <div class="just-login">Already have Account? Just <a class="just-login__href" href="#">Login</a></div>
+        </div>
+    </div>
+</div>
+
+
+<script src="libs/jquery/js/jquery.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script>
+    $('.slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        infinite: false,
+        responsive: [{
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true
+            }
+
+        }, {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                dots: true
+            }
+        }]
+    });
+</script>
+<script src="libs/select2/select2.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
