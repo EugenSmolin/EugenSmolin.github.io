@@ -27,7 +27,7 @@
       border-radius: 4px;
       background-color: #fff;
       padding: 5px 10px;
-      font-size: 16px;
+      font-size: 14px;
       font-family: NanumGothic, sans-serif;
     }
 
@@ -41,7 +41,7 @@
       font-size: 16px;
     }
 
-    #email {
+    .quote-email {
       width: 100%
     }
 
@@ -60,6 +60,8 @@
 
   // === CUSTOM SELECT === //
   .select2-container {
+    font-size: 14px;
+
     .select2-choice {
       position: relative;
       top: 4px;
@@ -105,6 +107,10 @@
 
   .select2-result-label {
     padding: 0 5px;
+  }
+
+  .select2-results {
+    font-size: 14px;
   }
 
   .select2-search {

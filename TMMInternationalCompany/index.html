@@ -129,27 +129,25 @@
     <div class="container">
         <h2>quick quote</h2>
         <div class="quote-block">
-            <form action="">
-                <div class="quote-block__row">
-                    <select class="select-freight" name="freight_type" id="freight_type">
-                        <option value="">Freight type</option>
-                        <option value="">Freight type 2</option>
-                        <option value="">Freight type 3</option>
-                    </select>
-                    <input type="text" name="weight" id="weight" placeholder="Weight">
-                </div>
-                <div class="quote-block__row">
-                    <input type="text" name="shiping_from" id="shiping_from" placeholder="Shiping from">
-                    <input type="text" name="shiping_to" id="shiping_to" placeholder="Shiping to">
-                </div>
-                <div class="quote-block__row">
-                    <input type="text" name="email" id="email" placeholder="E-mail">
-                </div>
-                <div class="quote-block__row">
-                    <textarea name="details" id="details" placeholder="Details"></textarea>
-                </div>
-                <button class="btn-submit">Send</button>
-            </form>
+            <div class="quote-block__row">
+                <select class="select-freight" name="quote-freight-type" id="test">
+                    <option value="">Freight type</option>
+                    <option value="">Freight type 2</option>
+                    <option value="">Freight type 3</option>
+                </select>
+                <input class="only-number" name="quote-weight" placeholder="Weight">
+            </div>
+            <div class="quote-block__row">
+                <input name="quote-shipping-from" placeholder="Shipping from">
+                <input name="quote-shipping-to" placeholder="Shipping to">
+            </div>
+            <div class="quote-block__row">
+                <input class="quote-email" name="quote-email" placeholder="E-mail">
+            </div>
+            <div class="quote-block__row">
+                <textarea name="quote-details" placeholder="Details"></textarea>
+            </div>
+            <button class="btn-submit" id="btn-send-quick-quote">Send</button>
         </div>
     </div>
 </section>
@@ -249,7 +247,8 @@
                         <input name="user-pass" class="block-info__inp" id="password" type="password">
                     </div>
                     <div class="block-info__row">
-                        <label for="confirm-password" class="block-info__label block-info__required">Confirm Password:</label>
+                        <label for="confirm-password" class="block-info__label block-info__required">Confirm
+                            Password:</label>
                         <input name="user-pass-confirm" class="block-info__inp" id="confirm-password" type="password">
                     </div>
                 </div>
@@ -259,7 +258,8 @@
             <div class="confirm-agree">
                 <input class="inp-checkbox" id="confirm-agree" type="checkbox">
                 <label for="confirm-agree"></label>
-                I have read and agree to the <a href="#">Privacy Terms</a> and <a href="#">Terms of Use</a> of the website. (Mandatory)
+                I have read and agree to the <a href="#">Privacy Terms</a> and <a href="#">Terms of Use</a> of the
+                website. (Mandatory)
             </div>
 
             <button class="btn-modal btn-disabled" id="btn-create-account" disabled>Create Account</button>

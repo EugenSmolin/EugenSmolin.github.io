@@ -57,7 +57,7 @@ $(document).ready(function () {
     });
 
 
-    // === CONFIRM AGREE === //
+    // === CONFIRM AGREE DISABLED === //
     $('#confirm-agree').on('change', function () {
         let $thisChecked = $(this).prop('checked');
         if ($thisChecked === true) {
@@ -79,7 +79,6 @@ $(document).ready(function () {
         }
 
         return true;
-
     }
 
     function validPassword(_this) {
@@ -117,8 +116,19 @@ $(document).ready(function () {
         return true;
     }
 
+    function validPhoneNumber(_this) {
+        let $inpVal = _this.val();
 
-    // === SIGN UP - CREATE ACCOUNT === //
+        if ($inpVal === '') {
+            _this.addClass('required-input');
+            return false;
+        }
+
+        return true;
+    }
+
+
+    // === CREATE ACCOUNT - SIGN UP === //
     $('#btn-create-account').on('click', function () {
         let $valid = true;
 
@@ -164,18 +174,123 @@ $(document).ready(function () {
 
         console.log($createAccount);
 
-        // $.ajax({
-        //     type: "POST",
-        //     url: "",
-        //     contentType: "application/json",
-        //     data: JSON.stringify($createAccount),
-        //     success: function (data) {
-        //
-        //         console.log(data);
-        //
-        //     }
-        //
-        // });
+        /*$.ajax({
+            type: "POST",
+            url: "",
+            contentType: "application/json",
+            data: JSON.stringify($createAccount),
+            success: function (data) {
+
+                console.log(data);
+
+            }
+
+        });*/
+
+    }
+
+
+    // === SEND FORM - HOME PAGE === //
+    $('#btn-send-quick-quote').on('click', function() {
+
+        let $valid = true;
+
+        if (!validEmail($('[name="quote-email"]'))) {
+            $valid = false;
+        }
+
+
+        if ($valid === true) {
+            sendFormQuickQuote();
+        } else {
+            console.log('Error valid send form!!!');
+        }
+
+    });
+
+    function sendFormQuickQuote() {
+
+        let $sendForm = {
+            freightType: $('.select-freight').find('.select2-chosen').text(),
+            weight: $('[name="quote-weight"]').val(),
+            shippingFrom: $('[name="quote-shipping-from"]').val(),
+            shippingTo: $('[name="quote-shipping-to"]').val(),
+            email: $('[name="quote-email"]').val(),
+            details: $('[name="quote-details"]').val()
+        };
+
+        console.log($sendForm);
+
+        /*$.ajax({
+            type: "POST",
+            url: "",
+            contentType: "application/json",
+            data: JSON.stringify($sendForm),
+            success: function (data) {
+
+                console.log(data);
+
+            }
+
+        });*/
+
+    }
+
+
+    // === SEND FORM - CONTACTS PAGE === //
+    $('#btn-send-contacts').on('click', function() {
+
+        let $valid = true;
+
+        if (!validName($('[name="contacts-first-name"]'))) {
+            $valid = false;
+        }
+
+        if (!validName($('[name="contacts-second-name"]'))) {
+            $valid = false;
+        }
+
+        if (!validPhoneNumber($('[name="contacts-phone"]'))) {
+            $valid = false;
+        }
+
+        if (!validEmail($('[name="contacts-email"]'))) {
+            $valid = false;
+        }
+
+
+        if ($valid === true) {
+            sendFormContacts();
+        } else {
+            console.log('Error valid send form!!!');
+        }
+
+    });
+
+    function sendFormContacts() {
+
+        let $sendForm = {
+            firstName: $('[name="contacts-first-name"]').val(),
+            secondName: $('[name="contacts-second-name"]').val(),
+            phone: $('[name="contacts-phone"]').val(),
+            email: $('[name="contacts-email"]').val(),
+            message: $('[name="contacts-message"]').val()
+        };
+
+        console.log($sendForm);
+
+        /*$.ajax({
+            type: "POST",
+            url: "",
+            contentType: "application/json",
+            data: JSON.stringify($sendForm),
+            success: function (data) {
+
+                console.log(data);
+
+            }
+
+        });*/
 
     }
 

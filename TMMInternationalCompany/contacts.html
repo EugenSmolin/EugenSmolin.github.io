@@ -56,14 +56,14 @@
             <div class="row">
                 <div class="col-md-6 offset-md-0 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
                     <div class="contacts-send">
-                        <input class="contacts-send__first" name="contactsFirstName" placeholder="First name">
-                        <input class="contacts-send__second" name="contactsSecondName" placeholder="Second name">
-                        <input class="contacts-send__phone" name="contactsPhone" placeholder="Phone">
-                        <input class="contacts-send__email" name="contactsEmail" placeholder="E-mail">
+                        <span class="required">*</span><input class="contacts-send__first" name="contacts-first-name" placeholder="First name">
+                        <span class="required">*</span><input class="contacts-send__second" name="contacts-second-name" placeholder="Second name">
+                        <span class="required">*</span><input class="contacts-send__phone only-number" name="contacts-phone" placeholder="Phone">
+                        <span class="required">*</span><input class="contacts-send__email" name="contacts-email" placeholder="E-mail">
                         <label for="message">Type you message</label>
-                        <textarea class="contacts-send__message" name="contactsMessage" id="message"></textarea>
+                        <textarea class="contacts-send__message" name="contacts-message" id="message"></textarea>
                         <div class="buttons-block">
-                            <button class="contacts-send__btn">Send</button>
+                            <button class="contacts-send__btn" id="btn-send-contacts">Send</button>
                         </div>
                     </div>
                 </div>
