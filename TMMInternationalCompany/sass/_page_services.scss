@@ -6,6 +6,7 @@
   .slider {
     margin-top: 50px;
     margin-bottom: 0;
+    padding-bottom: 50px;
 
     &__slide {
       position: relative;
@@ -45,11 +46,16 @@
       }
     }
 
+    .add-more-info {
+      display: none;
+    }
+
     &__more {
       text-transform: uppercase;
       font-size: 14px;
       font-weight: 600;
       color: $colorDarkGrey;
+      cursor: pointer;
 
       .icon-arrow {
         position: relative;

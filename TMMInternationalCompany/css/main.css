@@ -74,6 +74,9 @@ label {
   color: #272829;
   transition: all .3s linear; }
 
+input:disabled {
+  background-color: #fff; }
+
 .required-input {
   border: 1px solid #d0021b !important;
   color: #d0021b !important;
@@ -111,32 +114,45 @@ label {
   background-color: #666666 !important;
   transition: all .3s linear; }
 
-.modal-window {
+.message-success {
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: auto;
-  min-width: 370px;
-  min-height: 250px;
-  background-color: #fff;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0 0 10px #666666;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
   visibility: hidden;
   opacity: 0;
   transition: all .4s linear;
   z-index: 99; }
-  .modal-window.fadeIn {
-    top: 10%;
+  .message-success__modal {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 60px;
+    width: auto;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #666666;
+    z-index: 100; }
+  .message-success__modal-success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb; }
+  .message-success__modal-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb; }
+  .message-success.fadeIn {
+    padding-top: 10%;
+    top: 0;
     visibility: visible;
     opacity: 1;
     transition: all .4s linear; }
-  .modal-window__content {
-    position: relative;
-    padding: 20px;
-    font-size: 14px; }
-  .modal-window__close {
+  .message-success__close {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -145,9 +161,9 @@ label {
     height: 15px;
     cursor: pointer;
     opacity: .5; }
-    .modal-window__close:hover {
+    .message-success__close:hover {
       opacity: 1; }
-    .modal-window__close:before {
+    .message-success__close:before {
       content: '';
       display: block;
       width: 15px;
@@ -159,7 +175,7 @@ label {
       transform: rotate(-45deg);
       border: none;
       border-radius: 2px; }
-    .modal-window__close:after {
+    .message-success__close:after {
       content: '';
       display: block;
       width: 15px;
@@ -171,159 +187,9 @@ label {
       transform: rotate(45deg);
       border: none;
       border-radius: 2px; }
-  .modal-window__head {
-    font-family: NanumGothic, sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: #272829;
-    text-align: center;
-    padding-bottom: 20px; }
-  .modal-window__row {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin-bottom: 25px; }
-  .modal-window__label {
-    display: inline-block;
-    width: 80px;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    line-height: 16px;
-    color: #666; }
-  .modal-window__inp {
-    display: inline-block;
-    width: 170px;
-    height: 20px;
-    border: 1px solid #fff;
-    border-bottom: 1px solid #d8d8d8;
-    margin: 0;
-    padding: 0 5px;
-    text-align: left;
-    font-size: 14px; }
-  .modal-window .btn-modal {
-    display: block;
-    margin: 30px auto 15px;
-    padding: 5px 15px;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    background-color: #d0021b;
-    cursor: pointer;
-    opacity: 0.8;
-    transition: all .3s linear; }
-    .modal-window .btn-modal:hover {
-      opacity: 1; }
-  .modal-window .forgot-password {
-    display: block;
-    color: #d0021b;
-    margin-bottom: 15px;
-    font-weight: 600;
-    opacity: .8; }
-    .modal-window .forgot-password:hover {
-      opacity: 1; }
-  .modal-window .just-login {
-    text-align: center; }
-    .modal-window .just-login__href {
-      color: #d0021b;
-      font-weight: 600;
-      opacity: .8; }
-      .modal-window .just-login__href:hover {
-        opacity: 1; }
 
-#modal-login .modal-window__content {
-  text-align: center; }
-
-@media screen and (max-width: 768px) {
-  .modal-window {
-    min-width: 300px; } }
-
-#modal-sign-up {
-  width: 870px; }
-  #modal-sign-up .block-info {
-    display: inline-block;
-    width: 300px;
-    margin: 20px 50px;
-    vertical-align: top; }
-    #modal-sign-up .block-info__head {
-      font-size: 14px;
-      color: #272829;
-      margin-bottom: 20px; }
-      #modal-sign-up .block-info__head:after {
-        content: '';
-        display: block;
-        width: 150px;
-        height: 1px;
-        background-color: #d8d8d8; }
-    #modal-sign-up .block-info__row {
-      display: flex;
-      align-items: flex-end;
-      margin-bottom: 10px;
-      min-height: 25px;
-      padding-left: 10px; }
-    #modal-sign-up .block-info__label {
-      position: relative;
-      display: inline-block;
-      width: 100px;
-      font-size: 14px;
-      font-weight: normal;
-      line-height: 16px;
-      color: #666666; }
-    #modal-sign-up .block-info__inp {
-      display: inline-block;
-      width: 200px;
-      border: 1px solid #fff;
-      border-bottom: 1px solid #d8d8d8;
-      height: 20px;
-      padding: 0 5px;
-      font-size: 14px; }
-    #modal-sign-up .block-info__required:before {
-      content: '*';
-      display: inline-block;
-      width: 10px;
-      height: 16px;
-      color: #d0021b;
-      position: absolute;
-      top: -5px;
-      left: -10px; }
-  #modal-sign-up .confirm-agree {
-    text-align: center; }
-    #modal-sign-up .confirm-agree a {
-      font-weight: 600;
-      color: #bc515c; }
-
-@media screen and (max-width: 992px) {
-  #modal-sign-up {
-    width: 690px; }
-    #modal-sign-up .block-info {
-      margin: 10px; } }
-
-@media screen and (max-width: 768px) {
-  #modal-sign-up {
-    position: absolute;
-    width: auto; }
-    #modal-sign-up .user-info {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      flex-direction: column; }
-    #modal-sign-up .block-info {
-      margin: 10px; } }
-
-@media screen and (max-width: 576px) {
-  #modal-sign-up .block-info {
-    margin: 10px auto; }
-    #modal-sign-up .block-info__label {
-      width: 85px; }
-    #modal-sign-up .block-info__inp {
-      width: 180px; } }
-
-@media screen and (max-width: 360px) {
-  #modal-sign-up {
-    width: calc(100% - 30px); }
-    #modal-sign-up .modal-window__content {
-      padding: 20px 10px; } }
-
+/*@import './login.scss';*/
+/*@import './sign-up.scss';*/
 #header {
   background: url("../img/bg_header.png") center center no-repeat;
   background-size: cover;
@@ -632,7 +498,8 @@ label {
 
 #services-slider .slider {
   margin-top: 50px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-bottom: 50px; }
   #services-slider .slider__slide {
     position: relative;
     display: block;
@@ -659,11 +526,14 @@ label {
       margin-bottom: 20px; }
     #services-slider .slider__desc p {
       color: #272829; }
+  #services-slider .slider .add-more-info {
+    display: none; }
   #services-slider .slider__more {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
-    color: #272829; }
+    color: #272829;
+    cursor: pointer; }
     #services-slider .slider__more .icon-arrow {
       position: relative;
       top: -1px;
@@ -831,6 +701,7 @@ label {
     background-color: #d8d8d8;
     float: right; }
   #rates .calculate-block .total-block {
+    position: relative;
     margin-right: 50px;
     text-align: right; }
     #rates .calculate-block .total-block__label {
@@ -843,8 +714,15 @@ label {
       border: none;
       border-bottom: 1px solid #d8d8d8;
       height: 20px;
-      padding: 0 5px;
+      padding: 0 16px 0 5px;
       text-align: right;
+      font-size: 16px;
+      font-weight: 600;
+      color: #bc515c; }
+    #rates .calculate-block .total-block .dollar {
+      position: absolute;
+      bottom: 0;
+      right: 4px;
       font-size: 16px;
       font-weight: 600;
       color: #bc515c; }

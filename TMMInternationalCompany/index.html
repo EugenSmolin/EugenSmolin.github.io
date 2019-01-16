@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>TMM</title>
+    <title>Home</title>
 
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="libs/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
@@ -18,11 +18,24 @@
 </head>
 <body>
 
+<div class="message-success" id="message-success">
+    <div class="message-success__modal message-success__modal-success">
+        <div class="message-success__close"></div>
+        Your application is accepted.
+    </div>
+</div>
+
+<div class="message-success" id="message-server-error">
+    <div class="message-success__modal message-success__modal-error">
+        <div class="message-success__close"></div>
+        Server error!
+    </div>
+</div>
+
 <!-- //============== HEADER ==============// -->
 <header id="header">
     <div class="container">
         <div class="header-top">
-            <!-- <nav class="navbar"> -->
             <nav class="navbar navbar-expand-lg navbar-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,10 +48,10 @@
                         <a class="nav-item nav-link" href="services.html">Services</a>
                         <a class="nav-item nav-link" href="rates.html">Rates</a>
                         <a class="nav-item nav-link" href="contacts.html">Contacts</a>
-                        <a class="nav-item nav-link login" href="#" id="login">
+                        <!--<a class="nav-item nav-link login" href="#" id="login">
                             <i class="far fa-user icon-user"></i>
                             <span>Login</span>
-                        </a>
+                        </a>-->
                     </div>
                 </div>
             </nav>
@@ -129,25 +142,27 @@
     <div class="container">
         <h2>quick quote</h2>
         <div class="quote-block">
-            <div class="quote-block__row">
-                <select class="select-freight" name="quote-freight-type" id="test">
-                    <option value="">Freight type</option>
-                    <option value="">Freight type 2</option>
-                    <option value="">Freight type 3</option>
-                </select>
-                <input class="only-number" name="quote-weight" placeholder="Weight">
-            </div>
-            <div class="quote-block__row">
-                <input name="quote-shipping-from" placeholder="Shipping from">
-                <input name="quote-shipping-to" placeholder="Shipping to">
-            </div>
-            <div class="quote-block__row">
-                <input class="quote-email" name="quote-email" placeholder="E-mail">
-            </div>
-            <div class="quote-block__row">
-                <textarea name="quote-details" placeholder="Details"></textarea>
-            </div>
-            <button class="btn-submit" id="btn-send-quick-quote">Send</button>
+            <form id="form-quick-quote">
+                <div class="quote-block__row">
+                    <select class="select-freight" name="FreightType" id="test">
+                        <option value="Freight typ">Freight type</option>
+                        <option value="Freight type 2">Freight type 2</option>
+                        <option value="Freight type 3">Freight type 3</option>
+                    </select>
+                    <input class="only-number" name="Weight" placeholder="Weight">
+                </div>
+                <div class="quote-block__row">
+                    <input name="ShippingFrom" placeholder="Shipping from">
+                    <input name="ShippingTo" placeholder="Shipping to">
+                </div>
+                <div class="quote-block__row">
+                    <input class="quote-email" name="Email" placeholder="E-mail">
+                </div>
+                <div class="quote-block__row">
+                    <textarea name="Details" placeholder="Details"></textarea>
+                </div>
+                <button type="button" class="btn-submit" id="btn-send-quick-quote">Send</button>
+            </form>
         </div>
     </div>
 </section>
@@ -171,7 +186,7 @@
 </section>
 
 <!-- //=============== LOGIN ==============// -->
-<div class="modal-window" id="modal-login">
+<!--<div class="modal-window" id="modal-login">
     <div class="modal-window__content">
         <div class="modal-window__close"></div>
         <div class="modal-window__head">
@@ -191,10 +206,10 @@
             <div class="just-login">Already have Account? Just <a class="just-login__href" href="#">Login</a></div>
         </div>
     </div>
-</div>
+</div>-->
 
 <!-- //=============== SIGN UP ==============// -->
-<div class="modal-window" id="modal-sign-up">
+<!--<div class="modal-window" id="modal-sign-up">
     <div class="modal-window__content">
         <div class="modal-window__close" data-id="modal-close"></div>
         <div class="modal-window__head">
@@ -267,7 +282,7 @@
             <div class="just-login">Already have Account? Just <a class="just-login__href" href="#">Login</a></div>
         </div>
     </div>
-</div>
+</div>-->
 
 
 <script src="libs/jquery/js/jquery.min.js"></script>
@@ -283,7 +298,7 @@
         autoplaySpeed: 5000,
         infinite: false,
         responsive: [{
-            breakpoint: 991,
+            breakpoint: 992,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3,
@@ -291,7 +306,7 @@
             }
 
         }, {
-            breakpoint: 767,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
