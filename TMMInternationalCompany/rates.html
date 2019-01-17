@@ -71,8 +71,13 @@
                                 </div>
                                 <div class="ground-row">
                                     <label class="ground-trans" for="ground-trans">Ground Transport:</label>
-                                    <input class="only-number" id="ground-trans" value="0" disabled>
+                                    <input class="only-number" id="ground-trans" value="0.00" disabled>
                                     <div class="dollar">$</div>
+                                </div>
+                                <div class="ground-row">
+                                    <div class="call-message" id="call-message-ground">
+                                        There are no prices in this direction. Сontact us for more information.
+                                    </div>
                                 </div>
                             </div>
                             <div class="calculate-block__ocean">
@@ -92,14 +97,19 @@
                                 </div>
                                 <div class="ocean-row">
                                     <label class="ocean-trans" for="ocean-trans">Ocean Transport:</label>
-                                    <input class="only-number" id="ocean-trans" value="0" disabled>
+                                    <input class="only-number" id="ocean-trans" value="0.00" disabled>
                                     <div class="dollar">$</div>
+                                </div>
+                                <div class="ocean-row">
+                                    <div class="call-message" id="call-message-ocean">
+                                        There are no prices in this direction. Сontact us for more information.
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="total-block">
                             <label class="total-block__label" for="total">Total bill:</label>
-                            <input class="total-block__inp only-number" id="total" value="0" disabled>
+                            <input class="total-block__inp only-number" id="total" value="0.00" disabled>
                             <div class="dollar">$</div>
                         </div>
                         <button class="btn-make-order" id="make-order">Make Order</button>
@@ -133,6 +143,7 @@
 <script src="libs/jquery/js/jquery.min.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 <script src="libs/select2/select2.min.js"></script>
+<script src="js/calculate.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

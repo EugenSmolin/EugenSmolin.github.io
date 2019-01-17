@@ -103,6 +103,15 @@
           font-weight: 600;
           color: $colorLightRed;
         }
+
+        .call-message {
+          display: none;
+          max-width: 260px;
+          color: $colorRed;
+          font-size: 14px;
+          font-weight: 600;
+          text-align: right;
+        }
       }
     }
 
@@ -220,6 +229,7 @@
 
   .select2-result-label {
     padding: 0 5px;
+    font-size: 14px;
   }
 
   .select2-search {
@@ -250,9 +260,9 @@
       }
 
       .total-block {
-        margin-top: 20px;
-        margin-right: 0;
-        text-align: center;
+        display: block;
+        width: 200px;
+        margin: 20px auto 0;
       }
     }
   }

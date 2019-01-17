@@ -692,6 +692,15 @@ input:disabled {
       font-size: 16px;
       font-weight: 600;
       color: #bc515c; }
+    #rates .calculate-block__ground .ground-row .call-message,
+    #rates .calculate-block__ground .ocean-row .call-message, #rates .calculate-block__ocean .ground-row .call-message,
+    #rates .calculate-block__ocean .ocean-row .call-message {
+      display: none;
+      max-width: 260px;
+      color: #d0021b;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: right; }
   #rates .calculate-block__ocean:after {
     content: '';
     display: inline-block;
@@ -779,7 +788,8 @@ input:disabled {
   background: #bc515c; }
 
 .calculate-select-dropdown .select2-result-label {
-  padding: 0 5px; }
+  padding: 0 5px;
+  font-size: 14px; }
 
 .calculate-select-dropdown .select2-search input {
   font-size: 14px;
@@ -794,9 +804,9 @@ input:disabled {
   #rates .calculate-block .ocean-none {
     display: none; }
   #rates .calculate-block .total-block {
-    margin-top: 20px;
-    margin-right: 0;
-    text-align: center; } }
+    display: block;
+    width: 200px;
+    margin: 20px auto 0; } }
 
 @media screen and (max-width: 360px) {
   #rates .select2-container .select2-choice {

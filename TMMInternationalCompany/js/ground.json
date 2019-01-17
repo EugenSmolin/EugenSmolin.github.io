@@ -20,13 +20,13 @@
     },
     "Phoenix": {
       "Chicago": "725.00",
-      "Newark": "1,250.00",
+      "Newark": "1250.00",
       "Houston": "650.00",
       "Florida": "950.00"
     },
     "Tucson": {
       "Chicago": "750.00",
-      "Newark": "1,250.00",
+      "Newark": "1250.00",
       "Houston": "650.00",
       "Florida": "950.00"
     },
@@ -38,51 +38,51 @@
     },
     "Anaheim": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "650.00",
-      "Florida": "1,150.00"
+      "Florida": "1150.00"
     },
     "East Bay": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "850.00",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Fontana": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "650.00",
-      "Florida": "1,150.00"
+      "Florida": "1150.00"
     },
     "Los Angeles": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "650.00",
-      "Florida": "1,150.00"
+      "Florida": "1150.00"
     },
     "North Hollywood": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "650.00",
-      "Florida": "1,150.00"
+      "Florida": "1150.00"
     },
     "Sacramento": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "850.00",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "San Diego": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "650.00",
-      "Florida": "1,150.00"
+      "Florida": "1150.00"
     },
     "San Jose": {
       "Chicago": "810.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "850.00",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Hartford": {
       "Chicago": "620.00",
@@ -224,7 +224,7 @@
     },
     "Albuquerque": {
       "Chicago": "650.00",
-      "Newark": "1,000.00",
+      "Newark": "1000.00",
       "Houston": "call",
       "Florida": "750.00"
     },
@@ -272,21 +272,21 @@
     },
     "Eugene": {
       "Chicago": "950.00",
-      "Newark": "1,300.00",
+      "Newark": "1300.00",
       "Houston": "call",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Portland": {
       "Chicago": "900.00",
-      "Newark": "1,300.00",
+      "Newark": "1300.00",
       "Houston": "call",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Portland West": {
       "Chicago": "900.00",
-      "Newark": "1,300.00",
+      "Newark": "1300.00",
       "Houston": "call",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Philadelphia": {
       "Chicago": "550.00",
@@ -356,7 +356,7 @@
     },
     "Salt lake City": {
       "Chicago": "700.00",
-      "Newark": "1,050.00",
+      "Newark": "1050.00",
       "Houston": "call",
       "Florida": "800.00"
     },
@@ -380,21 +380,21 @@
     },
     "Seattle": {
       "Chicago": "900.00",
-      "Newark": "1,250.00",
+      "Newark": "1250.00",
       "Houston": "call",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Seattle-North": {
       "Chicago": "900.00",
-      "Newark": "1,250.00",
+      "Newark": "1250.00",
       "Houston": "call",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Spokane": {
       "Chicago": "900.00",
-      "Newark": "1,250.00",
+      "Newark": "1250.00",
       "Houston": "call",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Appleton": {
       "Chicago": "350.00",
@@ -424,13 +424,13 @@
     },
     "Phoenix": {
       "Chicago": "725.00",
-      "Newark": "1,250.00",
+      "Newark": "1250.00",
       "Houston": "650.00",
       "Florida": "950.00"
     },
     "Tucson": {
       "Chicago": "750.00",
-      "Newark": "1,250.00",
+      "Newark": "1250.00",
       "Houston": "650.00",
       "Florida": "950.00"
     },
@@ -442,75 +442,75 @@
     },
     "Bakersfield": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "650.00",
-      "Florida": "1,150.00"
+      "Florida": "1150.00"
     },
     "Fresno": {
       "Chicago": "825.00",
-      "Newark": "1,250.00",
+      "Newark": "1250.00",
       "Houston": "900.00",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Hayward": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "850.00",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Los Angeles": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "650.00",
-      "Florida": "1,150.00"
+      "Florida": "1150.00"
     },
     "Martinez": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "850.00",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Rancho Cucamonga": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "650.00",
-      "Florida": "1,150.00"
+      "Florida": "1150.00"
     },
     "Sacramento": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "850.00",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "San Bernardino": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "650.00",
-      "Florida": "1,150.00"
+      "Florida": "1150.00"
     },
     "San Diego": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "650.00",
-      "Florida": "1,150.00"
+      "Florida": "1150.00"
     },
     "San Jose": {
       "Chicago": "810.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "850.00",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Vallejo": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "850.00",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Van Nuys": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "650.00",
-      "Florida": "1,150.00"
+      "Florida": "1150.00"
     },
     "Denver": {
       "Chicago": "700.00",
@@ -598,9 +598,9 @@
     },
     "Boise": {
       "Chicago": "900.00",
-      "Newark": "1,250.00",
-      "Houston": "1,050.00",
-      "Florida": "1,200.00"
+      "Newark": "1250.00",
+      "Houston": "1050.00",
+      "Florida": "1200.00"
     },
     "Bartlett": {
       "Chicago": "140.00",
@@ -724,13 +724,13 @@
     },
     "Las Vegas": {
       "Chicago": "720.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "call",
       "Florida": "900.00"
     },
     "Reno": {
       "Chicago": "720.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "call",
       "Florida": "900.00"
     },
@@ -754,7 +754,7 @@
     },
     "Albuquerque": {
       "Chicago": "650.00",
-      "Newark": "1,000.00",
+      "Newark": "1000.00",
       "Houston": "call",
       "Florida": "750.00"
     },
@@ -826,15 +826,15 @@
     },
     "Eugene": {
       "Chicago": "950.00",
-      "Newark": "1,300.00",
+      "Newark": "1300.00",
       "Houston": "call",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Portland": {
       "Chicago": "900.00",
-      "Newark": "1,300.00",
+      "Newark": "1300.00",
       "Houston": "call",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Harrisburg": {
       "Chicago": "550.00",
@@ -946,7 +946,7 @@
     },
     "": {
       "Chicago": "700.00",
-      "Newark": "1,050.00",
+      "Newark": "1050.00",
       "Houston": "call",
       "Florida": "800.00"
     },
@@ -964,21 +964,21 @@
     },
     "Graham": {
       "Chicago": "900.00",
-      "Newark": "1,250.00",
+      "Newark": "1250.00",
       "Houston": "call",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "North Seattle": {
       "Chicago": "900.00",
-      "Newark": "1,250.00",
+      "Newark": "1250.00",
       "Houston": "call",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Pasco": {
       "Chicago": "900",
-      "Newark": "1,250.00",
+      "Newark": "1250.00",
       "Houston": "call",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Charleston": {
       "Chicago": "550.00",
@@ -1002,57 +1002,57 @@
   "MANHEIM": {
     "Arizona": {
       "Chicago": "750.00",
-      "Newark": "1,250.00",
+      "Newark": "1250.00",
       "Houston": "0.00",
-      "Florida": "1,000.00"
+      "Florida": "1000.00"
     },
     "Greater AA of Phoenix": {
       "Chicago": "725.00",
-      "Newark": "1,250.00",
+      "Newark": "1250.00",
       "Houston": "650.00",
       "Florida": "950.00"
     },
     "Tucson AA": {
       "Chicago": "750.00",
-      "Newark": "1,250.00",
+      "Newark": "1250.00",
       "Houston": "650.00",
       "Florida": "950.00"
     },
     "Bay Cities": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "650.00",
-      "Florida": "1,150.00"
+      "Florida": "1150.00"
     },
     "California Auto": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "650.00",
-      "Florida": "1,150.00"
+      "Florida": "1150.00"
     },
     "Fresno Auto Dealers": {
       "Chicago": "825.00",
-      "Newark": "1,250.00",
+      "Newark": "1250.00",
       "Houston": "900.00",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "LA Dealer": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "650.00",
-      "Florida": "1,150.00"
+      "Florida": "1150.00"
     },
     "Riverside": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "650.00",
-      "Florida": "1,150.00"
+      "Florida": "1150.00"
     },
     "Southern California": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "700.00",
-      "Florida": "1,150.00"
+      "Florida": "1150.00"
     },
     "Colorado": {
       "Chicago": "700.00",
@@ -1062,7 +1062,7 @@
     },
     "Denver": {
       "Chicago": "700.00",
-      "Newark": "9,950.00",
+      "Newark": "9950.00",
       "Houston": "575.00",
       "Florida": "850.00"
     },
@@ -1278,19 +1278,19 @@
     },
     "Greater Las Vegas": {
       "Chicago": "720.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "call",
       "Florida": "900.00"
     },
     "Greater Nevada": {
       "Chicago": "720.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "call",
       "Florida": "900.00"
     },
     "Nevada": {
       "Chicago": "720.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "call",
       "Florida": "900.00"
     },
@@ -1314,7 +1314,7 @@
     },
     "Albuquerque": {
       "Chicago": "650.00",
-      "Newark": "1,000.00",
+      "Newark": "1000.00",
       "Houston": "call",
       "Florida": "750.00"
     },
@@ -1362,9 +1362,9 @@
     },
     "Portland": {
       "Chicago": "900.00",
-      "Newark": "1,300.00",
+      "Newark": "1300.00",
       "Houston": "call",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Butler": {
       "Chicago": "call",
@@ -1458,7 +1458,7 @@
     },
     "Utah": {
       "Chicago": "700.00",
-      "Newark": "1,050.00",
+      "Newark": "1050.00",
       "Houston": "call",
       "Florida": "800.00"
     },
@@ -1476,9 +1476,9 @@
     },
     "South Seattle": {
       "Chicago": "900.00",
-      "Newark": "1,250.00",
+      "Newark": "1250.00",
       "Houston": "call",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Metro Milwaukee": {
       "Chicago": "180.00",
@@ -1490,21 +1490,21 @@
   "ADESA": {
     "Fairfield": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "850.00",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Fremont": {
       "Chicago": "825.00",
-      "Newark": "1,250.00",
+      "Newark": "1250.00",
       "Houston": "900.00",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Sacramento": {
       "Chicago": "800.00",
-      "Newark": "1,200.00",
+      "Newark": "1200.00",
       "Houston": "850.00",
-      "Florida": "1,200.00"
+      "Florida": "1200.00"
     },
     "Jacksonville": {
       "Chicago": "650.00",
